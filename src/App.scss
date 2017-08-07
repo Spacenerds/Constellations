@@ -36,8 +36,63 @@
     .homepage{
         background: #000;
         color: $moon;
-        #logo {
-            height: 52px;
-            width: 242px;
+        height: 100vh;
+        width: 100vw;
+        padding-top: 50px;
+        .logo{
+            height: 270px;
+            width: 400px;
+            margin: auto;
+        }
+        .topSVG {
+            margin-bottom: -235px;
+            position: relative;
+            z-index: 5;
+            width: 400px;
+            height: 260px;
+            -webkit-animation: starlight 2s linear alternate forwards;
+            .logo-star {
+                fill: #fff;
+            }
+        }
+        .bottomSVG {
+            background: transparent;
+            fill: transparent;
+            stroke-dasharray: 210;
+            stroke-width: 1;
+            stroke: $lilac;
+            stroke-dashoffset: 525;
+            -webkit-animation: dash 3s linear alternate forwards;
+        }
+        .starmap {
+            display: block;
+            // width: 100vw;
+            margin: 20px auto;
+        }
+    }
+    @-webkit-keyframes starlight {
+        0% {
+            opacity: 0;
+            stroke: $moon;
+        }
+        100% {
+            stroke: $moon;
+            stroke-dashoffset: 0;
+        }
+    }
+    @-webkit-keyframes dash {
+        0% {
+            opacity: 0;
+            stroke: $moon;
+        }
+        50%{
+            opacity: 0;
+        }
+        90% {
+            stroke-width: 1;
+        }
+        100% {
+            stroke: $moon;
+            stroke-dashoffset: 0;
         }
     }
