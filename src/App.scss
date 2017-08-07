@@ -29,3 +29,15 @@
         font-family: 'Megrim', Serif;
         font-weight: normal;
     }
+
+// /////////////////////////////////////////////////////////////////
+// Home
+// /////////////////////////////////////////////////////////////////
+    .homepage{
+        background: #000;
+        color: $moon;
+        #logo {
+            height: 52px;
+            width: 242px;
+        }
+    }

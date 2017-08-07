@@ -15,3 +15,10 @@ ul {
 h1, h2 {
   font-family: 'Megrim', Serif;
   font-weight: normal; }
+
+.homepage {
+  background: #000;
+  color: #B5B4B5; }
+  .homepage #logo {
+    height: 52px;
+    width: 242px; }
