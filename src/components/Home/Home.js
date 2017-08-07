@@ -3,10 +3,7 @@ import $ from 'jquery';
 
 class Home extends Component {
     render() {
-        $test = setInterval(function(){ drawKhaos(2, 2); }, 50);
-        $x = 1;
-        $rgb = 0;
-        $opacity = 1;
+
 
     
 
