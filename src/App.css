@@ -15,3 +15,12 @@ ul {
 h1, h2 {
   font-family: 'Megrim', Serif;
   font-weight: normal; }
+
+.constellationMapping {
+  background-image: url("./images/star-1050487_960_720.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh; }
+
+.constMap {
+  width: 100vw; }
