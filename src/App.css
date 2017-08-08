@@ -25,7 +25,9 @@ h1, h2 {
   .homepage .logo {
     height: 270px;
     width: 400px;
-    margin: auto; }
+    margin: auto;
+    position: absolute;
+    left: 34%; }
   .homepage .topSVG {
     margin-bottom: -235px;
     position: relative;
