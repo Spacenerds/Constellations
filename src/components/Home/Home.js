@@ -1,7 +1,89 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import $ from 'jquery';
+// import virtualsky from './virtualsky.js';
 
 class Home extends Component {
+
+    // componentDidMount(){
+    //     virtualsky();
+        // var planetarium = virtualsky({
+        //         id: 'starmap',
+        //         projection: 'stereo',
+        //         latitude: 34.4326,
+        //         longitude: -119.86286
+        // });
+    // }
+
+        componentDidMount(){
+            let canvas = ReactDOM.findDOMNode(this.refs.myCanvas);
+            let ctx = canvas.getContext('2d');
+
+            // ctx.fillStyle = 'rgb(200,0,0)';
+            // ctx.fillRect(10, 10, 55, 50);
+
+
+
+// canvas = document.getElementById('canvas');
+// ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+var estrelas = [];
+
+function createStars() {
+  estrelas = [];
+  for (var i = 0; i < canvas.width; i++) {
+    estrelas.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      raio: Math.random(),
+    })
+  }
+}
+
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "white";
+  for (let i = 0; i < estrelas.length; i++) {
+    var e = estrelas[i];
+    ctx.beginPath();
+    ctx.arc(e.x, e.y, e.raio, 0, 2 * Math.PI);
+    ctx.fill();
+  }
+}
+
+function update() {
+  for (let i = 0; i < estrelas.length; i++) {
+    var e = estrelas[i];
+    e.raio = Math.random();
+  }
+}
+
+createStars();
+function pulse() {
+  update();
+  draw();
+  requestAnimationFrame(pulse);
+}
+
+pulse();
+
+window.onresize = function() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  createStars();
+}    
+
+
+        }
+
     render() {
+
+
+
+
         return (
             <div className="homepage">
                 <div className="logo">
@@ -67,10 +149,10 @@ class Home extends Component {
 
                 </div>
 
-                <div className="starmap">
-                    <iframe SRC="http://server1.sky-map.org/skywindow?object=M100&zoom=8&img_source=SDSS">
-</iframe>
-                </div>
+
+
+
+                <canvas ref="myCanvas" />
             </div>
         );
     }
