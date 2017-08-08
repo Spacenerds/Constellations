@@ -29,7 +29,80 @@
         font-family: 'Megrim', Serif;
         font-weight: normal;
     }
-    .constellationMapping{
+
+  
+
+// /////////////////////////////////////////////////////////////////
+// Home
+// /////////////////////////////////////////////////////////////////
+    .homepage{
+        background: #000;
+        color: $moon;
+        height: 100vh;
+        width: 100vw;
+        padding-top: 50px;
+        .logo{
+            height: 270px;
+            width: 400px;
+            margin: auto;
+            position: absolute;
+            left: 34%;
+        }
+        .topSVG {
+            margin-bottom: -235px;
+            position: relative;
+            z-index: 5;
+            width: 400px;
+            height: 260px;
+            -webkit-animation: starlight 2s linear alternate forwards;
+            .logo-star {
+                fill: #fff;
+            }
+        }
+        .bottomSVG {
+            background: transparent;
+            fill: transparent;
+            stroke-dasharray: 210;
+            stroke-width: 1;
+            stroke: $lilac;
+            stroke-dashoffset: 525;
+            -webkit-animation: dash 3s linear alternate forwards;
+        }
+        .starmap {
+            display: block;
+            // width: 100vw;
+            margin: 20px auto;
+        }
+    }
+    @-webkit-keyframes starlight {
+        0% {
+            opacity: 0;
+            stroke: $moon;
+        }
+        100% {
+            stroke: $moon;
+            stroke-dashoffset: 0;
+        }
+    }
+    @-webkit-keyframes dash {
+        0% {
+            opacity: 0;
+            stroke: $moon;
+        }
+        50%{
+            opacity: 0;
+        }
+        90% {
+            stroke-width: 1;
+        }
+        100% {
+            stroke: $moon;
+            stroke-dashoffset: 0;
+        }
+
+        
+    }
+      .constellationMapping{
         background-image: url('./images/star-1050487_960_720.jpg');
         background-size: cover;
         width: 100vw;
