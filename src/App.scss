@@ -13,6 +13,15 @@
     $moon:          #B5B4B5;
     $lilac:         #BDCAEC;
 
+    html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
     body {
         margin: 0;
         padding: 0;
@@ -98,11 +107,45 @@
         100% {
             stroke: $moon;
             stroke-dashoffset: 0;
-        }
-
-        
+        }    
     }
-      .constellationMapping{
+  }
+
+// /////////////////////////////////////////////////////////////////
+// Events
+// /////////////////////////////////////////////////////////////////
+
+    .events-container {
+        section {
+            width: 100vw;
+            height: 100vh;
+        }
+        iframe {
+            html {
+                margin-top: -203px;
+            }
+        }
+    }
+
+    .one, .two, .three, .four, .five {
+        // padding: 50px;
+    }
+
+    .one {
+        background: $teal;
+    }
+    .two {
+        background: $blue;
+        height: 200vh;
+    }
+    .three {
+        background: $deepspace;
+    }
+    .four {
+        background: $lilac;
+    }
+
+  .constellationMapping{
         background-image: url('./images/star-1050487_960_720.jpg');
         background-size: cover;
         position: absolute;

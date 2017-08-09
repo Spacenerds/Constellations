@@ -4,7 +4,11 @@ import './App.scss';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
+import { HashRouter } from "react-router-dom";
+
 ReactDOM.render(
-    <App />,
+    <HashRouter>
+        <App />
+    </HashRouter>,
 document.getElementById('root'));
 registerServiceWorker();
