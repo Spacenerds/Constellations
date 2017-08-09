@@ -63,7 +63,7 @@ class Events extends Component {
     render() {
         let options = {
             sectionClassName:     'section',
-            anchors:              ['Events', 'Types', 'sectionThree'],
+            anchors:              ['One', 'Types', 'sectionThree'],
             scrollBar:            false,
             navigation:           true,
             verticalAlign:        false,
@@ -75,9 +75,19 @@ class Events extends Component {
             <SectionsContainer {...options} className="events-container">
                 <Section className="one">
                     <h1>Celestial Events</h1>
+                    <button>hello</button>
                 </Section>
                 <Section className="two" ref='cake'>
-                    <h2>Types of Events</h2>
+                    <h3>Types of Events</h3>
+                    <ul>
+                        <li>Lunar Cycle</li>
+                        <li>Lunar Eclipse</li>
+                        <li>Solar Eclipse</li>
+                        <li>Meteor Shower</li>
+                        <li>Planetary Event</li>
+                        <li>Comets</li>
+                        <li>Equinox/Solstice</li>
+                    </ul>
                 </Section>
                 <Section className="three">
                     <canvas id="canvas" width="500" height="500" ref={(canvas) => { this.canvasRef = canvas; }}></canvas>
