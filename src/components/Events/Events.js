@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import ReactDOM, { findDOMNode } from 'react-dom';
-// import {SectionsContainer, Section} from 'react-fullpage';
 
 class Events extends Component {
     constructor() {
@@ -9,14 +8,13 @@ class Events extends Component {
         this.getCursorPosition = this.getCursorPosition.bind(this);
         this.drawLine = this.drawLine.bind(this);
         this.updateCanvas = this.updateCanvas.bind(this);
-    }
+    };
 
     componentDidMount(){
-        window.addEventListener('scroll', this.handleScroll);
         this.canvas = findDOMNode(this.canvasRef);
         this.ctx = this.canvas.getContext('2d');
         this.updateCanvas();
-    }
+    };
 
     getCursorPosition(e) {
         var x;
@@ -54,24 +52,26 @@ class Events extends Component {
     };
 
     updateCanvas() {
-        console.log("update canvas activated")
         this.canvas.addEventListener('click', this.drawLine, false);
         this.ctx.fillRect(0,0, 500, 500);
-    }
+    };
 
     render() {
-        let options = {
-            sectionClassName:     'section',
-            anchors:              ['Events', 'Types', 'sectionThree'],
-            scrollBar:            false,
-            navigation:           true,
-            verticalAlign:        false,
-            sectionPaddingTop:    '50px',
-            sectionPaddingBottom: '50px',
-            arrowNavigation:      true
-        };
         return (
             <div className="events-container">
+                <section className="head">
+                    <h1>Celestial Events</h1>
+                    <h3>Types of Events</h3>
+                    <ul>
+                        <li>Lunar Cycle</li>
+                        <li>Lunar Eclipse</li>
+                        <li>Solar Eclipse</li>
+                        <li>Meteor Shower</li>
+                        <li>Planetary Event</li>
+                        <li>Comets</li>
+                        <li>Equinox/Solstice</li>
+                    </ul>
+                </section>
                 <canvas id="canvas" width="500" height="500" ref={(canvas) => { this.canvasRef = canvas; }}></canvas>
             </div>
         );
