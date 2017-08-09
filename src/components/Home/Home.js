@@ -8,7 +8,6 @@ import {connect} from 'react-redux';
 class Home extends Component {
 
     render() {
-
         return (
             <div className="homepage">
                 <div className="logo">

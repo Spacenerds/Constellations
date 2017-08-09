@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import ReactDOM, { findDOMNode } from 'react-dom';
-import {SectionsContainer, Section} from 'react-fullpage';
+// import {SectionsContainer, Section} from 'react-fullpage';
 
 class Events extends Component {
     constructor() {
@@ -43,7 +43,6 @@ class Events extends Component {
         if (clicks !== 1) {
             clicks++;
         } else {
-            console.log("triggered by else clicks", clicks, x, y, lastClick)
             this.ctx.beginPath();
             this.ctx.moveTo(lastClick[0], lastClick[1]);
             this.ctx.lineTo(x, y, 6);
@@ -72,17 +71,9 @@ class Events extends Component {
             arrowNavigation:      true
         };
         return (
-            <SectionsContainer {...options} className="events-container">
-                <Section className="one">
-                    <h1>Celestial Events</h1>
-                </Section>
-                <Section className="two" ref='cake'>
-                    <h2>Types of Events</h2>
-                </Section>
-                <Section className="three">
-                    <canvas id="canvas" width="500" height="500" ref={(canvas) => { this.canvasRef = canvas; }}></canvas>
-                </Section>
-            </SectionsContainer>
+            <div className="events-container">
+                <canvas id="canvas" width="500" height="500" ref={(canvas) => { this.canvasRef = canvas; }}></canvas>
+            </div>
         );
     }
 }
