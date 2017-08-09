@@ -121,30 +121,39 @@
             width: 100vw;
             height: 100vh;
         }
-        iframe {
-            html {
-                margin-top: -203px;
+    }
+
+    .types, .lunar-cycle, .lunar-eclipse, .solar-eclipse, .meteor {
+        padding: 50px;
+        ul {
+            list-style: none;
+            li{
+                padding-left: 20px;
             }
         }
     }
 
-    .one, .two, .three, .four, .five {
-        // padding: 50px;
-    }
-
-    .one {
+    .types {
         background: $teal;
     }
-    .two {
+    .lunar-cycle {
         background: $blue;
         height: 200vh;
     }
-    .three {
+    .lunar-eclipse {
         background: $deepspace;
     }
-    .four {
+    .solar-eclipse {
         background: $lilac;
     }
+    .meteor {
+        background: $moon;
+    }
+
+
+// /////////////////////////////////////////////////////////////////
+// Constellations
+// /////////////////////////////////////////////////////////////////
 
   .constellationMapping{
         background-image: url('./images/star-1050487_960_720.jpg');
@@ -159,14 +168,14 @@
         
     }
     .Layer_0 {
-  background-image: url("./images/Layer 0.png");
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 359px;
-  height: 278px;
-  z-index: 1;
-}
+        background-image: url("./images/Layer 0.png");
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 359px;
+        height: 278px;
+        z-index: 1;
+    }
     .Layer_12  {
   background-image: url("./images/Layer 12.png");
   position: absolute;

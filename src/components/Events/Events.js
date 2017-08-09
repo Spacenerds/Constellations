@@ -63,7 +63,7 @@ class Events extends Component {
     render() {
         let options = {
             sectionClassName:     'section',
-            anchors:              ['One', 'Types', 'sectionThree'],
+            anchors:              ['types', 'cycle', 'lunareclipse', 'solareclipse', 'test'],
             scrollBar:            false,
             navigation:           true,
             verticalAlign:        false,
@@ -73,11 +73,8 @@ class Events extends Component {
         };
         return (
             <SectionsContainer {...options} className="events-container">
-                <Section className="one">
+                <Section className="types">
                     <h1>Celestial Events</h1>
-                    <button>hello</button>
-                </Section>
-                <Section className="two" ref='cake'>
                     <h3>Types of Events</h3>
                     <ul>
                         <li>Lunar Cycle</li>
@@ -89,7 +86,28 @@ class Events extends Component {
                         <li>Equinox/Solstice</li>
                     </ul>
                 </Section>
-                <Section className="three">
+                <Section className="lunar-cycle">
+                    <h2>Lunar Cycle</h2>
+                    <p>use the API to pull in the next lunar cycle event thing</p>
+                    <p>Cool picture of lunar cycle</p>
+                    <p>SVG animation of Lunar cycle</p>
+                </Section>
+                <Section className="lunar-eclipse">
+                    <h2>Lunar Eclipse</h2>
+                    <p>SVG animation of Lunar eclipse</p>
+                    <p>2017 lunar eclipses and locations</p>
+                </Section>
+                <Section className="solar-eclipse">
+                    <h2>Solar Eclipse</h2>
+                    <p>SVG animation of Solar eclipse</p>
+                    <p>2017 solar eclipses and locations</p>
+                </Section>
+                <Section className="meteor">
+                    <h2>Meteor Showers</h2>
+                    <p>SVG animation of Meteor showers</p>
+                    <p>Showers names and time of year to see them</p>
+                </Section>
+                <Section className="test-container">
                     <canvas id="canvas" width="500" height="500" ref={(canvas) => { this.canvasRef = canvas; }}></canvas>
                 </Section>
             </SectionsContainer>

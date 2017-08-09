@@ -81,21 +81,28 @@ h1, h2 {
   width: 100vw;
   height: 100vh; }
 
-.events-container iframe html {
-  margin-top: -203px; }
+.types, .lunar-cycle, .lunar-eclipse, .solar-eclipse, .meteor {
+  padding: 50px; }
+  .types ul, .lunar-cycle ul, .lunar-eclipse ul, .solar-eclipse ul, .meteor ul {
+    list-style: none; }
+    .types ul li, .lunar-cycle ul li, .lunar-eclipse ul li, .solar-eclipse ul li, .meteor ul li {
+      padding-left: 20px; }
 
-.one {
+.types {
   background: #28E6F9; }
 
-.two {
+.lunar-cycle {
   background: #1DAEEC;
   height: 200vh; }
 
-.three {
+.lunar-eclipse {
   background: #080C22; }
 
-.four {
+.solar-eclipse {
   background: #BDCAEC; }
+
+.meteor {
+  background: #B5B4B5; }
 
 .constellationMapping {
   background-image: url("./images/star-1050487_960_720.jpg");
