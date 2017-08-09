@@ -127,3 +127,141 @@ h1, h2 {
 .four {
   background: #BDCAEC;
 }
+
+.constellationMapping {
+  background-image: url("./images/star-1050487_960_720.jpg");
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 100vh; }
+
+.constMap {
+  width: 100vw; }
+
+.Layer_0 {
+  background-image: url("./images/Layer 0.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 359px;
+  height: 278px;
+  z-index: 1; }
+
+.Layer_12 {
+  background-image: url("./images/Layer 12.png");
+  position: absolute;
+  left: 9px;
+  top: 207px;
+  width: 100px;
+  height: 53px;
+  z-index: 2; }
+  .Layer_12:hover {
+    background-color: yellow; }
+
+.Layer_11 {
+  background-image: url("./images/Layer 11.png");
+  position: absolute;
+  left: 9px;
+  top: 136px;
+  width: 74px;
+  height: 58px;
+  z-index: 3; }
+  .Layer_11:hover {
+    background-color: yellow; }
+
+.Layer_10 {
+  background-image: url("./images/Layer 10.png");
+  position: absolute;
+  left: 90px;
+  top: 142px;
+  width: 137px;
+  height: 64px;
+  z-index: 4; }
+  .Layer_10:hover {
+    background-color: yellow; }
+
+.Layer_9 {
+  background-image: url("./images/Layer 9.png");
+  position: absolute;
+  left: 109px;
+  top: 204px;
+  width: 117px;
+  height: 48px;
+  z-index: 5; }
+  .Layer_9:hover {
+    background-color: yellow; }
+
+.Layer_8 {
+  background-image: url("./images/Layer 8.png");
+  position: absolute;
+  left: 233px;
+  top: 199px;
+  width: 112px;
+  height: 67px;
+  z-index: 6; }
+  .Layer_8:hover {
+    background-color: yellow; }
+
+.Layer_7 {
+  background-image: url("./images/Layer 7.png");
+  position: absolute;
+  left: 233px;
+  top: 50px;
+  width: 109px;
+  height: 84px;
+  z-index: 7; }
+  .Layer_7:hover {
+    background-color: yellow; }
+
+.Layer_6 {
+  background-image: url("./images/Layer 6.png");
+  position: absolute;
+  left: 235px;
+  top: 124px;
+  width: 109px;
+  height: 82px;
+  z-index: 8; }
+  .Layer_6:hover {
+    background-color: yellow; }
+
+.Layer_4 {
+  background-image: url("./images/Layer 4.png");
+  position: absolute;
+  left: 258px;
+  top: 6px;
+  width: 60px;
+  height: 51px;
+  z-index: 9; }
+  .Layer_4:hover {
+    background-color: yellow; }
+
+.Layer_3 {
+  background-image: url("./images/Layer 3.png");
+  position: absolute;
+  left: 114px;
+  top: 5px;
+  width: 105px;
+  height: 56px;
+  z-index: 10; }
+  .Layer_3:hover {
+    background-color: yellow; }
+
+.Layer_2 {
+  background-image: url("./images/Layer 2.png");
+  position: absolute;
+  left: 23px;
+  top: 71px;
+  width: 75px;
+  height: 48px;
+  z-index: 11; }
+  .Layer_2:hover {
+    background-color: yellow; }
+
+.Layer_1 {
+  background-image: url("./images/Layer 1.png");
+  position: absolute;
+  left: 12px;
+  top: 13px;
+  width: 81px;
+  height: 57px;
+  z-index: 12; }
