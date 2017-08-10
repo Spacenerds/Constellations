@@ -10,7 +10,7 @@ $("div.Layer_10").on("click", function(){
 });
 
 $("div.Layer_1").on("click", function(){
-  $("span.toggled_1").toggleClass("toggle_off");
+  $("div.display_Box").toggleClass("toggle_off");
   
 });
 $("div.Layer_2").on("click", function(){
@@ -79,7 +79,9 @@ class ConstellationMapping extends Component {
         <div  id='l2' className='Layer_2'></div>
         <div className='Layer_12'></div>
       </div>
+      <div id="t1" className='display_Box'>
       <span id="spanid" className='toggled_1'>  HELLO I AM WORKINGGG </span>
+      </div>
       <span id="spanid" className='toggled_2'>  HELLO I AM WORKINGGG </span>
       <span id="spanid" className='toggled_3'>  HELLO I AM WORKINGGG </span>
       <span id="spanid" className='toggled_4'>  HELLO I AM WORKINGGG </span>
