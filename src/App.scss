@@ -315,9 +315,9 @@
     }
     .Layer_0 {
         background-image: url("./images/Layer 0.png");
-        position: absolute;
-        left: 0px;
-        top: 0px;
+        position: relative;
+        // left: 10vw;
+        // top: 30vh;
         width: 359px;
         height: 278px;
         z-index: 1;
@@ -413,28 +413,14 @@ background-color: yellow;
 
   }
 }
-
-.Layer_4 {
-  background-image: url("./images/Layer 4.png");
+.Layer_1 {
+  background-image: url("./images/Layer 1.png");
   position: absolute;
-  left: 258px;
-  top: 6px;
-  width: 60px;
-  height: 51px;
-  z-index: 9;
-  &:hover{
-background-color: yellow;
-
-  }
-}
-.Layer_3 {
-  background-image: url("./images/Layer 3.png");
-  position: absolute;
-  left: 114px;
-  top: 5px;
-  width: 105px;
-  height: 56px;
-  z-index: 10;
+  left: 31px;
+  top: 71px;
+  width: 56px;
+  height: 53px;
+  z-index: 6;
   &:hover{
 background-color: yellow;
   }
@@ -442,25 +428,52 @@ background-color: yellow;
 .Layer_2 {
   background-image: url("./images/Layer 2.png");
   position: absolute;
-  left: 23px;
-  top: 71px;
-  width: 75px;
-  height: 48px;
-  z-index: 11;
+  left: 16px;
+  top: 17px;
+  width: 68px;
+  height: 52px;
+  z-index: 5;
   &:hover{
 background-color: yellow;
   }
 }
-.Layer_1 {
-  background-image: url("./images/Layer 1.png");
+.Layer_3 {
+  background-image: url("./images/Layer 3.png");
   position: absolute;
-  left: 12px;
-  top: 13px;
-  width: 81px;
-  height: 57px;
-  z-index: 12;
-  
+  left: 103px;
+  top: 72px;
+  width: 94px;
+  height: 80px;
+  z-index: 4;
+  &:hover{
+background-color: yellow;
+  }
 }
+.Layer_4 {
+  background-image: url("./images/Layer 4.png");
+  position: absolute;
+  left: 119px;
+  top: 3px;
+  width: 104px;
+  height: 61px;
+  z-index: 3;
+  &:hover{
+background-color: yellow;
+  }
+}
+.Layer_5 {
+  background-image: url("./images/Layer 5.png");
+  position: absolute;
+  left: 247px;
+  top: 5px;
+  width: 74px;
+  height: 53px;
+  z-index: 2;
+  &:hover{
+background-color: yellow;
+  }
+}
+
 .toggled_1{
     position: absolute;
     right: 0px;
@@ -468,12 +481,14 @@ background-color: yellow;
     font-size: 20px;
 }
 .toggle_off{
-  color: red;
-  position: absolute;
-    right: 0px;
-    visibility: hidden;
-    font-size: 20px;
  
+    visibility: visible;
+     width: 100px;
+    height: 200px;
+    position: absolute;
+    
+    background-color: blue;
+    z-index: 200;
 }
 .toggled_2{
     position: absolute;
@@ -551,4 +566,12 @@ background-color: yellow;
     right: 0px;
     color: blue;
     font-size: 20px;
+}
+.display_Box {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    visibility: hidden;
+    background-color: blue;
+    z-index: 200;
 }
