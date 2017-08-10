@@ -154,9 +154,9 @@
 
         //stars aren't working. figure out later
         @function star-shadow ($n){
-            $value: '#{random(2000)}px #{random(2000)}px #fff';
+            $value: '#{random(100)}vw #{random(100)}vh #fff';
             @for $i from 2 through $n{
-                $value: '#{$value}, #{random(2000)}px #{random(2000)}px #fff'
+                $value: '#{$value}, #{random(100)}vw #{random(100)}vw #fff'
             }
             @return unquote($value)
         }
@@ -165,6 +165,7 @@
         $shadows-large: star-shdaow(100);
         .star{
             transform-style: preserve-3d;
+            position: fixed;
         }
         .starone {
             width: 1px;
@@ -176,7 +177,7 @@
             &:after {
                 content: " ";
                 position: absolute;
-                top: 2000px;
+                top: 100vh;
                 width: 1px;
                 height: 1px;
                 background: transparent;
@@ -193,7 +194,7 @@
             &:after{
                 content: " ";
                 position: absolute;
-                top: 2000px;
+                top: 100vh;
                 width: 2px;
                 height: 2px;
                 background: transparent;
@@ -210,7 +211,7 @@
             &:after{
                 content: " ";
                 position: absolute;
-                top: 2000px;
+                top: 100vh;
                 width: 3px;
                 height: 3px;
                 background: transparent;
@@ -286,15 +287,245 @@
             }
         }
     }
+    $se-size: 15vh;
+    $se-duration: 5s;
     .solar-eclipse {
-        background: $lilac;
+        background: $blue;
+        .se-img-container {
+            height: 20vh;
+            animation: sky $se-duration linear infinite;
+            background: $blue;
+            @keyframes sky {
+                from, to { background: $blue; }
+                50% { background: black; }
+            }
+        }
+        .solar-eclipse-image {
+            position: relative;
+            width: $se-size;
+            height: $se-size;
+            transform: translate(calc(49vw - #{$se-size/2}), calc(10vh - #{$se-size/2}));
+        }
+        .sun, .moon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(red, .5);
+            border-radius: 50%;
+        }
+        .sun {
+            background: gold;
+            animation: sun $se-duration linear infinite;
+            @keyframes sun {
+                50% {
+                    background: white;
+                    box-shadow: 
+                        0 0 5em white,
+                        0 0 5em white,
+                        0 0 5em white,
+                        0 0 5em white;
+                }
+            }
+        }
+        .moon {
+            animation: moon $se-duration linear infinite;
+            @keyframes moon {
+                from {
+                    transform: translateX(-110%);
+                    background: lightgray;
+                }
+                50% {
+                    background: black;
+                }
+                to {
+                    transform: translateX(110%);
+                    background: lightgray;
+                }
+            }
+        }
     }
     .meteor {
         background: $moon;
+        padding-bottom: 0 !important;
+        $path: "http://orion9.net/_demos/meteorRain/img/";
+        /*=======================*/
+        /* MIXINS
+        /*=======================*/
+        @mixin keyframes($animation-name) {
+            @-webkit-keyframes #{$animation-name} {
+                @content;
+            }
+            @-moz-keyframes #{$animation-name} {
+                @content;
+            }  
+            @-ms-keyframes #{$animation-name} {
+                @content;
+            }
+            @-o-keyframes #{$animation-name} {
+                @content;
+            }  
+            @keyframes #{$animation-name} {
+                @content;
+            }
+        }
+
+        @mixin animation($str) {
+            -webkit-animation: #{$str};
+            -moz-animation: #{$str};
+            -ms-animation: #{$str};
+            -o-animation: #{$str};
+            animation: #{$str};      
+        }
+
+        @mixin transform($str) {
+            -webkit-transform: #{$str};
+            -moz-transform: #{$str};
+            -ms-transform: #{$str};
+            -o-transform: #{$str};
+            transform: #{$str};
+        }
+
+        @mixin transition($str) {
+            -webkit-transition: -webkit-#{$str};
+            -moz-transition: -moz-#{$str};
+            -ms-transition: -ms-#{$str};
+            -o-transition: -o-#{$str};
+            transition: #{$str};
+        }
+
+        /*=======================*/
+        /* SVG ELEMENTS
+        /*=======================*/
+        #foreground {
+            position: relative;
+            width: 100vw;
+            height: 76vh;
+        }
+        #foreground > div {
+            bottom: 0;
+            position: absolute;
+            transform-origin: 50% 100%;
+            pointer-events:none;
+        }
+        .grass {
+            width:105%;
+            height:200px;
+            left:-2.5%;
+            background: url("#{$path}grass.svg") repeat-x bottom center;
+            background-position: -100px 100%;
+            @include animation("skew4 4s .2s ease-in-out infinite");
+        }
+        #tree1 {
+            width:335px;
+            height:425px;
+            background: url("#{$path}tree1.svg") no-repeat;
+            left:calc(15% - 335px / 2);
+            @include animation("skew1 8s ease-in-out infinite");
+        }
+        .reed { background: url("#{$path}reed.svg") no-repeat; background-size: cover; }
+        #reed1 {
+            left:calc(15% - 335px / 2);
+            width:180px;
+            height:155px;
+            @include animation("skew4 4s ease-in-out infinite");
+        }
+        #reed2 {
+            left:calc(15% + 80px / 2);
+            width: 200px;
+            height: 180px;
+
+            @include animation("skew4 4s .4s ease-in-out infinite");
+        }
+        #reed3 {
+            left:calc(15% - 120px / 2);
+            width: 220px;
+            height: 200px;
+
+            @include animation("skew4 4s .8s ease-in-out infinite");
+        }
+        #tree2 {
+            width:245px;
+            height:480px;
+            background: url("#{$path}tree2.svg") no-repeat;
+            right:calc(15% - 245px / 2);
+            @include animation("skew1 8s 2s ease-in-out infinite");
+        }
+        #bush {
+            right:calc(15% - 120px / 2);
+            width:210px;
+            height:135px;
+            background: url("#{$path}bush.svg") no-repeat;
+            background-size: cover;
+            @include animation("skew4 4s .6s ease-in-out infinite");
+        }
+        #telescope {
+            width:130px;
+            height:150px;
+            background: url("#{$path}telescope.svg") no-repeat;
+            left:calc(50% + 45px);
+            bottom: 55px !important;
+        }
+
+        #girl {
+            width:108px;
+            height:136px;
+            background: url("#{$path}girl.svg") no-repeat;
+            left:calc(50% - 108px / 2);
+            bottom: 25px !important;
+            cursor: pointer;
+            cursor: alias;
+            pointer-events: auto !important;
+        }
+
+
+        /*=======================*/
+        /* OTHER ELEMENTS
+        /*=======================*/
+        #halo {
+            opacity:0;
+            @include transition("opacity 1s ease-out");
+        }
+        #halo > div {
+            position: absolute;
+            width: 100%;
+            height: 450px;
+            background-color: rgba(170, 255, 230,.05);
+            bottom: -275px;
+            border-radius: 50%;
+            box-shadow: 0 0 55px 0 rgba(170, 255, 230,.1);
+            @include animation("halo 4s ease-in-out infinite");
+            animation-play-state: paused;
+        }
+        .meteorShower #halo > div { animation-play-state: running; }
+        /*=======================*/
+        /* KEYFRAMES
+        /*=======================*/
+        @include keyframes(skew1) {
+            0%, 100% { @include transform("skewX(0)"); }
+            50% { @include transform("skewX(1deg)"); }
+        }
+        @include keyframes(skew4) {
+            0%, 100% { @include transform("skewX(0)"); }
+            50% { @include transform("skewX(4deg)"); }
+        }
+        @include keyframes(observing) {
+            0%, 80% { @include transform("skewX(0)"); }
+            10%, 15% { @include transform("skewX(-4deg)"); }
+            25%, 50% { @include transform("skewX(-4deg) skewY(4deg)"); }
+            55%, 70% { @include transform("skewX(-4deg)") }
+        }
+        @include keyframes(halo) {
+            0%, 100% { opacity:1; }
+            50% { opacity:.5; }
+        }
     }
     .planetary {
         background: $dust;
     }
+
+
 
 
 // /////////////////////////////////////////////////////////////////
@@ -323,232 +554,226 @@
         z-index: 1;
     }
     .Layer_12  {
-  background-image: url("./images/Layer 12.png");
-  position: absolute;
-  
-  left: 9px;
-  top: 207px;
-  width: 100px;
-  height: 53px;
-  z-index: 2;
-  &:hover{
-background-color: yellow;
-  }
-}
+        background-image: url("./images/Layer 12.png");
+        position: absolute;
+        
+        left: 9px;
+        top: 207px;
+        width: 100px;
+        height: 53px;
+        z-index: 2;
+        &:hover{
+            background-color: yellow;
+        }
+    }
 
-.Layer_11 {
-  background-image: url("./images/Layer 11.png");
-  position: absolute;
-  left: 9px;
-  top: 136px;
-  width: 74px;
-  height: 58px;
-  z-index: 3;
-  &:hover{
-background-color: yellow;
+    .Layer_11 {
+        background-image: url("./images/Layer 11.png");
+        position: absolute;
+        left: 9px;
+        top: 136px;
+        width: 74px;
+        height: 58px;
+        z-index: 3;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_10 {
+        background-image: url("./images/Layer 10.png");
+        position: absolute;
+        left: 90px;
+        top: 142px;
+        width: 137px;
+        height: 64px;
+        z-index: 4;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_9  {
+        background-image: url("./images/Layer 9.png");
+        position: absolute;
+        left: 109px;
+        top: 204px;
+        width: 117px;
+        height: 48px;
+        z-index: 5;
+        &:hover{
+            background-color: yellow;
+        }
+    }
 
-  }
-}
-.Layer_10 {
-  background-image: url("./images/Layer 10.png");
-  position: absolute;
-  left: 90px;
-  
-  top: 142px;
-  width: 137px;
-  height: 64px;
-  z-index: 4;
-  &:hover{
-background-color: yellow;
-  }
-}
-.Layer_9  {
-  background-image: url("./images/Layer 9.png");
-  position: absolute;
-  left: 109px;
-  top: 204px;
-  width: 117px;
-  height: 48px;
-  z-index: 5;
-  &:hover{
-background-color: yellow;
-  }
-}
+    .Layer_8 {
+        background-image: url("./images/Layer 8.png");
+        position: absolute;
+        left: 233px;
+        top: 199px;
+        width: 112px;
+        height: 67px;
+        z-index: 6;
+        &:hover{
+            background-color: yellow;
+        }
+    }
 
-.Layer_8 {
-  background-image: url("./images/Layer 8.png");
-  position: absolute;
-  left: 233px;
-  top: 199px;
-  width: 112px;
-  height: 67px;
-  z-index: 6;
-  &:hover{
-background-color: yellow;
-  }
-}
+    .Layer_7 {
+        background-image: url("./images/Layer 7.png");
+        position: absolute;
+        left: 233px;
+        top: 50px;
+        width: 109px;
+        height: 84px;
+        z-index: 7;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_6 {
+        background-image: url("./images/Layer 6.png");
+        position: absolute;
+        left: 235px;
+        top: 124px;
+        width: 109px;
+        height: 82px;
+        z-index: 8;
+        &:hover{
+            background-color: yellow;
+        }
+    }
 
-.Layer_7 {
-  background-image: url("./images/Layer 7.png");
-  position: absolute;
-  left: 233px;
-  top: 50px;
-  width: 109px;
-  height: 84px;
-  z-index: 7;
-  &:hover{
-background-color: yellow;
-  }
-}
-.Layer_6 {
-  background-image: url("./images/Layer 6.png");
-  position: absolute;
-  left: 235px;
-  top: 124px;
-  width: 109px;
-  height: 82px;
-  z-index: 8;
-  &:hover{
-background-color: yellow;
-
-  }
-}
-
-.Layer_4 {
-  background-image: url("./images/Layer 4.png");
-  position: absolute;
-  left: 258px;
-  top: 6px;
-  width: 60px;
-  height: 51px;
-  z-index: 9;
-  &:hover{
-background-color: yellow;
-
-  }
-}
-.Layer_3 {
-  background-image: url("./images/Layer 3.png");
-  position: absolute;
-  left: 114px;
-  top: 5px;
-  width: 105px;
-  height: 56px;
-  z-index: 10;
-  &:hover{
-background-color: yellow;
-  }
-}
-.Layer_2 {
-  background-image: url("./images/Layer 2.png");
-  position: absolute;
-  left: 23px;
-  top: 71px;
-  width: 75px;
-  height: 48px;
-  z-index: 11;
-  &:hover{
-background-color: yellow;
-  }
-}
-.Layer_1 {
-  background-image: url("./images/Layer 1.png");
-  position: absolute;
-  left: 12px;
-  top: 13px;
-  width: 81px;
-  height: 57px;
-  z-index: 12;
-  
-}
-.toggled_1{
-    position: absolute;
-    right: 0px;
-    color: yellow;
-    font-size: 20px;
-}
-.toggle_off{
-  color: red;
-  position: absolute;
-    right: 0px;
-    visibility: hidden;
-    font-size: 20px;
- 
-}
-.toggled_2{
-    position: absolute;
-    top: 20px;
-    right: 0px;
-    color: red;
-    font-size: 20px;
-}
-.toggled_3{
-    position: absolute;
-    top: 120px;
-    right: 0px;
-    color: red;
-    font-size: 20px;
-}
-.toggled_4{
-    position: absolute;
-    top: 110px;
-    right: 0px;
-    color: red;
-    font-size: 20px;
-}
-.toggled_5{
-    position: absolute;
-    top: 100px;
-    right: 0px;
-    color: red;
-    font-size: 20px;
-}
-.toggled_6{
-    position: absolute;
-    top: 90px;
-    right: 0px;
-    color: red;
-    font-size: 20px;
-}
-.toggled_7{
-    position: absolute;
-    top: 80px;
-    right: 0px;
-    color: white;
-    font-size: 20px;
-}
-.toggled_8{
-    position: absolute;
-    top: 70px;
-    right: 0px;
-    color: grey;
-    font-size: 20px;
-}
-.toggled_9{
-    position: absolute;
-    top: 60px;
-    right: 0px;
-    color: green;
-    font-size: 20px;
-}
-.toggled_10{
-    position: absolute;
-    top: 50px;
-    right: 0px;
-    color: white;
-    font-size: 20px;
-}
-.toggled_11{
-    position: absolute;
-    top: 40px;
-    right: 0px;
-    color: purple;
-    font-size: 20px;
-}
-.toggled_12{
-    position: absolute;
-    top: 30px;
-    right: 0px;
-    color: blue;
-    font-size: 20px;
-}
+    .Layer_4 {
+        background-image: url("./images/Layer 4.png");
+        position: absolute;
+        left: 258px;
+        top: 6px;
+        width: 60px;
+        height: 51px;
+        z-index: 9;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_3 {
+        background-image: url("./images/Layer 3.png");
+        position: absolute;
+        left: 114px;
+        top: 5px;
+        width: 105px;
+        height: 56px;
+        z-index: 10;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_2 {
+        background-image: url("./images/Layer 2.png");
+        position: absolute;
+        left: 23px;
+        top: 71px;
+        width: 75px;
+        height: 48px;
+        z-index: 11;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_1 {
+        background-image: url("./images/Layer 1.png");
+        position: absolute;
+        left: 12px;
+        top: 13px;
+        width: 81px;
+        height: 57px;
+        z-index: 12;
+    }
+    .toggled_1{
+        position: absolute;
+        right: 0px;
+        color: yellow;
+        font-size: 20px;
+    }
+    .toggle_off{
+        color: red;
+        position: absolute;
+        right: 0px;
+        visibility: hidden;
+        font-size: 20px;
+    }
+    .toggled_2{
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        color: red;
+        font-size: 20px;
+    }
+    .toggled_3{
+        position: absolute;
+        top: 120px;
+        right: 0px;
+        color: red;
+        font-size: 20px;
+    }
+    .toggled_4{
+        position: absolute;
+        top: 110px;
+        right: 0px;
+        color: red;
+        font-size: 20px;
+    }
+    .toggled_5{
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        color: red;
+        font-size: 20px;
+    }
+    .toggled_6{
+        position: absolute;
+        top: 90px;
+        right: 0px;
+        color: red;
+        font-size: 20px;
+    }
+    .toggled_7{
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        color: white;
+        font-size: 20px;
+    }
+    .toggled_8{
+        position: absolute;
+        top: 70px;
+        right: 0px;
+        color: grey;
+        font-size: 20px;
+    }
+    .toggled_9{
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        color: green;
+        font-size: 20px;
+    }
+    .toggled_10{
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        color: white;
+        font-size: 20px;
+    }
+    .toggled_11{
+        position: absolute;
+        top: 40px;
+        right: 0px;
+        color: purple;
+        font-size: 20px;
+    }
+    .toggled_12{
+        position: absolute;
+        top: 30px;
+        right: 0px;
+        color: blue;
+        font-size: 20px;
+    }
