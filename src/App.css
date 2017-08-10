@@ -462,6 +462,98 @@ button {
   left: 12px;
   top: 13px;
   width: 81px;
-  height: 57px;
+  z-index: 12; }
+
+.toggled_1 {
+  position: absolute;
+  right: 0px;
+  color: yellow;
+  font-size: 20px; }
+
+.toggle_off {
+  color: red;
+  position: absolute;
+  right: 0px;
+  visibility: hidden;
+  font-size: 20px; }
+
+.toggled_2 {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  color: red;
+  font-size: 20px; }
+
+.toggled_3 {
+  position: absolute;
+  top: 120px;
+  right: 0px;
+  color: red;
+  font-size: 20px; }
+
+.toggled_4 {
+  position: absolute;
+  top: 110px;
+  right: 0px;
+  color: red;
+  font-size: 20px; }
+
+.toggled_5 {
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  color: red;
+  font-size: 20px; }
+
+.toggled_6 {
+  position: absolute;
+  top: 90px;
+  right: 0px;
+  color: red;
+  font-size: 20px; }
+
+.toggled_7 {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  color: white;
+  font-size: 20px; }
+
+.toggled_8 {
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  color: grey;
+  font-size: 20px; }
+
+.toggled_9 {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  color: green;
+  font-size: 20px; }
+
+.toggled_10 {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  color: white;
+  font-size: 20px; }
+
+.toggled_11 {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  color: purple;
+  font-size: 20px; }
+
+.toggled_12 {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  color: blue;
+  font-size: 20px; }
+
   z-index: 12;
 }
+
