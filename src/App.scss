@@ -35,6 +35,17 @@
         margin: 0;
         padding: 0;
     }
+    button {
+        padding: 8px 70px;
+        background: rgba($deepspace, 0.75);
+        color: $blue;
+        font-family: 'Megrim', Serif;
+        font-size: 13pt;
+
+        border: 3px solid transparent;
+        border-image: linear-gradient(to top right, #fff 0%, $teal 9%, $deepspace 50%);
+        border-image-slice: 1;
+    }
     label {
         position: absolute;
         z-index: 1;
@@ -167,10 +178,10 @@
         .bottomSVG {
             background: transparent;
             fill: transparent;
-            stroke-dasharray: 210;
+            stroke-dasharray: 800;
             stroke-width: 1;
             stroke: $lilac;
-            stroke-dashoffset: 525;
+            stroke-dashoffset: 1600;
             -webkit-animation: dash 3s linear alternate forwards;
         }
         .starmap {
