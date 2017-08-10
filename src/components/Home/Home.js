@@ -9,65 +9,77 @@ class Home extends Component {
             <div className="homepage">
                 <div className="logo">
                     <svg className="topSVG">
-                        {/*n*/}
-                        <circle className="logo-star" cx={9} cy={110} r={1} />
-                        <circle className="logo-star" cx={9} cy={36} r={1} />
-                        <circle className="logo-star" cx={65} cy={96} r={1} />
-                        <circle className="logo-star" cx={65} cy={36} r={1} />
-                        {/*i*/}
-                        <circle className="logo-star" cx={109} cy={110} r={1} />
-                        <circle className="logo-star" cx={109} cy={36} r={1} />
-                        {/*g*/}
-                        <circle className="logo-star" cx={212} cy={48} r={1} />
-                        <circle className="logo-star" cx={185} cy={76} r={1} />
-                        {/*h*/}
-                        <circle className="logo-star" cx={250} cy={36} r={1} />
-                        <circle className="logo-star" cx={250} cy={110} r={1} />
-                        <circle className="logo-star" cx={298} cy={36} r={1} />
-                        <circle className="logo-star" cx={298} cy={110} r={1} />
-                        {/*t*/}
-                        <circle className="logo-star" cx={331} cy={40} r={1} />
-                        <circle className="logo-star" cx={389} cy={40} r={1} />
-                        <circle className="logo-star" cx={360} cy={110} r={1} />
+                        {/*a*/}
+                        <circle className="logo-star" cx={9} cy={112} r={1} />
+                        <circle className="logo-star" cx={39.5} cy={44} r={1} />
+                        <circle className="logo-star" cx={69} cy={110} r={1} />
                         {/*s*/}
-                        <circle className="logo-star" cx={100} cy={229} r={1} />
-                        <circle className="logo-star" cx={142} cy={173} r={1} />
-                        {/*k*/}
-                        <circle className="logo-star" cx={176} cy={240} r={1} />
-                        <circle className="logo-star" cx={176} cy={165} r={1} />
-                        <circle className="logo-star" cx={220} cy={240} r={1} />
-                        <circle className="logo-star" cx={217} cy={165} r={1} />
+                        <circle className="logo-star" cx={136} cy={49} r={1} />
+                        <circle className="logo-star" cx={99} cy={105} r={1} />
+                        {/*t*/}
+                        <circle className="logo-star" cx={167} cy={43} r={1} />
+                        <circle className="logo-star" cx={221} cy={43} r={1} />
+                        <circle className="logo-star" cx={195} cy={112} r={1} />
+                        {/*r*/}
+                        <circle className="logo-star" cx={250} cy={43} r={1} />
+                        <circle className="logo-star" cx={250} cy={112} r={1} />
+                        <circle className="logo-star" cx={298} cy={112} r={1} />
+                        {/*o*/}
+                        <circle className="logo-star" cx={356} cy={41} r={1} />
+                        <circle className="logo-star" cx={356} cy={114} r={1} />
+                        {/*n*/}
+                        <circle className="logo-star" cx={21} cy={144} r={1} />
+                        <circle className="logo-star" cx={21} cy={210} r={1} />
+                        <circle className="logo-star" cx={74} cy={200} r={1} />
+                        <circle className="logo-star" cx={74} cy={144} r={1} />
+                        {/*e*/}
+                        <circle className="logo-star" cx={105} cy={142} r={1} />
+                        <circle className="logo-star" cx={105} cy={210} r={1} />
+                        <circle className="logo-star" cx={149} cy={142} r={1} />
+                        <circle className="logo-star" cx={149} cy={210} r={1} />
+
                         {/*y*/}
                         <circle className="logo-star" cx={253} cy={165} r={1} />
                         <circle className="logo-star" cx={306} cy={165} r={1} />
                         <circle className="logo-star" cx={280} cy={240} r={1} />
                     </svg>
-                    <svg version="1.1" className="bottomSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 389 214">
-                        <polyline className="logo-lines" points="8.5,81.2 8.5,9.1 63.1,65.2 63.1,9.2 "/>
-                        <line className="logo-lines" x1="43.4" y1="79.3" x2="66.6" y2="79.3"/>
-                        <path className="logo-lines" d="M106,81.2V8.7"/>
-                        <path className="logo-lines" d="M206.7,20c-5.9-7.7-14.2-9.6-21.8-9.6c-22.2,0-33,17-33,35.4c0,21.7,13.9,33,33.6,33c7.5,0,12.7-0.9,21.1-4.9
-                            L206.5,47h-27.8"/>
-                        <path className="logo-lines" d="M137.6,140.1c-5.8-6-11.3-7.4-16.6-7.4c-8.4,0-17.7,5-17.7,15.4c0,8.1,5.3,11.7,12,14.6
-                            c2.3,0.9,4.7,1.9,7.4,2.8c12.8,4.6,18.9,11.2,18.9,21.1c0,2.4-0.6,5.7-1.4,7.6c-4.2,9.8-12,12.2-20,12.2c-6.3,0-17-2.4-22.2-9.4"/>
-                        <path className="logo-lines" d="M212,204.4l-37.5-38.9l35.9-33.1"/>
-                        <polyline className="logo-lines" points="286.8,132.6 271.9,155.5 256.8,132.6 "/>
-                        <line className="logo-lines" x1="190.5" y1="54.5" x2="206.5" y2="54.5"/>
-                        <line className="logo-lines" x1="243" y1="9.5" x2="243" y2="81.5"/>
-                        <line className="logo-lines" x1="289.9" y1="10" x2="289.9" y2="82"/>
-                        <line className="logo-lines" x1="243.5" y1="40.5" x2="290.5" y2="40.5"/>
-                        <line className="logo-lines" x1="243.5" y1="51.5" x2="289.5" y2="51.5"/>
-                        <line className="logo-lines" x1="322" y1="11.5" x2="377.5" y2="11.5"/>
-                        <line className="logo-lines" x1="322.5" y1="20.5" x2="377" y2="20.5"/>
-                        <line className="logo-lines" x1="349.5" y1="20.5" x2="349.8" y2="80"/>
-                        <line className="logo-lines" x1="108.5" y1="203.5" x2="137.5" y2="174.5"/>
-                        <line className="logo-lines" x1="171.5" y1="132.5" x2="171.5" y2="204.5"/>
-                        <line className="logo-lines" x1="194.5" y1="132.5" x2="171.5" y2="154.5"/>
-                        <polyline className="logo-lines" points="245,132 272,174.4 297,132.4 "/>
-                        <line className="logo-lines" x1="272" y1="173.6" x2="272" y2="205"/>
+
+                    <svg version="1.1" className="bottomSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1163 578">
+                        <path className="logo-lines" d="M399.4,65.7c-16.3-16.9-31.5-20.6-46.4-20.6c-23.5,0-49.4,13.9-49.4,43.1c0,22.6,14.9,32.8,33.5,40.8
+                        c6.3,2.7,13.3,5.3,20.6,8c35.8,12.9,52.7,31.2,52.7,59c0,6.6-1.7,15.9-4,21.2c-11.6,27.5-33.5,34.2-56,34.2
+                        c-17.6,0-47.4-6.6-62-26.2"/>
+                        <line className="logo-lines" x1="491.3" y1="44.5" x2="645.5" y2="44.5"/>
+                        <path className="logo-lines" d="M777.5,192.7h-51.6l-0.4,52.4V44.5h64c0.7,0,2.3,0.3,4.3,0.3c2,0.3,4.6,1,6.6,1c40.1,4,51.4,43.1,51.4,70.3
+                        c0,20.9-8,55.7-38.1,70.6C800.7,192.2,787.5,192.7,777.5,192.7z"/>
+                        <path className="logo-lines" d="M935.4,144c0-54.4,41.8-104.8,100.8-104.8c60.4,0,100.8,51.7,100.8,104.8c0,55.4-41.8,105.5-100.5,105.5
+                        C975.8,249.4,935.4,196.4,935.4,144z"/>
+                        <path className="logo-lines" d="M819.1,533.4h-95.2v-201h54.4c1.3,0,14.9,1,21.9,1.7c27.2,2,62,8.6,83.2,46.1c2.7,4.6,6.3,11.6,8.3,17.2
+                        c4,11.3,5.6,25.2,5.6,33.8c0,28.9-11.6,73-48.1,91.9C842,527.1,827.4,533.4,819.1,533.4z"/>
+                        <polyline className="logo-lines" points="25,246.1 115.2,48 205.4,246.1 "/>
+                        <line className="logo-lines" x1="55.6" y1="178.9" x2="174.8" y2="178.9"/>
+                        <polyline className="logo-lines" points="48.2,195.1 115.2,220.8 182.2,195.1 "/>
+                        <line className="logo-lines" x1="384.3" y1="150.2" x2="324.3" y2="247.3"/>
+                        <path className="logo-lines" d="M1090.4,349.6c-16.3-16.9-31.5-20.6-46.4-20.6c-23.5,0-49.4,13.9-49.4,43.1c0,22.6,14.9,32.8,33.5,40.8
+                        c6.3,2.7,13.3,5.3,20.6,8c35.8,12.9,52.7,31.2,52.7,59c0,6.6-1.7,15.9-4,21.2c-11.6,27.5-33.5,34.2-56,34.2
+                        c-17.6,0-47.4-6.6-62-26.2"/>
+                        <line className="logo-lines" x1="1075.2" y1="434.1" x2="1015.3" y2="531.1"/>
+                        <line className="logo-lines" x1="490.4" y1="73.3" x2="644.4" y2="73.3"/>
+                        <line className="logo-lines" x1="567.4" y1="73.3" x2="567.4" y2="247.2"/>
+                        <line className="logo-lines" x1="808.9" y1="188.2" x2="842.5" y2="245"/>
+                        <polyline className="logo-lines" points="784.2,192.6 816.1,245 857.9,245 "/>
+                        <path className="logo-lines" d="M566.3,481h-51.6l-0.4,52.4V332.7h64c0.7,0,2.3,0.3,4.3,0.3c2,0.3,4.6,1,6.6,1c40.1,4,51.4,43.1,51.4,70.3
+                        c0,20.9-8,55.7-38.1,70.6C589.4,480.4,576.2,481,566.3,481z"/>
+                        <line className="logo-lines" x1="597.7" y1="476.5" x2="631.2" y2="533.2"/>
+                        <polyline className="logo-lines" points="572.9,480.9 604.8,533.2 646.6,533.2 "/>
+                        <line className="logo-lines" x1="1036.1" y1="38.1" x2="1036.1" y2="249.4"/>
+                        <polyline className="logo-lines" points="61.3,533.2 61.3,337.4 215.3,498 215.3,330.8 "/>
+                        <line className="logo-lines" x1="220.8" y1="523.3" x2="154.8" y2="523.3"/>
+                        <polyline className="logo-lines" points="427.7,331.9 304.5,331.9 304.5,532.1 432.1,532.1 "/>
+                        <line className="logo-lines" x1="305.6" y1="416.6" x2="420" y2="416.6"/>
+                        <line className="logo-lines" x1="305.6" y1="425.4" x2="420" y2="425.4"/>
+                        <line className="logo-lines" x1="305.6" y1="445.2" x2="417.8" y2="445.2"/>
+                        <polyline className="logo-lines" points="871.1,363.8 850.2,433.1 868.9,509 "/>
                     </svg>
-
-
                 </div>
 
                 <Link to="/constellations"><button>Constellations</button></Link>

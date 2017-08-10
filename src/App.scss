@@ -167,10 +167,10 @@
         .bottomSVG {
             background: transparent;
             fill: transparent;
-            stroke-dasharray: 210;
+            stroke-dasharray: 800;
             stroke-width: 1;
             stroke: $lilac;
-            stroke-dashoffset: 525;
+            stroke-dashoffset: 1600;
             -webkit-animation: dash 3s linear alternate forwards;
         }
         .starmap {
