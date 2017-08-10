@@ -286,8 +286,64 @@
             }
         }
     }
+    $se-size: 15vh;
+    $se-duration: 5s;
     .solar-eclipse {
-        background: $lilac;
+        background: $blue;
+        .se-img-container {
+            height: 20vh;
+            animation: sky $se-duration linear infinite;
+            background: $blue;
+            @keyframes sky {
+                from, to { background: $blue; }
+                50% { background: black; }
+            }
+        }
+        .solar-eclipse-image {
+            position: relative;
+            width: $se-size;
+            height: $se-size;
+            transform: translate(calc(49vw - #{$se-size/2}), calc(10vh - #{$se-size/2}));
+        }
+        .sun, .moon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(red, .5);
+            border-radius: 50%;
+        }
+        .sun {
+            background: gold;
+            animation: sun $se-duration linear infinite;
+            @keyframes sun {
+                50% {
+                    background: white;
+                    box-shadow: 
+                        0 0 5em white,
+                        0 0 5em white,
+                        0 0 5em white,
+                        0 0 5em white;
+                }
+            }
+        }
+        .moon {
+            animation: moon $se-duration linear infinite;
+            @keyframes moon {
+                from {
+                    transform: translateX(-110%);
+                    background: lightgray;
+                }
+                50% {
+                    background: black;
+                }
+                to {
+                    transform: translateX(110%);
+                    background: lightgray;
+                }
+            }
+        }
     }
     .meteor {
         background: $moon;

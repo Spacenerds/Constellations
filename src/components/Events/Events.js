@@ -227,7 +227,7 @@ class Events extends Component {
                         <h3>Next Full Moon</h3>
                         <p>September 6</p>
                         <button>
-                        <AddToCalendar event={nextFullMoon}/>
+                            <AddToCalendar event={nextFullMoon}/>
                         </button>
                     </div>
                 </Section>
@@ -243,8 +243,13 @@ class Events extends Component {
                     </div>
                 </Section>
                 <Section className="solar-eclipse">
+                    <div className="se-img-container">
+                        <div className="solar-eclipse-image">
+                            <div className="sun"></div>
+                            <div className="moon"></div>
+                        </div>
+                    </div>
                     <h2>Solar Eclipse</h2>
-                    <p>SVG animation of Solar eclipse</p>
                     <p>2017 solar eclipses and locations</p>
                 </Section>
                 <Section className="meteor">
