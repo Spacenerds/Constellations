@@ -4,6 +4,7 @@
     body {
         margin: 0;
         padding: 0;
+        background-color: rgba(black, 0.2);
     }
     a {
         text-decoration: none;
@@ -12,3 +13,190 @@
         margin: 0;
         padding: 0;
     }
+
+
+
+
+label {
+    position: absolute;
+    z-index: 1;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ label {
+    left: 0;
+}
+
+// burger
+////////////////////////////////////////////////
+.burger {
+    position: relative;
+    top: 24px;
+    cursor: pointer;
+}
+
+.burger g {
+    stroke: #ffffff;
+    transition: stroke 0.25s ease-in-out;    
+}
+
+.burger g:hover {
+    stroke: darken(#ffffff, 20%);
+}
+
+input:checked ~ label .burger {
+    opacity: 0;
+}
+
+// close
+////////////////////////////////////////////////
+.close {
+    position: relative;
+    top: 24px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.close g:hover {
+    stroke: darken(#ffffff, 20%);
+}
+
+.close g {
+    stroke: #ffffff;
+    transition: stroke 0.25s ease-in-out;    
+}
+
+.close line {
+    transform-origin: 0%;
+}
+
+.close g {
+    transform: rotateZ(45deg);
+    transform-origin: 50%;
+}
+
+input:checked ~ label .close {
+    opacity: 1;
+}
+
+// menu
+////////////////////////////////////////////////
+
+@mixin cover-background($img-uri, $background-top:"center", $background-left:"center", $background-attachment:"fixed") {
+  background: url($img-uri) no-repeat unquote($background-top) unquote($background-left) unquote($background-attachment); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
+
+.menu {
+    @include cover-background('menu-bg.jpg');
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows-small;
+  animation: animStar 50s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+  }
+}
+
+#stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: $shadows-medium;
+  animation: animStar 100s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+  }
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: $shadows-big;
+  animation: animStar 150s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
+  }
+}
+
+input:checked ~ .menu {
+    opacity: 1;
+}
+
+.menu div {
+    margin-top: 50px;
+    transition: margin 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+input:checked ~ .menu div {
+    margin-top: 0px;
+}
+
+// main
+////////////////////////////////////////////////
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;    
+}
+
+.main span {
+    margin: auto;
+    font-size: 40px;
+    color: #ffffff;
+    font-family: 'Pacifico', cursive;    
+}
+
+
+
+
+
+
+
+
