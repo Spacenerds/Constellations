@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import AddToCalendar from 'react-add-to-calendar';
 import { findDOMNode } from 'react-dom';
 import {SectionsContainer, Section} from 'react-fullpage';
 import {Link} from 'react-router-dom';
@@ -10,6 +11,7 @@ class Events extends Component {
     constructor() {
         super();
         // this.state = {
+
         // }       
         // this.getCursorPosition = this.getCursorPosition.bind(this);
         // this.drawLine = this.drawLine.bind(this);
@@ -171,6 +173,13 @@ class Events extends Component {
                opacity: 1
            }, 3000)
         }
+        let nextFullMoon = {
+            title: "Full Moon",
+            description: "Full Moon",
+            location: "Earth",
+            startTime: '2017-09-06T03:02:00-04:00',
+            endTime: '2017-09-06T09:45:00-04:00'
+        }
         return (
             <SectionsContainer {...options} className="events-container">
                 <Section className="types">
@@ -217,6 +226,9 @@ class Events extends Component {
                     <div className="lunar-text">
                         <h3>Next Full Moon</h3>
                         <p>September 6</p>
+                        <button>
+                        <AddToCalendar event={nextFullMoon}/>
+                        </button>
                     </div>
                 </Section>
                 <Section className="lunar-eclipse">
