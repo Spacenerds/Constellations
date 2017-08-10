@@ -28,6 +28,7 @@ body {
     font-family: 'Poiret One', sans-serif;
 }
 
+<<<<<<< HEAD
 a {
     text-decoration: none;
 }
@@ -53,6 +54,122 @@ button {
     border-image: linear-gradient(to top right, #fff 0%, $teal 9%, $deepspace 50%);
     border-image-slice: 1;
 }
+=======
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgba(black, 0.2);
+        font-family: 'Poiret One', sans-serif;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    label {
+        position: absolute;
+        z-index: 1;
+    }
+    input {
+        display: none;
+    }
+    input:checked ~ label {
+        left: 0;
+    }
+
+// burger
+////////////////////////////////////////////////
+    .burger {
+        position: relative;
+        top: 24px;
+        cursor: pointer;
+    }
+    .burger g {
+        stroke: #ffffff;
+        transition: stroke 0.25s ease-in-out;    
+    }
+    .burger g:hover {
+        stroke: darken(#ffffff, 20%);
+    }
+    input:checked ~ label .burger {
+        opacity: 0;
+    }
+
+// close
+////////////////////////////////////////////////
+    .close {
+        position: relative;
+        top: 24px;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .close g:hover {
+        stroke: darken(#ffffff, 20%);
+    }
+
+    .close g {
+        stroke: #ffffff;
+        transition: stroke 0.25s ease-in-out;    
+    }
+
+    .close line {
+        transform-origin: 0%;
+    }
+
+    .close g {
+        transform: rotateZ(45deg);
+        transform-origin: 50%;
+    }
+
+    input:checked ~ label .close {
+        opacity: 1;
+    }
+
+// menu
+////////////////////////////////////////////////
+
+    @mixin cover-background($img-uri, $background-top:"center", $background-left:"center", $background-attachment:"fixed") {
+        background: url($img-uri) no-repeat unquote($background-top) unquote($background-left) unquote($background-attachment); 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;  
+    }
+    .menu {
+        @include cover-background('menu-bg.jpg');
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        opacity: 0;
+        width: 100vw;
+        height: 100vh;
+        transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input:checked ~ .menu {
+        opacity: 1;
+    }
+
+    .menu div {
+        margin-top: 50px;
+        transition: margin 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    input:checked ~ .menu div {
+        margin-top: 0px;
+    }
+
+>>>>>>> master
 
 // /////////////////////////////////////////////////////////////////
 // Home
@@ -565,6 +682,7 @@ $se-duration: 5s;
     height: 100vh;
 }
 
+
 .constMap {
     width: 100vw;
 }
@@ -588,6 +706,62 @@ $se-duration: 5s;
     z-index: 2;
     &:hover {
         background-color: yellow;
+
+  .constellationMapping{
+        background-image: url('./images/star-1050487_960_720.jpg');
+        background-size: cover;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+    .constMap{
+        width: 100vw; 
+    }
+    .Layer_0 {
+        background-image: url("./images/Layer 0.png");
+        position: relative;
+        // left: 10vw;
+        // top: 30vh;
+        width: 359px;
+        height: 278px;
+        z-index: 1;
+    }
+    .Layer_12  {
+        background-image: url("./images/Layer 12.png");
+        position: absolute;
+        left: 9px;
+        top: 207px;
+        width: 100px;
+        height: 53px;
+        z-index: 2;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_11 {
+        background-image: url("./images/Layer 11.png");
+        position: absolute;
+        left: 9px;
+        top: 136px;
+        width: 74px;
+        height: 58px;
+        z-index: 3;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_10 {
+        background-image: url("./images/Layer 10.png");
+        position: absolute;
+        left: 90px;
+        top: 142px;
+        width: 137px;
+        height: 64px;
+        z-index: 4;
+        &:hover{
+            background-color: yellow;
+        }
+
     }
 }
 
@@ -602,6 +776,7 @@ $se-duration: 5s;
     &:hover {
         background-color: yellow;
     }
+
 }
 
 .Layer_10 {
@@ -844,6 +1019,316 @@ $se-duration: 5s;
     z-index: 8;
     &:hover {
         background-color: yellow;
+
+    .Layer_1 {
+    background-image: url("./images/Layer 1.png");
+    position: absolute;
+    left: 31px;
+    top: 71px;
+    width: 56px;
+    height: 53px;
+    z-index: 6;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_2 {
+    background-image: url("./images/Layer 2.png");
+    position: absolute;
+    left: 16px;
+    top: 17px;
+    width: 68px;
+    height: 52px;
+    z-index: 5;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_3 {
+    background-image: url("./images/Layer 3.png");
+    position: absolute;
+    left: 103px;
+    top: 72px;
+    width: 94px;
+    height: 80px;
+    z-index: 4;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_4 {
+        background-image: url("./images/Layer 4.png");
+        position: absolute;
+        left: 119px;
+        top: 3px;
+        width: 104px;
+        height: 61px;
+        z-index: 3;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_5 {
+        background-image: url("./images/Layer 5.png");
+        position: absolute;
+        left: 247px;
+        top: 5px;
+        width: 74px;
+        height: 53px;
+        z-index: 2;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .toggled_1{
+        position: absolute;
+        right: 0px;
+        color: yellow;
+        font-size: 20px;
+    }
+    .toggle_off{
+        visibility: visible;
+        width: 100px;
+        height: 200px;
+        position: absolute; 
+        background-color: blue;
+        z-index: 200;
+    }
+    .toggled_2{
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        color: red;
+        font-size: 20px;
+    }
+    .toggled_3{
+        position: absolute;
+        top: 120px;
+        right: 0px;
+        color: red;
+        font-size: 20px;
+    }
+    .toggled_4{
+        position: absolute;
+        top: 110px;
+        right: 0px;
+        color: red;
+        font-size: 20px;
+    }
+    .toggled_5{
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        color: red;
+        font-size: 20px;
+    }
+    .toggled_6{
+        position: absolute;
+        top: 90px;
+        right: 0px;
+        color: red;
+        font-size: 20px;
+    }
+    .toggled_7{
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        color: white;
+        font-size: 20px;
+    }
+    .toggled_8{
+        position: absolute;
+        top: 70px;
+        right: 0px;
+        color: grey;
+        font-size: 20px;
+    }
+    .toggled_9{
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        color: green;
+        font-size: 20px;
+    }
+    .toggled_10{
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        color: white;
+        font-size: 20px;
+    }
+    .toggled_11{
+        position: absolute;
+        top: 40px;
+        right: 0px;
+        color: purple;
+        font-size: 20px;
+    }
+    .toggled_12{
+        position: absolute;
+        top: 30px;
+        right: 0px;
+        color: blue;
+        font-size: 20px;
+    }
+    .display_Box {
+        width: 100px;
+        height: 200px;
+        position: absolute;
+        visibility: hidden;
+        background-color: blue;
+        z-index: 200;
+    }
+    .Layer_8 {
+        background-image: url("./images/Layer 8.png");
+        position: absolute;
+        left: 233px;
+        top: 199px;
+        width: 112px;
+        height: 67px;
+        z-index: 6;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_7 {
+        background-image: url("./images/Layer 7.png");
+        position: absolute;
+        left: 233px;
+        top: 50px;
+        width: 109px;
+        height: 84px;
+        z-index: 7;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_6 {
+        background-image: url("./images/Layer 6.png");
+        position: absolute;
+        left: 235px;
+        top: 124px;
+        width: 109px;
+        height: 82px;
+        z-index: 8;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_4 {
+        background-image: url("./images/Layer 4.png");
+        position: absolute;
+        left: 258px;
+        top: 6px;
+        width: 60px;
+        height: 51px;
+        z-index: 9;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_3 {
+        background-image: url("./images/Layer 3.png");
+        position: absolute;
+        left: 114px;
+        top: 5px;
+        width: 105px;
+        height: 56px;
+        z-index: 10;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_2 {
+        background-image: url("./images/Layer 2.png");
+        position: absolute;
+        left: 23px;
+        top: 71px;
+        width: 75px;
+        height: 48px;
+        z-index: 11;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+    .Layer_1 {
+        background-image: url("./images/Layer 1.png");
+        position: absolute;
+        left: 12px;
+        top: 13px;
+        width: 81px;
+        height: 57px;
+        z-index: 12;
+    }
+    .toggled_1{
+        position: absolute;
+        right: 0px;
+        color: yellow;
+        font-size: 20px;
+    }
+    .toggle_off{
+        color: red;
+        position: absolute;
+        right: 0px;
+        visibility: hidden;
+        font-size: 20px;
+    }
+    .toggled_2{
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        color: red;
+        font-size: 20px;
+    }
+    .toggled_3{
+        position: absolute;
+        top: 120px;
+        right: 0px;
+        color: red;
+        font-size: 20px;
+    }
+    .toggled_4{
+        position: absolute;
+        top: 110px;
+        right: 0px;
+        color: red;
+        font-size: 20px;
+    }
+    .toggled_5{
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        color: red;
+        font-size: 20px;
+    }
+    .toggled_6{
+        position: absolute;
+        top: 90px;
+        right: 0px;
+        color: red;
+        font-size: 20px;
+    }
+    .toggled_7{
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        color: white;
+        font-size: 20px;
+    }
+    .toggled_8{
+        position: absolute;
+        top: 70px;
+        right: 0px;
+        color: grey;
+        font-size: 20px;
+    }
+    .toggled_9{
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        color: green;
+        font-size: 20px;
+
     }
 }
 
@@ -885,6 +1370,7 @@ $se-duration: 5s;
         background-color: yellow;
     }
 }
+
 
 .Layer_1 {
     background-image: url("./images/Layer 1.png");
@@ -998,3 +1484,4 @@ $se-duration: 5s;
     color: blue;
     font-size: 20px;
 }
+
