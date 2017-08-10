@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import $ from 'jquery';
 
 import {Link} from 'react-router-dom';
-import {connect} from 'react-redux';
 
 class Home extends Component {
 
