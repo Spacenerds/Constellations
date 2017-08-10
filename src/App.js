@@ -13,10 +13,8 @@ class App extends Component {
   
   render() {
     return (
-
-      <Nav />      
-
       <div >
+        <Nav />      
         {router}
       </div>
 
