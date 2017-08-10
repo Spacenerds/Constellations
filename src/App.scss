@@ -38,6 +38,17 @@
         font-family: 'Megrim', Serif;
         font-weight: normal;
     }
+    button {
+        padding: 8px 70px;
+        background: rgba($deepspace, 0.75);
+        color: $blue;
+        font-family: 'Megrim', Serif;
+        font-size: 13pt;
+
+        border: 3px solid transparent;
+        border-image: linear-gradient(to top right, #fff 0%, $teal 9%, $deepspace 50%);
+        border-image-slice: 1;
+    }
 
   
 
@@ -117,34 +128,178 @@
 // /////////////////////////////////////////////////////////////////
 
     .events-container {
-        section {
-            width: 100vw;
-            height: 100vh;
+        .section {
+            padding: 20px !important;
         }
-        iframe {
-            html {
-                margin-top: -203px;
+    }
+
+    .types {
+        background: #000;
+        color: #fff;
+    }
+    .lunar-cycle {
+        background: $deepspace;
+        color: #fff;
+        height: 100vh;
+        text-align: center;
+        background: linear-gradient(#000000, $deepspace);
+        h1 {
+            color: $teal;
+            margin-bottom: 0;
+        }
+        .lunar-text {
+            position: relative;
+            z-index: 5;
+        }
+
+        //stars aren't working. figure out later
+        @function star-shadow ($n){
+            $value: '#{random(2000)}px #{random(2000)}px #fff';
+            @for $i from 2 through $n{
+                $value: '#{$value}, #{random(2000)}px #{random(2000)}px #fff'
+            }
+            @return unquote($value)
+        }
+        $shadows-small: star-shadow(700);
+        $shadows-medium: star-shadow(200);
+        $shadows-large: star-shdaow(100);
+        .star{
+            transform-style: preserve-3d;
+        }
+        .starone {
+            width: 1px;
+            height: 1px;
+            background: transparent;
+            box-shadow: $shadows-small;
+            animation-timing-function: ease(in-out-circ);
+            animation-direction: alternate;
+            &:after {
+                content: " ";
+                position: absolute;
+                top: 2000px;
+                width: 1px;
+                height: 1px;
+                background: transparent;
+                box-shadow: $shadows-small;
+            }
+        }
+        .startwo{
+            width: 2px;
+            height: 2px;
+            background: transparent;
+            box-shadow: $shadows-medium;
+            animation-timing-function: ease(in-out-circ);
+            animation-direction: alternate;
+            &:after{
+                content: " ";
+                position: absolute;
+                top: 2000px;
+                width: 2px;
+                height: 2px;
+                background: transparent;
+                box-shadow: $shadows-medium;
+            }
+        }
+        .starthree{
+            width: 3px;
+            height: 3px;
+            background: transparent;
+            box-shadow: $shadows-large;
+            animation-timing-function: ease(in-out-circ);
+            animation-direction: alternate;
+            &:after{
+                content: " ";
+                position: absolute;
+                top: 2000px;
+                width: 3px;
+                height: 3px;
+                background: transparent;
+                box-shadow: $shadows-large;
+            }
+        }  
+        .tonight-moon {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 87px;
+            margin-right: 3vw;
+        }
+        #lunar-container {
+            margin: auto;
+            opacity: 0;
+            h3 {
+                margin: 0;
+                color: $teal;
+            }
+            p {
+                margin: 0;
+                margin-bottom: 4px;
+                color: $moon;
+            }
+            #moonCanvas {
+                margin: 12px auto 20px auto;
+            }
+        }
+        ul li {
+            margin-top: 10px;
+            display: inline-block;
+            &:before {
+                content: '☾ ';
+                margin-left: 10px;
+            }
+        }
+        .lunar-cycle-image img {
+            width: 50vw;
+            margin: auto;
+            position: relative;
+            z-index: 5;
+        }
+    }
+    .lunar-eclipse {
+        text-align: center;
+        color: #fff;
+        background: $deepspace;
+        .lunar-eclipse-text {
+            position: relative;
+            z-index: 5;
+            text-align: right;
+            margin-right: 50px;
+        }
+        .moon-eclipse {
+            position: absolute;
+            margin: -37vh auto 0 -54vh;
+            width: 130vh;
+            z-index: 0;
+            height: 130vh;
+            border-radius: 50%;
+            background: url("https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg") no-repeat center / 124% 124%;
+            animation: eclipse 20s linear infinite;
+        }
+        @keyframes eclipse {
+            0% {
+                box-shadow: inset 650px 650px 150px rgba(black, .8);
+            }
+            50% {
+                box-shadow: inset  0 0 150px rgba(black, .8);
+            }
+            100% {
+                box-shadow: inset -650px -650px 150px rgba(black, .8);
             }
         }
     }
-
-    .one, .two, .three, .four, .five {
-        // padding: 50px;
-    }
-
-    .one {
-        background: $teal;
-    }
-    .two {
-        background: $blue;
-        height: 200vh;
-    }
-    .three {
-        background: $deepspace;
-    }
-    .four {
+    .solar-eclipse {
         background: $lilac;
     }
+    .meteor {
+        background: $moon;
+    }
+    .planetary {
+        background: $dust;
+    }
+
+
+// /////////////////////////////////////////////////////////////////
+// Constellations
+// /////////////////////////////////////////////////////////////////
 
   .constellationMapping{
         background-image: url('./images/star-1050487_960_720.jpg');
@@ -159,14 +314,14 @@
         
     }
     .Layer_0 {
-  background-image: url("./images/Layer 0.png");
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 359px;
-  height: 278px;
-  z-index: 1;
-}
+        background-image: url("./images/Layer 0.png");
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 359px;
+        height: 278px;
+        z-index: 1;
+    }
     .Layer_12  {
   background-image: url("./images/Layer 12.png");
   position: absolute;

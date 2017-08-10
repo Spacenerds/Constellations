@@ -10,6 +10,6 @@ export default(
     <Switch>
         <Route exact component={Home} path='/' />
         <Route component={Events} path='/events' />
-        {/*<Route component={Constellations} path='/constellations' />*/}
+        <Route component={Constellations} path='/constellations' />
     </Switch>
 )
