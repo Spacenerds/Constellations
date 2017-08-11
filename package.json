@@ -28,7 +28,7 @@
     "react-add-to-calendar": "^0.1.4",
     "react-dom": "^15.6.1",
     "react-fullpage": "^0.1.18",
-
+    
     "react-router-dom": "^4.1.2"
   },
   "devDependencies": {
