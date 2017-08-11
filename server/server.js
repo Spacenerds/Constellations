@@ -7,11 +7,16 @@ var horoscopeCTRL = require('./horoscopeCTRL');
 var constellationsCTRL = require('./constellationsCTRL');
 
 
-// var db = massive.connectSync({
-//   connectionString : 'asdfadfadf'
-// });
+var db = massive.connectSync({
+  host: 'ec2-23-23-221-255.compute-1.amazonaws.com',
+    port: 5432,
+    database: 'd7p9hdlkvruvt8',
+    user: 'gjfrvorujlxzzk',
+    password: 'd1c03e091035b93f0e86f7d31c1fe1fd4c6aa1796e7d2162766a4f3828739138',
+    ssl: true
+});
 
-// console.log(db)
+console.log(db)
 
 var app = express();
 app.use(bodyParser.json());

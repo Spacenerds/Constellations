@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import Events from './components/Events/Events';
 import Constellations from './components/ConstellationMapping';
 import TarotView from './components/Tarot/TarotView';
+import Horoscope from './components/Horoscope/Horoscope';
 
 export default(
     <Switch>
@@ -13,5 +14,6 @@ export default(
         <Route component={Events} path='/events' />
         <Route component={Constellations} path='/constellations' />
         <Route component={TarotView} path='/tarot' />
+        <Route component={Horoscope} path='/horoscope' />
     </Switch>
 )
