@@ -89,6 +89,7 @@ class Home extends Component {
 
                 <Link to="/constellations"><button>Constellations</button></Link>
                 <Link to="/events"><button>Events</button></Link>
+                <Link to="/tarot"><button>Tarot</button></Link>
             </div>
         );
     }
