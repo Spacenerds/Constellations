@@ -37,11 +37,16 @@ class Home extends Component {
                         <circle className="logo-star" cx={105} cy={210} r={1} />
                         <circle className="logo-star" cx={149} cy={142} r={1} />
                         <circle className="logo-star" cx={149} cy={210} r={1} />
-
-                        {/*y*/}
-                        <circle className="logo-star" cx={253} cy={165} r={1} />
-                        <circle className="logo-star" cx={306} cy={165} r={1} />
-                        <circle className="logo-star" cx={280} cy={240} r={1} />
+                        {/*r*/}
+                        <circle className="logo-star" cx={177} cy={142} r={1} />
+                        <circle className="logo-star" cx={177} cy={210} r={1} />
+                        <circle className="logo-star" cx={225} cy={211} r={1} />
+                        {/*d*/}
+                        <circle className="logo-star" cx={250} cy={142} r={1} />
+                        <circle className="logo-star" cx={250} cy={210} r={1} />
+                        {/*s*/}
+                        <circle className="logo-star" cx={374} cy={147} r={1} />
+                        <circle className="logo-star" cx={339} cy={206} r={1} />
                     </svg>
 
                     <svg version="1.1" className="bottomSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1163 578">
