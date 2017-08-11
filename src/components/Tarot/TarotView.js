@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import PickACard from './PickACard'
 
 class TarotView extends Component {
+
     render() {
         return (
-            <div>
+            <div className="tarot-container">
                 <h1>Tarot Reading</h1>
                 <div className="pickAcard-container">
                     <PickACard/>
+                    <button></button>
                 </div>
             </div>
         );
