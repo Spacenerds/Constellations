@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import aquarius from './Icons/aquarius.svg'
+import {FormGroup, FormControl, InputGroup, Glyphicon} from 'react-bootstrap';
 
 class Icons extends Component {
     render(){
@@ -17,19 +18,14 @@ class Icons extends Component {
                 <img style={styles.svg} src={require ("./Icons/capricorn.svg")} />
                 <img style={styles.svg} src={require ("./Icons/aquarius.svg")} />
                 <img style={styles.svg} src={require ("./Icons/pisces.svg")} />
+                
             </div>
         )
     }
 }
 
 const styles = {
-    svgList: {
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        
 
-    },
     svg: {
         fill: 'none',
         stroke: '#000',
