@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
+import $ from 'jquery'
 import './../App.css';
+import Nav from './Nav';
 
-
-$(document).ready(function() {
-$("div.Layer_10").on("click", function(){
-  $("span.toggled_10").toggleClass("toggle_off");
-  
-});
 
 $("div.Layer_1").on("click", function(){
   $("div.display_Box").toggleClass("toggle_off");
@@ -53,13 +48,13 @@ $("div.Layer_12").on("click", function(){
   $("span.toggled_12").toggleClass("toggle_off");
   
 });
-})
 
 class ConstellationMapping extends Component {
   render() {
     return (
+      
       <div className="star-cont"> 
-        
+       
       <div className="stars">
       <div className="twinkling">
         <div className='Base_Layer ' > 
@@ -76,20 +71,10 @@ class ConstellationMapping extends Component {
         <div  id='Aquarius' className='Aquarius'></div>
         <div id='Pisces' className='Pisces'></div>
         </div>
-      <div id="t1" className='display_Box'>
-      <span id="spanid" className='toggled_1'>  HELLO I AM WORKINGGG </span>
+      <div className='display_Box'>
+      <Nav /> 
       </div>
-      <span id="spanid" className='toggled_2'>  HELLO I AM WORKINGGG </span>
-      <span id="spanid" className='toggled_3'>  HELLO I AM WORKINGGG </span>
-      <span id="spanid" className='toggled_4'>  HELLO I AM WORKINGGG </span>
-      <span id="spanid" className='toggled_5'>  HELLO I AM WORKINGGG </span>
-      <span id="spanid" className='toggled_6'>  HELLO I AM WORKINGGG </span>
-      <span id="spanid" className='toggled_7'>  HELLO I AM WORKINGGG </span>
-      <span id="spanid" className='toggled_8'>  HELLO I AM WORKINGGG </span>
-      <span id="spanid" className='toggled_9'>  HELLO I AM WORKINGGG </span>
-      <span id="spanid" className='toggled_10'>  HELLO I AM WORKINGGG </span>
-      <span id="spanid" className='toggled_11'>  HELLO I AM WORKINGGG </span>
-      <span id="spanid" className='toggled_12'>  HELLO I AM WORKINGGG </span> 
+      
       </div>
       </div>
       </div>
