@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 import { findDOMNode } from 'react-dom';
 import {SectionsContainer, Section} from 'react-fullpage';
 import {Link} from 'react-router-dom';
