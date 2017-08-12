@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-
+import Fullscreen from "react-screenfull";
 import {Link} from 'react-router-dom';
+
+
 
 class Home extends Component {
 
     render() {
+         
         return (
             <div className="homepage">
                 <div className="logo">
@@ -86,7 +89,6 @@ class Home extends Component {
                         <polyline className="logo-lines" points="871.1,363.8 850.2,433.1 868.9,509 "/>
                     </svg>
                 </div>
-
                 <Link to="/constellations"><button>Constellations</button></Link>
                 <Link to="/events"><button>Events</button></Link>
                 <Link to="/tarot"><button>Tarot</button></Link>

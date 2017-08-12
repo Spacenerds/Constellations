@@ -54,11 +54,8 @@ $("div.Layer_12").on("click", function(){
   
 });
 })
+
 class ConstellationMapping extends Component {
-
-  
-  
-
   render() {
     return (
       <div className="star-cont"> 

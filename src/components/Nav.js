@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import '.././App.scss'; 
 import $ from 'jquery'
-import Sky from './Sky'
 
 class Nav extends Component{
+
+
+
     render(){ 
         return(
            <div>
@@ -23,11 +26,11 @@ class Nav extends Component{
                     </g>
                 </svg>
                 </label>
-                <div className="menu" id="stars stars2">
-                <div>Home</div>
-                <div>About</div>
-                <div>Hello</div>
-                <div>Contact</div>
+                <div className="menu">
+                    <Link onClick="close" to="/tarot"><button>Tarot</button></Link>
+                    <Link onClick="close" to="/events"><button>Events</button></Link>
+                    <Link onClick="close" to="/constellations"><button>Consteallations</button></Link>
+                    <Link onClick="close" to="/horoscope"><button>Horoscope </button></Link>
                 </div>
                 
             </div>
