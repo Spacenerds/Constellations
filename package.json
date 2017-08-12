@@ -2,6 +2,7 @@
   "name": "constellations",
   "version": "0.1.0",
   "private": true,
+  "main": "./server/server.js",
   "dependencies": {
 
     "body-parser": "^1.17.2",
