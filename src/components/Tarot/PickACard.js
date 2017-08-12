@@ -34,9 +34,54 @@ class PickACard extends Component {
         }
         this.pickCard = this.pickCard.bind(this);
         this.setCards = this.setCards.bind(this);
+        this.dealCards = this.dealCards.bind(this);
     }
     componentDidMount(){
+        this.dealCards();
         this.setCards();
+    }
+    dealCards(){
+        console.log('deal');
+        $('.pickCard1').stop().animate(
+            {
+                'top': '0vh',
+                'opacity': '1',
+            },
+            1000,
+            'swing'
+        );
+        $('.pickCard2').stop().animate(
+            {
+                'top': '0vh',
+                'opacity': '1',
+            },
+            1250,
+            'swing'
+        );
+        $('.pickCard3').stop().animate(
+            {
+                'top': '0vh',
+                'opacity': '1',
+            },
+            1500,
+            'swing'
+        );
+        $('.pickCard4').stop().animate(
+            {
+                'top': '0vh',
+                'opacity': '1',
+            },
+            1750,
+            'swing'
+        );
+        $('.pickCard5').stop().animate(
+            {
+                'top': '0vh',
+                'opacity': '1',
+            },
+            2000,
+            'swing'
+        );
     }
     setCards(){
         var arr = [];
@@ -50,7 +95,7 @@ class PickACard extends Component {
         })
     };
     pickCard(i){
-        var CARDWIDTH = 96;
+        var CARDWIDTH = 120;
         function turnCompatible(elem, src) {
             $('.pickCard' + i + '.turnCompatible').animate({
                 width: 0,
@@ -120,19 +165,19 @@ class PickACard extends Component {
             <div>
                 <h3>Double click to flip your cards over</h3>
                 <div className="card-holder">
-                    <div className="pickCard1 card-base" onClick={() => this.pickCard(1)}>
+                    <div className= "card-base" onClick={() => this.pickCard(1)}>
                         <img className="card pickCard1 turnCompatible" src={cardback} alt='tarot card' />
                     </div>
-                    <div className="pickCard2 card-base" onClick={() => this.pickCard(2)}>
+                    <div className="card-base" onClick={() => this.pickCard(2)}>
                         <img className="card pickCard2 turnCompatible" src={cardback} alt='tarot card' />
                     </div>
-                    <div className="pickCard3 card-base" onClick={() => this.pickCard(3)}>
+                    <div className="card-base" onClick={() => this.pickCard(3)}>
                         <img className="card pickCard3 turnCompatible" src={cardback} alt='tarot card' />
                     </div>
-                    <div className="pickCard4 card-base" onClick={() => this.pickCard(4)}>
+                    <div className= "card-base" onClick={() => this.pickCard(4)}>
                         <img className="card pickCard4 turnCompatible" src={cardback} alt='tarot card' />
                     </div>
-                    <div className="pickCard5 card-base" onClick={() => this.pickCard(5)}>
+                    <div className="card-base" onClick={() => this.pickCard(5)}>
                         <img className="card pickCard5 turnCompatible" src={cardback} alt='tarot card' />
                     </div>
                 </div>
