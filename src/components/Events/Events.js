@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 
 import Cycle from './Cycle';
 import Meteor from './Meteor';
+import Nav from '.././Nav';
 
 class Events extends Component {
     // componentDidMount(){
@@ -69,8 +70,9 @@ class Events extends Component {
         
         return (
             <SectionsContainer {...options} className="events-container">
+                <Nav /> 
                 <Section className="types">
-                    
+                 
                     <h1>Celestial Events</h1>
                     <h3>Types of Events</h3>
                     <ul>
