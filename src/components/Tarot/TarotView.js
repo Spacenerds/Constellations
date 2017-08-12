@@ -11,7 +11,8 @@ class TarotView extends Component {
                 <h1>Tarot Reading</h1>
                 <div className="pickAcard-container">
                     <PickACard/>
-                    <button></button>
+                    <p>use database call to find card description</p>
+                    <p>state should probably be in the parent component?</p>
                 </div>
             </div>
         );

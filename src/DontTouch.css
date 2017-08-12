@@ -371,8 +371,16 @@ http://www.Mkrtchyan.zz.mu
 .Base_Layer {
   background-image: url("./images/BaseLayer.png");
   position: absolute;
-  left: 31px;
+  left: 10vw;
   top: 20vh;
   width: 567px;
   height: 602px;
   z-index: 1; }
+
+.display_Box {
+  height: 80vh;
+  width: 45vw;
+  position: absolute;
+  right: 0px;
+  top: 150px;
+  background-color: transparent; }
