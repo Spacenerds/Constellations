@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './../App.css';
 
 
-class ConstellationMapping extends Component {
+class AllTheConstellations extends Component {
 
   
   
@@ -49,4 +49,4 @@ class ConstellationMapping extends Component {
   }
 }
 
-export default ConstellationMapping;
+export default AllTheConstellations;
