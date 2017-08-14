@@ -26,6 +26,8 @@ import sun from './19sun.png';
 import judgement from './20judgement.png';
 import world from './21world.png';
 
+import './tarot.css';
+
 class PickACard extends Component {
     constructor(props){
         super(props);
@@ -37,7 +39,7 @@ class PickACard extends Component {
         this.dealCards = this.dealCards.bind(this);
     }
     componentDidMount(){
-
+        $('.roadhog').hide(),
         this.dealCards();
         this.setCards();
     }
@@ -97,7 +99,14 @@ class PickACard extends Component {
     };
     pickCard(i){
         var CARDWIDTH = 120;
+        console.log(this.state.cards[i], "this is the number");
+        for(let k = 0; k < this.props.tarot.length; k++){
+           if(this.props.tarot[k].relations === this.state.cards[i]){
+               console.log('yay!')
+           }
+        }
         function turnCompatible(elem, src) {
+            $('.pickCard' + i + ' .roadhog').show();
             $('.pickCard' + i + '.turnCompatible').animate({
                 width: 0,
                 marginLeft: CARDWIDTH / 2,
@@ -112,7 +121,7 @@ class PickACard extends Component {
             })
         }
         //figure out which card image should be displayed
-        var front = `http://localhost:3000${fool}`;
+        var front = `http://localhost:3000${fool}`
         if(this.state.cards[i] === 1){
             front = `http://localhost:3000${magician}`
         }else if(this.state.cards[i] === 2){
@@ -166,19 +175,25 @@ class PickACard extends Component {
             <div>
                 <h3>Double click to flip your cards over</h3>
                 <div className="card-holder">
-                    <div className= "card-base" onClick={() => this.pickCard(1)}>
+                    <div className= "pickCard1 card-base" onClick={() => this.pickCard(1)}>
                         <img className="card pickCard1 turnCompatible" src={cardback} alt='tarot card' />
+                        <div className="roadhog">
+                            HIDDEN BO BIDDEN!!!
+                            <p>{this.props.tarot[0]}</p>
+                            {console.log(this.state.cards[0])}
+                            {console.log(this.props.tarot[0], "holla!")}
+                        </div>
                     </div>
-                    <div className="card-base" onClick={() => this.pickCard(2)}>
+                    <div className="pickCard2 card-base" onClick={() => this.pickCard(2)}>
                         <img className="card pickCard2 turnCompatible" src={cardback} alt='tarot card' />
                     </div>
-                    <div className="card-base" onClick={() => this.pickCard(3)}>
+                    <div className="pickCard3 card-base" onClick={() => this.pickCard(3)}>
                         <img className="card pickCard3 turnCompatible" src={cardback} alt='tarot card' />
                     </div>
-                    <div className= "card-base" onClick={() => this.pickCard(4)}>
+                    <div className= "pickCard4 card-base" onClick={() => this.pickCard(4)}>
                         <img className="card pickCard4 turnCompatible" src={cardback} alt='tarot card' />
                     </div>
-                    <div className="card-base" onClick={() => this.pickCard(5)}>
+                    <div className="pickCard5 card-base" onClick={() => this.pickCard(5)}>
                         <img className="card pickCard5 turnCompatible" src={cardback} alt='tarot card' />
                     </div>
                 </div>
