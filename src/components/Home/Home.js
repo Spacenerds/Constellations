@@ -1,18 +1,8 @@
 import React, { Component } from 'react';
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 import Fullscreen from "react-screenfull";
-=======
-=======
->>>>>>> Stashed changes
 import {Link} from 'react-router-dom';
 import Nav from '.././Nav';
 import './home.css';
-
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 class Home extends Component {
 

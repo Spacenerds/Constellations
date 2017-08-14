@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
 import Icons from './Icons';
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 import './Horoscope.css'
 import Background from './hororbg.jpg';
-=======
 import './Search.css'
 import Nav from '.././Nav';
->>>>>>> Stashed changes
-=======
-import './Search.css'
-import Nav from '.././Nav';
->>>>>>> Stashed changes
 
 class Horoscope extends Component {
     constructor(props){
@@ -31,13 +23,9 @@ class Horoscope extends Component {
 
     render(){
         return(
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
             <div style={styles.itemsStyles}>
                 <Icons />
-=======
-=======
->>>>>>> Stashed changes
+
             <div>
                 {/*<Icons />
                 <FormGroup id="search">
@@ -54,17 +42,12 @@ class Horoscope extends Component {
                 </InputGroup>
                  
         </FormGroup>*/}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             </div>
         );
     }
 };
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 const styles = {
     itemsStyles: {
         height: '100vh',
@@ -73,11 +56,5 @@ const styles = {
         backgroundSize: 'cover'
     }
 }
-
-=======
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
 
 export default Horoscope;
