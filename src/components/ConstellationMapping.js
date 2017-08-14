@@ -78,6 +78,10 @@ class ConstellationMapping extends Component {
       <div className='display_Box'>
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+      <Nav /> 
+>>>>>>> Stashed changes
 =======
       <Nav /> 
 >>>>>>> Stashed changes

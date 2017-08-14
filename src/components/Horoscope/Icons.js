@@ -4,6 +4,9 @@ import './Horoscope.css'
 =======
 import aquarius from './Icons/aquarius.svg'
 // import {FormGroup, FormControl, InputGroup, Glyphicon} from 'react-bootstrap';
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 class Icons extends Component {
@@ -105,6 +108,9 @@ class Icons extends Component {
                 <img style={styles.svg} src={require ("./Icons/aquarius.svg")} />
                 <img style={styles.svg} src={require ("./Icons/pisces.svg")} />
                 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             </div>
         )           
@@ -112,6 +118,7 @@ class Icons extends Component {
 }
 
 const styles = {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     containerStyle: {
         height: '100vh',
@@ -127,6 +134,8 @@ const styles = {
         color: 'white',
 
 =======
+=======
+>>>>>>> Stashed changes
 
     svg: {
         fill: 'none',

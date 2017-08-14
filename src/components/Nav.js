@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import { Link } from 'react-router-dom';
 import { stack as Menu } from 'react-burger-menu';
 import Background from './horor.jpg';
@@ -17,17 +18,23 @@ class Nav extends Component{
 
     
 =======
+=======
+>>>>>>> Stashed changes
 import {Link} from 'react-router-dom';
 import $ from 'jquery'
 
 class Nav extends Component{
 
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
     render(){ 
         
         return(
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             <Menu isOpen={ false } styles={ styles } pageWrapId={ "page-wrap" } >
                 <Link to="/" id="home" className="hvr-pulse" isOpen ={ false }  >Home</Link>
@@ -37,6 +44,8 @@ class Nav extends Component{
                 <Link to="/horoscope" id="home" className="hvr-pulse" isOpen ={ false }  >Horoscope</Link>
             </Menu>
 =======
+=======
+>>>>>>> Stashed changes
             <div style={styles.menuStyles}>
                 <Link to="/"><button>Home</button></Link>
                 <Link to="/constellations"><button>Constellations</button></Link>
@@ -44,12 +53,16 @@ class Nav extends Component{
                 <Link to="/tarot"><button>Tarot</button></Link>  
                 <Link to="/horoscope"><button>Horoscope</button></Link>   
             </div> 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         );
     }
 }
 
 const styles = {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     bmBurgerButton: {
         position: 'fixed',
@@ -87,6 +100,8 @@ const styles = {
       }
       
 =======
+=======
+>>>>>>> Stashed changes
     menuStyles: {
       display: 'flex',
       alignItems: 'center',
@@ -95,6 +110,9 @@ const styles = {
       alignItems: 'center',
       width: '100vw'
     }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   }
 
