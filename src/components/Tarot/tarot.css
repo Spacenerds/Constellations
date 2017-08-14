@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Megrim");
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
@@ -907,3 +908,40 @@ input:checked ~ .menu div {
   .tarot-container .flipping {
     transform: translate(0, 20px) rotateY(90deg);
     -webkit-transform: translate(0, 20px) rotateY(90deg); }
+=======
+.tarot-container {
+  padding-top: 40px;
+  text-align: center;
+  background: url("./desk.png");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center; }
+  .tarot-container h1, .tarot-container h3, .tarot-container p {
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    width: auto;
+    margin: 0;
+    display: inline-block; }
+  .tarot-container h3 {
+    margin: 10px 0 0 0; }
+  .tarot-container .card-holder {
+    perspective: 700px; }
+  .tarot-container .card-base, .tarot-container .card {
+    height: 210px;
+    width: 120px;
+    margin: 10px;
+    display: inline-block;
+    position: relative; }
+  .tarot-container .card {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s; }
+  .tarot-container .pickCard1, .tarot-container .pickCard2, .tarot-container .pickCard3, .tarot-container .pickCard4, .tarot-container .pickCard5 {
+    top: -90vh;
+    opacity: 0.25; }
+  .tarot-container .flipping {
+    transform: translate(0, 20px) rotateY(90deg);
+    -webkit-transform: translate(0, 20px) rotateY(90deg); }
+  .tarot-container .roadhog {
+    display: hidden; }
+>>>>>>> b3a56ddbfcedbebd2ec1481bf399f6169258c548

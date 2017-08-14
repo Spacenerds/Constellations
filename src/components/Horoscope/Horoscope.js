@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import Icons from './Icons';
+<<<<<<< Updated upstream
 import './Horoscope.css'
 import Background from './hororbg.jpg';
+=======
+import './Search.css'
+import Nav from '.././Nav';
+>>>>>>> Stashed changes
 
 class Horoscope extends Component {
     constructor(props){
@@ -21,13 +26,33 @@ class Horoscope extends Component {
 
     render(){
         return(
+<<<<<<< Updated upstream
             <div style={styles.itemsStyles}>
                 <Icons />
+=======
+            <div>
+                {/*<Icons />
+                <FormGroup id="search">
+                <InputGroup>
+                    <FormControl className="inputf" type="text" placeholder="Entere your birthdate" 
+                    onKeyPress={event => {
+                        if (event.key === 'Enter') {
+                            this.props.search(this.state.query)
+                        }
+                    }}/>
+                    <InputGroup.Addon onClick={() => this.props.search(this.state.query)} >
+                        <Glyphicon glyph="search"></Glyphicon>
+                    </InputGroup.Addon>
+                </InputGroup>
+                 
+        </FormGroup>*/}
+>>>>>>> Stashed changes
             </div>
         );
     }
 };
 
+<<<<<<< Updated upstream
 const styles = {
     itemsStyles: {
         height: '100vh',
@@ -37,5 +62,7 @@ const styles = {
     }
 }
 
+=======
+>>>>>>> Stashed changes
 
 export default Horoscope;

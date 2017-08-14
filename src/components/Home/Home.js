@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
+<<<<<<< Updated upstream
 import Fullscreen from "react-screenfull";
+=======
+import {Link} from 'react-router-dom';
+import Nav from '.././Nav';
+import './home.css';
+
+>>>>>>> Stashed changes
 
 class Home extends Component {
 
@@ -48,7 +55,7 @@ class Home extends Component {
                         <circle className="logo-star" cx={250} cy={210} r={1} />
                         {/*s*/}
                         <circle className="logo-star" cx={374} cy={147} r={1} />
-                        <circle className="logo-star" cx={339} cy={206} r={1} />
+                        <circle className="logo-star" cx={337} cy={203} r={1} />
                     </svg>
 
                     <svg version="1.1" className="bottomSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1163 578">

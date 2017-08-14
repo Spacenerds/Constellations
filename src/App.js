@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+<<<<<<< Updated upstream
+=======
+import {Link} from 'react-router-dom';
+>>>>>>> Stashed changes
 import Nav from './components/Nav'
 
-import './App.css';
+
 import router from './router';
 
 
@@ -16,6 +20,15 @@ class App extends Component {
       </div>
 
     );
+  }
+}
+
+const styles = {
+  menuStyles: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    backgroud:"black"
   }
 }
 

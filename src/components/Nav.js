@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+<<<<<<< Updated upstream
 import { Link } from 'react-router-dom';
 import { stack as Menu } from 'react-burger-menu';
 import Background from './horor.jpg';
@@ -15,10 +16,19 @@ class Nav extends Component{
     };
 
     
+=======
+import {Link} from 'react-router-dom';
+import $ from 'jquery'
+
+class Nav extends Component{
+
+
+>>>>>>> Stashed changes
 
     render(){ 
         
         return(
+<<<<<<< Updated upstream
             <Menu isOpen={ false } styles={ styles } pageWrapId={ "page-wrap" } >
                 <Link to="/" id="home" className="hvr-pulse" isOpen ={ false }  >Home</Link>
                 <Link to="/events" id="home" className="hvr-pulse" isOpen ={ false }  >Events</Link>
@@ -26,11 +36,21 @@ class Nav extends Component{
                 <Link to="/tarot" id="home" className="hvr-pulse" isOpen ={ false }  >Tarot</Link>
                 <Link to="/horoscope" id="home" className="hvr-pulse" isOpen ={ false }  >Horoscope</Link>
             </Menu>
+=======
+            <div style={styles.menuStyles}>
+                <Link to="/"><button>Home</button></Link>
+                <Link to="/constellations"><button>Constellations</button></Link>
+                <Link to="/events"><button>Events</button></Link>
+                <Link to="/tarot"><button>Tarot</button></Link>  
+                <Link to="/horoscope"><button>Horoscope</button></Link>   
+            </div> 
+>>>>>>> Stashed changes
         );
     }
 }
 
 const styles = {
+<<<<<<< Updated upstream
     bmBurgerButton: {
         position: 'fixed',
         width: '36px',
@@ -66,6 +86,16 @@ const styles = {
         
       }
       
+=======
+    menuStyles: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-around',
+      position: 'absolute',
+      alignItems: 'center',
+      width: '100vw'
+    }
+>>>>>>> Stashed changes
   }
 
 

@@ -6,6 +6,10 @@ import {Link} from 'react-router-dom';
 import Cycle from './Cycle';
 import Meteor from './Meteor';
 import Nav from '.././Nav';
+<<<<<<< Updated upstream
+=======
+import './events.css';
+>>>>>>> Stashed changes
 
 class Events extends Component {
     // componentDidMount(){
