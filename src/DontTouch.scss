@@ -3,6 +3,7 @@ Nick Mkrtchyan
 https://www.facebook.com/sonick.pk
 http://www.Mkrtchyan.zz.mu
 ================================================================================================= */
+@import './main.scss';
 
 .star-cont {
     overflow: hidden;
@@ -360,7 +361,6 @@ http://www.Mkrtchyan.zz.mu
     height: auto;
     width: 35vw;
     background-color: rgba($moon, 0.75) ;
-    
     border-radius: 5px;
     padding: 40px;
     text-align: center;

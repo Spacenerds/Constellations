@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Icons from './Icons';
-import {FormGroup, FormControl, InputGroup, Glyphicon} from 'react-bootstrap';
 import './Search.css'
 import Nav from '.././Nav';
 
@@ -8,7 +7,7 @@ class Horoscope extends Component {
     render(){
         return(
             <div>
-                <Icons />
+                {/*<Icons />
                 <FormGroup id="search">
                 <InputGroup>
                     <FormControl className="inputf" type="text" placeholder="Entere your birthdate" 
@@ -22,7 +21,7 @@ class Horoscope extends Component {
                     </InputGroup.Addon>
                 </InputGroup>
                  
-        </FormGroup>
+        </FormGroup>*/}
             </div>
         );
     }

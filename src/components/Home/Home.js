@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Fullscreen from "react-screenfull";
 import {Link} from 'react-router-dom';
 import Nav from '.././Nav';
 

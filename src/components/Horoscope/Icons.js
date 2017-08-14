@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import aquarius from './Icons/aquarius.svg'
-import {FormGroup, FormControl, InputGroup, Glyphicon} from 'react-bootstrap';
+// import {FormGroup, FormControl, InputGroup, Glyphicon} from 'react-bootstrap';
 
 class Icons extends Component {
     render(){
