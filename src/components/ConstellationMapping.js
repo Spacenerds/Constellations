@@ -77,7 +77,10 @@ class ConstellationMapping extends Component {
         </div>
       <div className='display_Box'>
 
+<<<<<<< HEAD
        
+=======
+>>>>>>> master
 
         <div className='info_Box'> 
             <img src="https://www.horoscopedates.com/img/icon_aries.png" alt=""/>
