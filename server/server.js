@@ -35,9 +35,9 @@ const tarotCTRL = require('./tarotCTRL.js');
 // ENDPOINTS
 app.get('/tarot',  tarotCTRL.getTarot);
 
-app.get('/constellations/:id', constellationsCTRL.getConstellations);
+// app.get('/constellations/:id', constellationsCTRL.getConstellations);
 
-app.get('/horoscope/:sign', horoscopeCTRL.getHoroscope);
+// app.get('/horoscope/:sign', horoscopeCTRL.getHoroscope);
 
 
 app.listen(3003, () => console.log(`Listening on port ${config.port}`))
