@@ -47,8 +47,10 @@ http://www.Mkrtchyan.zz.mu
     .stars {
         background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
         z-index: 0;
-        height: 100vh;
+        height: 120vh;
         width: 100vw;
+        overflow: hidden;
+        
         
     }
       .stars2 {
@@ -56,6 +58,7 @@ http://www.Mkrtchyan.zz.mu
         z-index: 0;
         height: 100vh;
         width: 100vw;
+        
         animation: App-logo-spin infinite 500s linear;
         overflow: hidden;
       }
@@ -73,28 +76,28 @@ http://www.Mkrtchyan.zz.mu
     // }
 }
 
-// .Aries {
-//   background-image: url("images/Aries.png");
-//   position: absolute;
-//   left: 41px;
-//   top: 63px;
-//   width: 166px;
-//   height: 167px;
-//   z-index: 13;
-// //    -webkit-transition: all .5s ease; /* Safari and Chrome */
-//     -moz-transition: all .5s ease; /* Firefox */
-//     -ms-transition: all .5s ease; /* IE 9 */
-//     -o-transition: all .5s ease; /* Opera */
-//     transition: all .5s ease;
-//   &:hover {
-//     -webkit-transform:scale(1.25); /* Safari and Chrome */
-//     -moz-transform:scale(1.25); /* Firefox */
-//     -ms-transform:scale(1.25); /* IE 9 */
-//     -o-transform:scale(1.25); /* Opera */
-//      transform:scale(1.25);
-//          z-index: 25;
-// }
-// }
+.Aries {
+  background-image: url("images/Aries.png");
+  position: absolute;
+  left: 41px;
+  top: 63px;
+  width: 166px;
+  height: 167px;
+  z-index: 13;
+   -webkit-transition: all .5s ease; /* Safari and Chrome */
+    -moz-transition: all .5s ease; /* Firefox */
+    -ms-transition: all .5s ease; /* IE 9 */
+    -o-transition: all .5s ease; /* Opera */
+    transition: all .5s ease;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+         z-index: 25;
+}
+}
 .Taurus {
   background-image: url("./images/Taurus.png");
   position: absolute;
@@ -373,3 +376,268 @@ http://www.Mkrtchyan.zz.mu
     left: 5vw;
     z-index: 200;
   }
+
+//   .Ursa_Minor {
+//   background-image: url("./images/UrsaMinor.png");
+//   position: absolute;
+//   left: 15px;
+//   top: 50px;
+//   width: 549px;
+//   height: 365px;
+//   z-index: 26;
+// }
+// .Leo_Minor {
+//   background-image: url("./images/LeoMinor.png");
+//   position: absolute;
+//   left: 215px;
+//   top: 323px;
+//   width: 152px;
+//   height: 100px;
+//   z-index: 25;
+// }
+// .Leo2 {
+//   background-image: url("./images/Leo2.png");
+//   position: absolute;
+//   left: 55px;
+//   top: 424px;
+//   width: 379px;
+//   height: 227px;
+//   z-index: 24;
+// }
+// .Cancer2 {
+//   background-image: url("./images/Cancer2.png");
+//   position: absolute;
+//   left: 459px;
+//   top: 406px;
+//   width: 153px;
+//   height: 234px;
+//   z-index: 23;
+// }
+// .Gemini2 {
+//   background-image: url("./images/Gemini2.png");
+//   position: absolute;
+//   left: 617px;
+//   top: 372px;
+//   width: 243px;
+//   height: 246px;
+//   z-index: 22;
+// }
+// .Taurus2 {
+//   background-image: url("./images/Taurus2.png");
+//   position: absolute;
+//   left: 839px;
+//   top: 162px;
+//   width: 447px;
+//   height: 498px;
+//   z-index: 21;
+// }
+.Orion {
+  background-image: url("./images/Orion.png");
+  position: absolute;
+  left: 831px;
+  top: 494px;
+  width: 233px;
+  height: 328px;
+  z-index: 20;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
+}
+.Canis_Minor {
+  background-image: url("./images/CanisMinor.png");
+  position: absolute;
+  left: 587px;
+  top: 608px;
+  width: 205px;
+  height: 68px;
+  z-index: 19;
+}
+.Canis_Major {
+  background-image: url("./images/CanisMajor.png");
+  position: absolute;
+  left: 599px;
+  top: 838px;
+  width: 271px;
+  height: 184px;
+  z-index: 18;
+}
+.Columba {
+  background-image: url("./images/Columba.png");
+  position: absolute;
+  left: 805px;
+  top: 1008px;
+  width: 201px;
+  height: 152px;
+  z-index: 17;
+}
+.Eredanus {
+  background-image: url("./images/Eredanus.png");
+  position: absolute;
+  left: 977px;
+  top: 734px;
+  width: 391px;
+  height: 466px;
+  z-index: 16;
+}
+.Celus {
+  background-image: url("./images/Celus.png");
+  position: absolute;
+  left: 1241px;
+  top: 584px;
+  width: 429px;
+  height: 362px;
+  z-index: 15;
+}
+.Perseus {
+  background-image: url("./images/Perseus.png");
+  position: absolute;
+  left: 1073px;
+  top: 128px;
+  width: 273px;
+  height: 288px;
+  z-index: 14;
+}
+.Pegasus {
+  background-image: url("./images/Pegasus.png");
+  position: absolute;
+  left: 1367px;
+  top: 212px;
+  width: 673px;
+  height: 468px;
+  z-index: 13;
+}
+.Cassiopeia {
+  background-image: url("./images/Cassiopeia.png");
+  position: absolute;
+  left: 1389px;
+  top: 48px;
+  width: 309px;
+  height: 154px;
+  z-index: 12;
+}
+.Cycnus {
+  background-image: url("./images/Cycnus.png");
+  position: absolute;
+  left: 1993px;
+  top: 186px;
+  width: 315px;
+  height: 264px;
+  z-index: 11;
+}
+.Draco {
+  background-image: url("./images/Draco.png");
+  position: absolute;
+  left: 2193px;
+  top: 0px;
+  width: 849px;
+  height: 232px;
+  z-index: 10;
+}
+.Herculese {
+  background-image: url("./images/Herculese.png");
+  position: absolute;
+  left: 2411px;
+  top: 230px;
+  width: 363px;
+  height: 368px;
+  z-index: 9;
+}
+.Pisces {
+  background-image: url("./images/Pisces2.png");
+  position: absolute;
+  left: 1785px;
+  top: 952px;
+  width: 261px;
+  height: 110px;
+  z-index: 8;
+}
+.Scopius {
+  background-image: url("./images/Scopius.png");
+  position: absolute;
+  left: 2459px;
+  top: 870px;
+  width: 293px;
+  height: 290px;
+  z-index: 7;
+}
+.Libra {
+  background-image: url("./images/Libra2.png");
+  position: absolute;
+  left: 2763px;
+  top: 770px;
+  width: 141px;
+  height: 248px;
+  z-index: 6;
+}
+.Corvus {
+  background-image: url("./images/Corvus.png");
+  position: absolute;
+  left: 3089px;
+  top: 838px;
+  width: 190px;
+  height: 140px;
+  z-index: 5;
+}
+.Lupus {
+  background-image: url("./images/Lupus.png");
+  position: absolute;
+  left: 2687px;
+  top: 1028px;
+  width: 243px;
+  height: 204px;
+  z-index: 4;
+}
+.Virgo {
+  background-image: url("./images/Virgo2.png");
+  position: absolute;
+  left: 2871px;
+  top: 558px;
+  width: 444px;
+  height: 302px;
+  z-index: 3;
+}
+.Hydra {
+  background-image: url("./images/Hydra.png");
+  position: absolute;
+  left: 32px;
+  top: 616px;
+  width: 514px;
+  height: 454px;
+  z-index: 2;
+}
+.mainMap {
+  background-image: url("./images/mainMap.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 15vw;
+  right: 15vw;
+  top: 10vh;
+  width: 100vw;
+  height: 50vh;
+  z-index: 1;
+  display: block;
+}
+
+.info_Box{
+    height: auto;
+    width: 35vw;
+    background-color: rgba($moon, 0.75) ;
+    border-radius: 5px;
+    padding: 40px;
+    text-align: center;
+    
+  }
+  .display_Box {
+    height: 40vh;
+    width: 45vw;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 25vh;
+    background-color: transparent;
+}

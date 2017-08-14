@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import './../App.css';
-
+import './../DontTouch.css';
+import Nav from './Nav.js';
 
 class AllTheConstellations extends Component {
 
@@ -11,24 +11,36 @@ class AllTheConstellations extends Component {
   render() {
     return (
       <div className="star-cont"> 
+        
         <span className="zodiac-title">ZODIAC CONSTELLATIONS</span>
         
       <div className="stars">
         <div className="stars2"></div>
       <div className="twinkling">
-        <div className='Base_Layer ' > 
-        <div  id='Aries' className='Aries'></div>
-        <div  id='Taurus' className='Taurus' ></div>
-        <div  id='Gemini' className='Gemini'></div>
-        <div  id='Cancer' className='Cancer'></div>
-        <div  id='Leo' className='Leo'></div>
-        <div  id='Virgo' className='Virgo'></div>
-        <div  id='Libra' className='Libra'></div>
-        <div  id='Scorpio' className='Scorpio'></div>
-        <div  id='Sagittarius' className='Sagittarius'></div>
-        <div  id='Capricorn' className='Capricorn'></div>
-        <div  id='Aquarius' className='Aquarius'></div>
-        <div id='Pisces' className='Pisces'></div>
+        <div className='center-items'>
+        <div className='mainMap' > 
+        <div  id='Aries' className='Leo2'></div>
+        <div  id='Taurus' className='Cancer2' ></div>
+        <div  id='Gemini' className='Gemini2'></div>
+        <div  id='Cancer' className='Taurus2'></div>
+        <div  id='Leo' className='Orion'></div>
+        <div  id='Virgo' className='Canis_Minor'></div>
+        <div  id='Libra' className='Canis_Major'></div>
+        <div  id='Scorpio' className='Columba'></div>
+        <div  id='Sagittarius' className='Eredanus'></div>
+        <div  id='Capricorn' className='Celus'></div>
+        <div  id='Aquarius' className='Pegasus'></div>
+        <div id='Pisces' className='Cassiopeia'></div>
+        <div id='Pisces' className='Cycnus'></div>
+        <div id='Pisces' className='Draco'></div>
+        <div id='Pisces' className='Herculese'></div>
+        <div id='Pisces' className='Pisces2'></div>
+        <div id='Pisces' className='Scopius'></div>
+        <div id='Pisces' className='Libra2'></div>
+        <div id='Pisces' className='Corvus'></div>
+        <div id='Pisces' className='Lupus'></div>
+        <div id='Pisces' className='Virgo2'></div>
+        <div id='Pisces' className='Hydra'></div>
         </div>
       <div className='display_Box'>
         <div className='info_Box'> 
@@ -42,6 +54,9 @@ class AllTheConstellations extends Component {
       </div>
       </div>
       </div>
+      <Nav />
+      </div>
+      
       
       
       

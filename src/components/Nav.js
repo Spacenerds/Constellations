@@ -11,6 +11,7 @@ class Nav extends Component{
             <div style={styles.menuStyles}>
                 <Link to="/"><button>Home</button></Link>
                 <Link to="/constellations"><button>Constellations</button></Link>
+                <Link to="/constellationsDos"><button>ConstellationsDos</button></Link>
                 <Link to="/events"><button>Events</button></Link>
                 <Link to="/tarot"><button>Tarot</button></Link>  
                 <Link to="/horoscope"><button>Horoscope</button></Link>   
