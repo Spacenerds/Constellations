@@ -26,6 +26,8 @@ import sun from './19sun.png';
 import judgement from './20judgement.png';
 import world from './21world.png';
 
+import './tarot.css';
+
 class PickACard extends Component {
     constructor(props){
         super(props);

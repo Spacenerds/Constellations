@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PickACard from './PickACard'
 import axios from 'axios';
-
+import './tarot.scss';
 import Nav from '.././Nav';
 
 
