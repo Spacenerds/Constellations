@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
-<<<<<<< Updated upstream
 import './Horoscope.css'
-=======
-import aquarius from './Icons/aquarius.svg'
 // import {FormGroup, FormControl, InputGroup, Glyphicon} from 'react-bootstrap';
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 class Icons extends Component {
     constructor(props){
@@ -74,7 +67,6 @@ class Icons extends Component {
             content = this.displayContent() : 
             content = ""
         return(
-<<<<<<< Updated upstream
             <div  >
                 <section style={ styles.iconList } >
                     <button className="iconbutton" onClick={ this.getHoroscope } ><img className="iconitem animate" alt="" src={require ("./Icons/aries.svg") } /></button>
@@ -93,33 +85,12 @@ class Icons extends Component {
                 <div style={ styles.hororStyle }>
                     { content }
                 </div>
-=======
-            <div style={styles.svgsList}>
-                <img style={styles.svg} src={require ("./Icons/aries.svg")} />
-                <img style={styles.svg} src={require ("./Icons/taurus.svg")} />
-                <img style={styles.svg} src={require ("./Icons/gemini.svg")} />
-                <img style={styles.svg} src={require ("./Icons/cancer.svg")} />
-                <img style={styles.svg} src={require ("./Icons/leo.svg")} />
-                <img style={styles.svg} src={require ("./Icons/virgo.svg")} />
-                <img style={styles.svg} src={require ("./Icons/libra.svg")} />
-                <img style={styles.svg} src={require ("./Icons/scorpio.svg")} />
-                <img style={styles.svg} src={require ("./Icons/sagittarius.svg")} />
-                <img style={styles.svg} src={require ("./Icons/capricorn.svg")} />
-                <img style={styles.svg} src={require ("./Icons/aquarius.svg")} />
-                <img style={styles.svg} src={require ("./Icons/pisces.svg")} />
-                
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             </div>
         )           
     }
 }
 
 const styles = {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     containerStyle: {
         height: '100vh',
         width: '100vw',
@@ -133,10 +104,7 @@ const styles = {
     hororStyle: {
         color: 'white',
 
-=======
-=======
->>>>>>> Stashed changes
-
+    },
     svg: {
         fill: 'none',
         stroke: '#000',
@@ -144,7 +112,6 @@ const styles = {
         strokeLineJoin: 'round',
         width: 130,
         height: 130
->>>>>>> Stashed changes
     }
 }
 

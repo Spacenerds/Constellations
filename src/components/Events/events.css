@@ -4,36 +4,30 @@
 html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poiret One', sans-serif;
-}
+  font-family: 'Poiret One', sans-serif; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 ul {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 h1,
 h2 {
   font-family: 'Megrim', Serif;
   font-weight: normal;
-  opacity: 1;
-}
+  opacity: 1; }
 
 button {
   padding: 8px 70px;
@@ -43,24 +37,20 @@ button {
   font-size: 13pt;
   border: 3px solid transparent;
   border-image: linear-gradient(to top right, #fff 0%, #28E6F9 9%, #080C22 50%);
-  border-image-slice: 1;
-}
+  border-image-slice: 1; }
 
 body {
   margin: 0;
   padding: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  font-family: 'Poiret One', sans-serif;
-}
+  font-family: 'Poiret One', sans-serif; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 ul {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 button {
   padding: 8px 70px;
@@ -70,188 +60,133 @@ button {
   font-size: 13pt;
   border: 3px solid transparent;
   border-image: linear-gradient(to top right, #fff 0%, #28E6F9 9%, #080C22 50%);
-  border-image-slice: 1;
-}
+  border-image-slice: 1; }
 
 .events-container .section {
-  padding: 20px !important;
-}
+  padding: 20px !important; }
 
 .types {
   background: #000;
-  color: #fff;
-}
+  color: #fff; }
 
 .lunar-cycle {
   background: #080C22;
   color: #fff;
   height: 100vh;
   text-align: center;
-  background: linear-gradient(#000000, #080C22);
-}
-
-.lunar-cycle h1 {
-  color: #28E6F9;
-  margin-bottom: 0;
-}
-
-.lunar-cycle .lunar-text {
-  position: relative;
-  z-index: 5;
-}
-
-.lunar-cycle .star {
-  transform-style: preserve-3d;
-  position: fixed;
-}
-
-.lunar-cycle .tonight-moon {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 87px;
-  margin-right: 3vw;
-}
-
-.lunar-cycle #lunar-container {
-  margin: auto;
-  opacity: 0;
-}
-
-.lunar-cycle #lunar-container h3 {
-  margin: 0;
-  color: #28E6F9;
-}
-
-.lunar-cycle #lunar-container p {
-  margin: 0;
-  margin-bottom: 4px;
-  color: #B5B4B5;
-}
-
-.lunar-cycle #lunar-container #moonCanvas {
-  margin: 12px auto 20px auto;
-}
-
-.lunar-cycle ul li {
-  margin-top: 10px;
-  display: inline-block;
-}
-
-.lunar-cycle ul li:before {
-  content: '☾ ';
-  margin-left: 10px;
-}
-
-.lunar-cycle .lunar-cycle-image img {
-  width: 50vw;
-  margin: auto;
-  position: relative;
-  z-index: 5;
-}
+  background: linear-gradient(#000000, #080C22); }
+  .lunar-cycle h1 {
+    color: #28E6F9;
+    margin-bottom: 0; }
+  .lunar-cycle .lunar-text {
+    position: relative;
+    z-index: 5; }
+  .lunar-cycle .star {
+    transform-style: preserve-3d;
+    position: fixed; }
+  .lunar-cycle .tonight-moon {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 87px;
+    margin-right: 3vw; }
+  .lunar-cycle #lunar-container {
+    margin: auto;
+    opacity: 0; }
+    .lunar-cycle #lunar-container h3 {
+      margin: 0;
+      color: #28E6F9; }
+    .lunar-cycle #lunar-container p {
+      margin: 0;
+      margin-bottom: 4px;
+      color: #B5B4B5; }
+    .lunar-cycle #lunar-container #moonCanvas {
+      margin: 12px auto 20px auto; }
+  .lunar-cycle ul li {
+    margin-top: 10px;
+    display: inline-block; }
+    .lunar-cycle ul li:before {
+      content: '☾ ';
+      margin-left: 10px; }
+  .lunar-cycle .lunar-cycle-image img {
+    width: 50vw;
+    margin: auto;
+    position: relative;
+    z-index: 5; }
 
 .lunar-eclipse {
   text-align: center;
   color: #fff;
-  background: #080C22;
-}
-
-.lunar-eclipse .lunar-eclipse-text {
-  position: relative;
-  z-index: 5;
-  text-align: right;
-  margin-right: 50px;
-}
-
-.lunar-eclipse .moon-eclipse {
-  position: absolute;
-  margin: -37vh auto 0 -54vh;
-  width: 130vh;
-  z-index: 0;
-  height: 130vh;
-  border-radius: 50%;
-  background: url("https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg") no-repeat center/124% 124%;
-  animation: eclipse 20s linear infinite;
-}
+  background: #080C22; }
+  .lunar-eclipse .lunar-eclipse-text {
+    position: relative;
+    z-index: 5;
+    text-align: right;
+    margin-right: 50px; }
+  .lunar-eclipse .moon-eclipse {
+    position: absolute;
+    margin: -37vh auto 0 -54vh;
+    width: 130vh;
+    z-index: 0;
+    height: 130vh;
+    border-radius: 50%;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg") no-repeat center/124% 124%;
+    animation: eclipse 20s linear infinite; }
 
 @keyframes eclipse {
   0% {
-    box-shadow: inset 650px 650px 150px rgba(0, 0, 0, 0.8);
-  }
+    box-shadow: inset 650px 650px 150px rgba(0, 0, 0, 0.8); }
   50% {
-    box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.8);
-  }
+    box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.8); }
   100% {
-    box-shadow: inset -650px -650px 150px rgba(0, 0, 0, 0.8);
-  }
-}
+    box-shadow: inset -650px -650px 150px rgba(0, 0, 0, 0.8); } }
 
 .solar-eclipse {
-  background: #1DAEEC;
-}
-
-.solar-eclipse .se-img-container {
-  height: 20vh;
-  animation: sky 5s linear infinite;
-  background: #1DAEEC;
-}
+  background: #1DAEEC; }
+  .solar-eclipse .se-img-container {
+    height: 20vh;
+    animation: sky 5s linear infinite;
+    background: #1DAEEC; }
 
 @keyframes sky {
   from,
   to {
-    background: #1DAEEC;
-  }
+    background: #1DAEEC; }
   50% {
-    background: black;
-  }
-}
-
-.solar-eclipse .solar-eclipse-image {
-  position: relative;
-  width: 15vh;
-  height: 15vh;
-  transform: translate(calc(49vw - 7.5vh), calc(10vh - 7.5vh));
-}
-
-.solar-eclipse .sun,
-.solar-eclipse .moon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 0, 0, 0.5);
-  border-radius: 50%;
-}
-
-.solar-eclipse .sun {
-  background: gold;
-  animation: sun 5s linear infinite;
-}
+    background: black; } }
+  .solar-eclipse .solar-eclipse-image {
+    position: relative;
+    width: 15vh;
+    height: 15vh;
+    transform: translate(calc(49vw - 7.5vh), calc(10vh - 7.5vh)); }
+  .solar-eclipse .sun,
+  .solar-eclipse .moon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 0, 0, 0.5);
+    border-radius: 50%; }
+  .solar-eclipse .sun {
+    background: gold;
+    animation: sun 5s linear infinite; }
 
 @keyframes sun {
   50% {
     background: white;
-    box-shadow: 0 0 5em white, 0 0 5em white, 0 0 5em white, 0 0 5em white;
-  }
-}
-
-.solar-eclipse .moon {
-  animation: moon 5s linear infinite;
-}
+    box-shadow: 0 0 5em white, 0 0 5em white, 0 0 5em white, 0 0 5em white; } }
+  .solar-eclipse .moon {
+    animation: moon 5s linear infinite; }
 
 @keyframes moon {
   from {
     transform: translateX(-110%);
-    background: lightgray;
-  }
+    background: lightgray; }
   50% {
-    background: black;
-  }
+    background: black; }
   to {
     transform: translateX(110%);
-    background: lightgray;
-  }
-}
+    background: lightgray; } }
 
 .meteor {
   background: #B5B4B5;
@@ -267,157 +202,126 @@ button {
         /*=======================*/
   /*=======================*/
   /* KEYFRAMES
-        /*=======================*/
-}
-
-.meteor #foreground {
-  position: relative;
-  width: 100vw;
-  height: 76vh;
-}
-
-.meteor #foreground > div {
-  bottom: 0;
-  position: absolute;
-  transform-origin: 50% 100%;
-  pointer-events: none;
-}
-
-.meteor .grass {
-  width: 105%;
-  height: 200px;
-  left: -2.5%;
-  background: url("http://orion9.net/_demos/meteorRain/img/grass.svg") repeat-x bottom center;
-  background-position: -100px 100%;
-  -webkit-animation: skew4 4s .2s ease-in-out infinite;
-  -moz-animation: skew4 4s .2s ease-in-out infinite;
-  -ms-animation: skew4 4s .2s ease-in-out infinite;
-  -o-animation: skew4 4s .2s ease-in-out infinite;
-  animation: skew4 4s .2s ease-in-out infinite;
-}
-
-.meteor #tree1 {
-  width: 335px;
-  height: 425px;
-  background: url("http://orion9.net/_demos/meteorRain/img/tree1.svg") no-repeat;
-  left: calc(15% - 335px / 2);
-  -webkit-animation: skew1 8s ease-in-out infinite;
-  -moz-animation: skew1 8s ease-in-out infinite;
-  -ms-animation: skew1 8s ease-in-out infinite;
-  -o-animation: skew1 8s ease-in-out infinite;
-  animation: skew1 8s ease-in-out infinite;
-}
-
-.meteor .reed {
-  background: url("http://orion9.net/_demos/meteorRain/img/reed.svg") no-repeat;
-  background-size: cover;
-}
-
-.meteor #reed1 {
-  left: calc(15% - 335px / 2);
-  width: 180px;
-  height: 155px;
-  -webkit-animation: skew4 4s ease-in-out infinite;
-  -moz-animation: skew4 4s ease-in-out infinite;
-  -ms-animation: skew4 4s ease-in-out infinite;
-  -o-animation: skew4 4s ease-in-out infinite;
-  animation: skew4 4s ease-in-out infinite;
-}
-
-.meteor #reed2 {
-  left: calc(15% + 80px / 2);
-  width: 200px;
-  height: 180px;
-  -webkit-animation: skew4 4s .4s ease-in-out infinite;
-  -moz-animation: skew4 4s .4s ease-in-out infinite;
-  -ms-animation: skew4 4s .4s ease-in-out infinite;
-  -o-animation: skew4 4s .4s ease-in-out infinite;
-  animation: skew4 4s .4s ease-in-out infinite;
-}
-
-.meteor #reed3 {
-  left: calc(15% - 120px / 2);
-  width: 220px;
-  height: 200px;
-  -webkit-animation: skew4 4s .8s ease-in-out infinite;
-  -moz-animation: skew4 4s .8s ease-in-out infinite;
-  -ms-animation: skew4 4s .8s ease-in-out infinite;
-  -o-animation: skew4 4s .8s ease-in-out infinite;
-  animation: skew4 4s .8s ease-in-out infinite;
-}
-
-.meteor #tree2 {
-  width: 245px;
-  height: 480px;
-  background: url("http://orion9.net/_demos/meteorRain/img/tree2.svg") no-repeat;
-  right: calc(15% - 245px / 2);
-  -webkit-animation: skew1 8s 2s ease-in-out infinite;
-  -moz-animation: skew1 8s 2s ease-in-out infinite;
-  -ms-animation: skew1 8s 2s ease-in-out infinite;
-  -o-animation: skew1 8s 2s ease-in-out infinite;
-  animation: skew1 8s 2s ease-in-out infinite;
-}
-
-.meteor #bush {
-  right: calc(15% - 120px / 2);
-  width: 210px;
-  height: 135px;
-  background: url("http://orion9.net/_demos/meteorRain/img/bush.svg") no-repeat;
-  background-size: cover;
-  -webkit-animation: skew4 4s .6s ease-in-out infinite;
-  -moz-animation: skew4 4s .6s ease-in-out infinite;
-  -ms-animation: skew4 4s .6s ease-in-out infinite;
-  -o-animation: skew4 4s .6s ease-in-out infinite;
-  animation: skew4 4s .6s ease-in-out infinite;
-}
-
-.meteor #telescope {
-  width: 130px;
-  height: 150px;
-  background: url("http://orion9.net/_demos/meteorRain/img/telescope.svg") no-repeat;
-  left: calc(50% + 45px);
-  bottom: 55px !important;
-}
-
-.meteor #girl {
-  width: 108px;
-  height: 136px;
-  background: url("http://orion9.net/_demos/meteorRain/img/girl.svg") no-repeat;
-  left: calc(50% - 108px / 2);
-  bottom: 25px !important;
-  cursor: pointer;
-  cursor: alias;
-  pointer-events: auto !important;
-}
-
-.meteor #halo {
-  opacity: 0;
-  -webkit-transition: -webkit-opacity 1s ease-out;
-  -moz-transition: -moz-opacity 1s ease-out;
-  -ms-transition: -ms-opacity 1s ease-out;
-  -o-transition: -o-opacity 1s ease-out;
-  transition: opacity 1s ease-out;
-}
-
-.meteor #halo > div {
-  position: absolute;
-  width: 100%;
-  height: 450px;
-  background-color: rgba(170, 255, 230, 0.05);
-  bottom: -275px;
-  border-radius: 50%;
-  box-shadow: 0 0 55px 0 rgba(170, 255, 230, 0.1);
-  -webkit-animation: halo 4s ease-in-out infinite;
-  -moz-animation: halo 4s ease-in-out infinite;
-  -ms-animation: halo 4s ease-in-out infinite;
-  -o-animation: halo 4s ease-in-out infinite;
-  animation: halo 4s ease-in-out infinite;
-  animation-play-state: paused;
-}
-
-.meteor .meteorShower #halo > div {
-  animation-play-state: running;
-}
+        /*=======================*/ }
+  .meteor #foreground {
+    position: relative;
+    width: 100vw;
+    height: 76vh; }
+  .meteor #foreground > div {
+    bottom: 0;
+    position: absolute;
+    transform-origin: 50% 100%;
+    pointer-events: none; }
+  .meteor .grass {
+    width: 105%;
+    height: 200px;
+    left: -2.5%;
+    background: url("http://orion9.net/_demos/meteorRain/img/grass.svg") repeat-x bottom center;
+    background-position: -100px 100%;
+    -webkit-animation: skew4 4s .2s ease-in-out infinite;
+    -moz-animation: skew4 4s .2s ease-in-out infinite;
+    -ms-animation: skew4 4s .2s ease-in-out infinite;
+    -o-animation: skew4 4s .2s ease-in-out infinite;
+    animation: skew4 4s .2s ease-in-out infinite; }
+  .meteor #tree1 {
+    width: 335px;
+    height: 425px;
+    background: url("http://orion9.net/_demos/meteorRain/img/tree1.svg") no-repeat;
+    left: calc(15% - 335px / 2);
+    -webkit-animation: skew1 8s ease-in-out infinite;
+    -moz-animation: skew1 8s ease-in-out infinite;
+    -ms-animation: skew1 8s ease-in-out infinite;
+    -o-animation: skew1 8s ease-in-out infinite;
+    animation: skew1 8s ease-in-out infinite; }
+  .meteor .reed {
+    background: url("http://orion9.net/_demos/meteorRain/img/reed.svg") no-repeat;
+    background-size: cover; }
+  .meteor #reed1 {
+    left: calc(15% - 335px / 2);
+    width: 180px;
+    height: 155px;
+    -webkit-animation: skew4 4s ease-in-out infinite;
+    -moz-animation: skew4 4s ease-in-out infinite;
+    -ms-animation: skew4 4s ease-in-out infinite;
+    -o-animation: skew4 4s ease-in-out infinite;
+    animation: skew4 4s ease-in-out infinite; }
+  .meteor #reed2 {
+    left: calc(15% + 80px / 2);
+    width: 200px;
+    height: 180px;
+    -webkit-animation: skew4 4s .4s ease-in-out infinite;
+    -moz-animation: skew4 4s .4s ease-in-out infinite;
+    -ms-animation: skew4 4s .4s ease-in-out infinite;
+    -o-animation: skew4 4s .4s ease-in-out infinite;
+    animation: skew4 4s .4s ease-in-out infinite; }
+  .meteor #reed3 {
+    left: calc(15% - 120px / 2);
+    width: 220px;
+    height: 200px;
+    -webkit-animation: skew4 4s .8s ease-in-out infinite;
+    -moz-animation: skew4 4s .8s ease-in-out infinite;
+    -ms-animation: skew4 4s .8s ease-in-out infinite;
+    -o-animation: skew4 4s .8s ease-in-out infinite;
+    animation: skew4 4s .8s ease-in-out infinite; }
+  .meteor #tree2 {
+    width: 245px;
+    height: 480px;
+    background: url("http://orion9.net/_demos/meteorRain/img/tree2.svg") no-repeat;
+    right: calc(15% - 245px / 2);
+    -webkit-animation: skew1 8s 2s ease-in-out infinite;
+    -moz-animation: skew1 8s 2s ease-in-out infinite;
+    -ms-animation: skew1 8s 2s ease-in-out infinite;
+    -o-animation: skew1 8s 2s ease-in-out infinite;
+    animation: skew1 8s 2s ease-in-out infinite; }
+  .meteor #bush {
+    right: calc(15% - 120px / 2);
+    width: 210px;
+    height: 135px;
+    background: url("http://orion9.net/_demos/meteorRain/img/bush.svg") no-repeat;
+    background-size: cover;
+    -webkit-animation: skew4 4s .6s ease-in-out infinite;
+    -moz-animation: skew4 4s .6s ease-in-out infinite;
+    -ms-animation: skew4 4s .6s ease-in-out infinite;
+    -o-animation: skew4 4s .6s ease-in-out infinite;
+    animation: skew4 4s .6s ease-in-out infinite; }
+  .meteor #telescope {
+    width: 130px;
+    height: 150px;
+    background: url("http://orion9.net/_demos/meteorRain/img/telescope.svg") no-repeat;
+    left: calc(50% + 45px);
+    bottom: 55px !important; }
+  .meteor #girl {
+    width: 108px;
+    height: 136px;
+    background: url("http://orion9.net/_demos/meteorRain/img/girl.svg") no-repeat;
+    left: calc(50% - 108px / 2);
+    bottom: 25px !important;
+    cursor: pointer;
+    cursor: alias;
+    pointer-events: auto !important; }
+  .meteor #halo {
+    opacity: 0;
+    -webkit-transition: -webkit-opacity 1s ease-out;
+    -moz-transition: -moz-opacity 1s ease-out;
+    -ms-transition: -ms-opacity 1s ease-out;
+    -o-transition: -o-opacity 1s ease-out;
+    transition: opacity 1s ease-out; }
+  .meteor #halo > div {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background-color: rgba(170, 255, 230, 0.05);
+    bottom: -275px;
+    border-radius: 50%;
+    box-shadow: 0 0 55px 0 rgba(170, 255, 230, 0.1);
+    -webkit-animation: halo 4s ease-in-out infinite;
+    -moz-animation: halo 4s ease-in-out infinite;
+    -ms-animation: halo 4s ease-in-out infinite;
+    -o-animation: halo 4s ease-in-out infinite;
+    animation: halo 4s ease-in-out infinite;
+    animation-play-state: paused; }
+  .meteor .meteorShower #halo > div {
+    animation-play-state: running; }
 
 @-webkit-keyframes skew1 {
   0%,
@@ -426,16 +330,13 @@ button {
     -moz-transform: skewX(0);
     -ms-transform: skewX(0);
     -o-transform: skewX(0);
-    transform: skewX(0);
-  }
+    transform: skewX(0); }
   50% {
     -webkit-transform: skewX(1deg);
     -moz-transform: skewX(1deg);
     -ms-transform: skewX(1deg);
     -o-transform: skewX(1deg);
-    transform: skewX(1deg);
-  }
-}
+    transform: skewX(1deg); } }
 
 @-moz-keyframes skew1 {
   0%,
@@ -444,16 +345,13 @@ button {
     -moz-transform: skewX(0);
     -ms-transform: skewX(0);
     -o-transform: skewX(0);
-    transform: skewX(0);
-  }
+    transform: skewX(0); }
   50% {
     -webkit-transform: skewX(1deg);
     -moz-transform: skewX(1deg);
     -ms-transform: skewX(1deg);
     -o-transform: skewX(1deg);
-    transform: skewX(1deg);
-  }
-}
+    transform: skewX(1deg); } }
 
 @-ms-keyframes skew1 {
   .meteor 0%,
@@ -462,16 +360,13 @@ button {
     -moz-transform: skewX(0);
     -ms-transform: skewX(0);
     -o-transform: skewX(0);
-    transform: skewX(0);
-  }
+    transform: skewX(0); }
   .meteor 50% {
     -webkit-transform: skewX(1deg);
     -moz-transform: skewX(1deg);
     -ms-transform: skewX(1deg);
     -o-transform: skewX(1deg);
-    transform: skewX(1deg);
-  }
-}
+    transform: skewX(1deg); } }
 
 @-o-keyframes skew1 {
   0%,
@@ -480,16 +375,13 @@ button {
     -moz-transform: skewX(0);
     -ms-transform: skewX(0);
     -o-transform: skewX(0);
-    transform: skewX(0);
-  }
+    transform: skewX(0); }
   50% {
     -webkit-transform: skewX(1deg);
     -moz-transform: skewX(1deg);
     -ms-transform: skewX(1deg);
     -o-transform: skewX(1deg);
-    transform: skewX(1deg);
-  }
-}
+    transform: skewX(1deg); } }
 
 @keyframes skew1 {
   0%,
@@ -498,16 +390,13 @@ button {
     -moz-transform: skewX(0);
     -ms-transform: skewX(0);
     -o-transform: skewX(0);
-    transform: skewX(0);
-  }
+    transform: skewX(0); }
   50% {
     -webkit-transform: skewX(1deg);
     -moz-transform: skewX(1deg);
     -ms-transform: skewX(1deg);
     -o-transform: skewX(1deg);
-    transform: skewX(1deg);
-  }
-}
+    transform: skewX(1deg); } }
 
 @-webkit-keyframes skew4 {
   0%,
@@ -516,16 +405,13 @@ button {
     -moz-transform: skewX(0);
     -ms-transform: skewX(0);
     -o-transform: skewX(0);
-    transform: skewX(0);
-  }
+    transform: skewX(0); }
   50% {
     -webkit-transform: skewX(4deg);
     -moz-transform: skewX(4deg);
     -ms-transform: skewX(4deg);
     -o-transform: skewX(4deg);
-    transform: skewX(4deg);
-  }
-}
+    transform: skewX(4deg); } }
 
 @-moz-keyframes skew4 {
   0%,
@@ -534,16 +420,13 @@ button {
     -moz-transform: skewX(0);
     -ms-transform: skewX(0);
     -o-transform: skewX(0);
-    transform: skewX(0);
-  }
+    transform: skewX(0); }
   50% {
     -webkit-transform: skewX(4deg);
     -moz-transform: skewX(4deg);
     -ms-transform: skewX(4deg);
     -o-transform: skewX(4deg);
-    transform: skewX(4deg);
-  }
-}
+    transform: skewX(4deg); } }
 
 @-ms-keyframes skew4 {
   .meteor 0%,
@@ -552,16 +435,13 @@ button {
     -moz-transform: skewX(0);
     -ms-transform: skewX(0);
     -o-transform: skewX(0);
-    transform: skewX(0);
-  }
+    transform: skewX(0); }
   .meteor 50% {
     -webkit-transform: skewX(4deg);
     -moz-transform: skewX(4deg);
     -ms-transform: skewX(4deg);
     -o-transform: skewX(4deg);
-    transform: skewX(4deg);
-  }
-}
+    transform: skewX(4deg); } }
 
 @-o-keyframes skew4 {
   0%,
@@ -570,16 +450,13 @@ button {
     -moz-transform: skewX(0);
     -ms-transform: skewX(0);
     -o-transform: skewX(0);
-    transform: skewX(0);
-  }
+    transform: skewX(0); }
   50% {
     -webkit-transform: skewX(4deg);
     -moz-transform: skewX(4deg);
     -ms-transform: skewX(4deg);
     -o-transform: skewX(4deg);
-    transform: skewX(4deg);
-  }
-}
+    transform: skewX(4deg); } }
 
 @keyframes skew4 {
   0%,
@@ -588,16 +465,13 @@ button {
     -moz-transform: skewX(0);
     -ms-transform: skewX(0);
     -o-transform: skewX(0);
-    transform: skewX(0);
-  }
+    transform: skewX(0); }
   50% {
     -webkit-transform: skewX(4deg);
     -moz-transform: skewX(4deg);
     -ms-transform: skewX(4deg);
     -o-transform: skewX(4deg);
-    transform: skewX(4deg);
-  }
-}
+    transform: skewX(4deg); } }
 
 @-webkit-keyframes observing {
   0%,
@@ -606,33 +480,28 @@ button {
     -moz-transform: skewX(0);
     -ms-transform: skewX(0);
     -o-transform: skewX(0);
-    transform: skewX(0);
-  }
+    transform: skewX(0); }
   10%,
   15% {
     -webkit-transform: skewX(-4deg);
     -moz-transform: skewX(-4deg);
     -ms-transform: skewX(-4deg);
     -o-transform: skewX(-4deg);
-    transform: skewX(-4deg);
-  }
+    transform: skewX(-4deg); }
   25%,
   50% {
     -webkit-transform: skewX(-4deg) skewY(4deg);
     -moz-transform: skewX(-4deg) skewY(4deg);
     -ms-transform: skewX(-4deg) skewY(4deg);
     -o-transform: skewX(-4deg) skewY(4deg);
-    transform: skewX(-4deg) skewY(4deg);
-  }
+    transform: skewX(-4deg) skewY(4deg); }
   55%,
   70% {
     -webkit-transform: skewX(-4deg);
     -moz-transform: skewX(-4deg);
     -ms-transform: skewX(-4deg);
     -o-transform: skewX(-4deg);
-    transform: skewX(-4deg);
-  }
-}
+    transform: skewX(-4deg); } }
 
 @-moz-keyframes observing {
   0%,
@@ -641,33 +510,28 @@ button {
     -moz-transform: skewX(0);
     -ms-transform: skewX(0);
     -o-transform: skewX(0);
-    transform: skewX(0);
-  }
+    transform: skewX(0); }
   10%,
   15% {
     -webkit-transform: skewX(-4deg);
     -moz-transform: skewX(-4deg);
     -ms-transform: skewX(-4deg);
     -o-transform: skewX(-4deg);
-    transform: skewX(-4deg);
-  }
+    transform: skewX(-4deg); }
   25%,
   50% {
     -webkit-transform: skewX(-4deg) skewY(4deg);
     -moz-transform: skewX(-4deg) skewY(4deg);
     -ms-transform: skewX(-4deg) skewY(4deg);
     -o-transform: skewX(-4deg) skewY(4deg);
-    transform: skewX(-4deg) skewY(4deg);
-  }
+    transform: skewX(-4deg) skewY(4deg); }
   55%,
   70% {
     -webkit-transform: skewX(-4deg);
     -moz-transform: skewX(-4deg);
     -ms-transform: skewX(-4deg);
     -o-transform: skewX(-4deg);
-    transform: skewX(-4deg);
-  }
-}
+    transform: skewX(-4deg); } }
 
 @-ms-keyframes observing {
   .meteor 0%,
@@ -676,33 +540,28 @@ button {
     -moz-transform: skewX(0);
     -ms-transform: skewX(0);
     -o-transform: skewX(0);
-    transform: skewX(0);
-  }
+    transform: skewX(0); }
   .meteor 10%,
   .meteor 15% {
     -webkit-transform: skewX(-4deg);
     -moz-transform: skewX(-4deg);
     -ms-transform: skewX(-4deg);
     -o-transform: skewX(-4deg);
-    transform: skewX(-4deg);
-  }
+    transform: skewX(-4deg); }
   .meteor 25%,
   .meteor 50% {
     -webkit-transform: skewX(-4deg) skewY(4deg);
     -moz-transform: skewX(-4deg) skewY(4deg);
     -ms-transform: skewX(-4deg) skewY(4deg);
     -o-transform: skewX(-4deg) skewY(4deg);
-    transform: skewX(-4deg) skewY(4deg);
-  }
+    transform: skewX(-4deg) skewY(4deg); }
   .meteor 55%,
   .meteor 70% {
     -webkit-transform: skewX(-4deg);
     -moz-transform: skewX(-4deg);
     -ms-transform: skewX(-4deg);
     -o-transform: skewX(-4deg);
-    transform: skewX(-4deg);
-  }
-}
+    transform: skewX(-4deg); } }
 
 @-o-keyframes observing {
   0%,
@@ -711,33 +570,28 @@ button {
     -moz-transform: skewX(0);
     -ms-transform: skewX(0);
     -o-transform: skewX(0);
-    transform: skewX(0);
-  }
+    transform: skewX(0); }
   10%,
   15% {
     -webkit-transform: skewX(-4deg);
     -moz-transform: skewX(-4deg);
     -ms-transform: skewX(-4deg);
     -o-transform: skewX(-4deg);
-    transform: skewX(-4deg);
-  }
+    transform: skewX(-4deg); }
   25%,
   50% {
     -webkit-transform: skewX(-4deg) skewY(4deg);
     -moz-transform: skewX(-4deg) skewY(4deg);
     -ms-transform: skewX(-4deg) skewY(4deg);
     -o-transform: skewX(-4deg) skewY(4deg);
-    transform: skewX(-4deg) skewY(4deg);
-  }
+    transform: skewX(-4deg) skewY(4deg); }
   55%,
   70% {
     -webkit-transform: skewX(-4deg);
     -moz-transform: skewX(-4deg);
     -ms-transform: skewX(-4deg);
     -o-transform: skewX(-4deg);
-    transform: skewX(-4deg);
-  }
-}
+    transform: skewX(-4deg); } }
 
 @keyframes observing {
   0%,
@@ -746,84 +600,63 @@ button {
     -moz-transform: skewX(0);
     -ms-transform: skewX(0);
     -o-transform: skewX(0);
-    transform: skewX(0);
-  }
+    transform: skewX(0); }
   10%,
   15% {
     -webkit-transform: skewX(-4deg);
     -moz-transform: skewX(-4deg);
     -ms-transform: skewX(-4deg);
     -o-transform: skewX(-4deg);
-    transform: skewX(-4deg);
-  }
+    transform: skewX(-4deg); }
   25%,
   50% {
     -webkit-transform: skewX(-4deg) skewY(4deg);
     -moz-transform: skewX(-4deg) skewY(4deg);
     -ms-transform: skewX(-4deg) skewY(4deg);
     -o-transform: skewX(-4deg) skewY(4deg);
-    transform: skewX(-4deg) skewY(4deg);
-  }
+    transform: skewX(-4deg) skewY(4deg); }
   55%,
   70% {
     -webkit-transform: skewX(-4deg);
     -moz-transform: skewX(-4deg);
     -ms-transform: skewX(-4deg);
     -o-transform: skewX(-4deg);
-    transform: skewX(-4deg);
-  }
-}
+    transform: skewX(-4deg); } }
 
 @-webkit-keyframes halo {
   0%,
   100% {
-    opacity: 1;
-  }
+    opacity: 1; }
   50% {
-    opacity: .5;
-  }
-}
+    opacity: .5; } }
 
 @-moz-keyframes halo {
   0%,
   100% {
-    opacity: 1;
-  }
+    opacity: 1; }
   50% {
-    opacity: .5;
-  }
-}
+    opacity: .5; } }
 
 @-ms-keyframes halo {
   .meteor 0%,
   .meteor 100% {
-    opacity: 1;
-  }
+    opacity: 1; }
   .meteor 50% {
-    opacity: .5;
-  }
-}
+    opacity: .5; } }
 
 @-o-keyframes halo {
   0%,
   100% {
-    opacity: 1;
-  }
+    opacity: 1; }
   50% {
-    opacity: .5;
-  }
-}
+    opacity: .5; } }
 
 @keyframes halo {
   0%,
   100% {
-    opacity: 1;
-  }
+    opacity: 1; }
   50% {
-    opacity: .5;
-  }
-}
+    opacity: .5; } }
 
 .planetary {
-  background: #606060;
-}
+  background: #606060; }
