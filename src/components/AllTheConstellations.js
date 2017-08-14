@@ -17,7 +17,7 @@ class AllTheConstellations extends Component {
       <div className="stars">
         <div className="stars2"></div>
       <div className="twinkling">
-        <div className='center-items'>
+        
         <div className='mainMap' > 
         <div  id='Aries' className='Leo2'></div>
         <div  id='Taurus' className='Cancer2' ></div>
@@ -53,7 +53,7 @@ class AllTheConstellations extends Component {
        
       </div>
       </div>
-      </div>
+      
       <Nav />
       </div>
       
