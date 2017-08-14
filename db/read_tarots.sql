@@ -1,1 +1,1 @@
-select * from tarot
+select * from tarot;
