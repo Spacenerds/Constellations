@@ -2,66 +2,62 @@ import React, { Component } from 'react';
 import './Horoscope.css'
 
 class Icons extends Component {
-    
-    myfunction() {
-        console.log("CLICKED");
-  }
+    constructor(props){
+        super(props);
+        this.state = {
+        json: {},
+        getContent: false
 
-  constructor(props){
-    super(props);
-    this.state = {
-      json: {},
-      getContent: false
-
+        }
+        this.displayContent = this.displayContent.bind(this)
+        this.getHoroscope = this.getHoroscope.bind(this)
+        this.closeHoroscope = this.closeHoroscope.bind(this)
     }
-    this.displayContent = this.displayContent.bind(this)
-    this.getHoroscope = this.getHoroscope.bind(this)
-    this.closeHoroscope = this.closeHoroscope.bind(this)
-}
 
-componentWillMount () {
-    const URL = 'https://aztro.herokuapp.com/?sign=aries&day=today';
+    componentWillMount () {
+        const URL = 'https://aztro.herokuapp.com/?sign=aries&day=today';
 
-    fetch(URL, {
-        method: 'POST'
-    }).then(response => response.json())
-    .then(json => { this.setState({json}); });
-} 
+        fetch(URL, {
+            method: 'POST'
+        }).then(response => response.json())
+        .then(json => { this.setState({json}); });
+    } 
 
-getHoroscope() {
-    this.setState( { getContent: true })  
-}
+    getHoroscope() {
+        this.setState( { getContent: true })  
+    }
 
-closeHoroscope() {
-    this.setState( { getContent: false }) 
-   
+    closeHoroscope() {
+        this.setState( { getContent: false }) 
     
-}
+        
+    }
 
-displayContent() {
-    return (
-        <div className="horoscope-container">
-            <div className="content-style">
-                <div className="row-one">
-                    Current Date: {this.state.json.current_date} <br />
-                    Compatibility: {this.state.json.compatibility} <br />
-                    Lucky Number: {this.state.json.lucky_number} <br />
+    displayContent() {
+        return (
+            <div className="horoscope-container">
+                <h1>{this.state.json.sign}</h1>
+                <div className="content-style">
+                    <div className="row-one">
+                        Current Date: {this.state.json.current_date} <br />
+                        Compatibility: {this.state.json.compatibility} <br />
+                        Lucky Number: {this.state.json.lucky_number} <br />
+                    </div>
+                    <div>
+                    Lucky Time: {this.state.json.lucky_time} <br />
+                    Color: {this.state.json.color} <br />
+                    Date Range: {this.state.json.date_range} <br />
+                    </div>
                 </div>
-                <div>
-                Lucky Time: {this.state.json.lucky_time} <br />
-                Color: {this.state.json.color} <br />
-                Date Range: {this.state.json.date_range} <br />
+                <div className="mood">
+                    Mood: {this.state.json.mood} <br />
                 </div>
+                <div className="horor-description">
+                    Description: {this.state.json.description} <br />
+                </div>
+                <button onClick={ this.closeHoroscope }>close</button>
             </div>
-            <div className="mood">
-                Mood: {this.state.json.mood} <br />
-            </div>
-            <div className="horor-description">
-                Description: {this.state.json.description} <br />
-            </div>
-            <button onClick={ this.closeHoroscope }>close</button>
-        </div>
-    )
+        )
 }
     render(){
         console.log(this.state)

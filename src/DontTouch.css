@@ -38,16 +38,13 @@ http://www.Mkrtchyan.zz.mu
     z-index: 0;
     height: 100vh;
     width: 100vw; }
-  .star-cont .twinkling {
-    background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-    z-index: 1;
+  .star-cont .stars2 {
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index: 0;
     height: 100vh;
     width: 100vw;
-    -moz-animation: move-twink-back 800s linear infinite;
-    -ms-animation: move-twink-back 800s linear infinite;
-    -o-animation: move-twink-back 800s linear infinite;
-    -webkit-animation: move-twink-back 800s linear infinite;
-    animation: move-twink-back 800s linear infinite; }
+    animation: App-logo-spin infinite 500s linear;
+    overflow: hidden; }
 
 .Taurus {
   background-image: url("./images/Taurus.png");
@@ -378,9 +375,22 @@ http://www.Mkrtchyan.zz.mu
   z-index: 1; }
 
 .display_Box {
-  height: 80vh;
+  height: 40vh;
   width: 45vw;
   position: absolute;
   right: 0px;
-  top: 150px;
+  top: 25vh;
   background-color: transparent; }
+
+.info_Box {
+  height: auto;
+  width: 35vw;
+  border-radius: 5px;
+  padding: 40px;
+  text-align: center; }
+
+.zodiac-title {
+  font-size: 50px;
+  position: absolute;
+  left: 5vw;
+  z-index: 200; }
