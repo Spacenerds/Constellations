@@ -136,7 +136,6 @@ class PickACard extends Component {
                         <img className="card pickCard5 turnCompatible" src={cardback} alt='tarot card' />
                     </div>
                 </div>
-                <p>On click of div (looks like back of card), randomly generate a number between 1 and 22, then use that ID to get the card. Flip the div card over to reveal it</p>
             </div>
         );
     }
