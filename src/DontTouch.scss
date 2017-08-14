@@ -347,14 +347,16 @@ http://www.Mkrtchyan.zz.mu
   left: 10vw;
   top: 20vh;
   width: 567px;
-  height: 602px;
+  height: 50vh;
   z-index: 1;
+  display: block;
+
 }
 
   .display_Box {
-    height: 40vh;
+    height: 30vh;
     width: 45vw;
-    
+    display: block;
     position: absolute;
     right: 0px;
     top: 25vh;
@@ -613,7 +615,7 @@ http://www.Mkrtchyan.zz.mu
   background-image: url("./images/mainMap.png");
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
+  // position: absolute;
   left: 15vw;
   right: 15vw;
   top: 10vh;
@@ -621,23 +623,26 @@ http://www.Mkrtchyan.zz.mu
   height: 50vh;
   z-index: 1;
   display: block;
+  padding-top: 10vh;
 }
 
-.info_Box{
+.info_Box2{
     height: auto;
-    width: 35vw;
+    width: 65vw;
     background-color: rgba($moon, 0.75) ;
     border-radius: 5px;
     padding: 40px;
     text-align: center;
     
   }
-  .display_Box {
+  .display_Box2 {
     height: 40vh;
-    width: 45vw;
+    width: 65vw;
     display: block;
-    position: absolute;
-    right: 0px;
-    top: 25vh;
+    text-align: center;
+    // position: absolute;
+    // right: 16vw;
+    // left: 16vw;
+    // top: 55vh;
     background-color: transparent;
 }

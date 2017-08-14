@@ -17,7 +17,7 @@ class AllTheConstellations extends Component {
       <div className="stars">
         <div className="stars2"></div>
       <div className="twinkling">
-        
+        <div className='display_Box2'>
         <div className='mainMap' > 
         <div  id='Aries' className='Leo2'></div>
         <div  id='Taurus' className='Cancer2' ></div>
@@ -42,8 +42,8 @@ class AllTheConstellations extends Component {
         <div id='Pisces' className='Virgo2'></div>
         <div id='Pisces' className='Hydra'></div>
         </div>
-      <div className='display_Box'>
-        <div className='info_Box'> 
+      
+        <div className='info_Box2'> 
             <img src="https://www.horoscopedates.com/img/icon_aries.png" alt=""/>
             <h1>ARIES</h1>
             <span> 21 March – 20 That temperamental trait of individuals born with the Sun in the element of Fire is best seen in a young Aries. They are dynamic and full of energy, often forgetting to slow down, look into the past for some answers and learn from their experiences. Filled with enthusiasm and childish, an Aries is a true leader that will be able to spark your inner fire in no time. When active enough and focused on ways to focus their energy on their true goals, these people are representatives of Fire in its purest and controlled form. </span>
