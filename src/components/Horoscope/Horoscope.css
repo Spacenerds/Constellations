@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Cantarell:400,700');
 
 .inputf {
     background: transparent;
@@ -63,6 +64,37 @@
 
 }
 
+.horoscope-container {
+    font-family: 'Cantarell', sans-serif;
+    border: 2px white solid;
+    margin: 10px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.content-style {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+.horor-description {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.row-one {
+    display: 'flex';
+    padding-right: 40px;
+}
+
+.mood {
+    
+    display: flex;
+    justify-content: 'center';
+    font-size: 35px;
+}
 
 
 

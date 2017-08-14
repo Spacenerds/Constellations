@@ -14,15 +14,17 @@ class Nav extends Component{
 
     };
 
+    
 
     render(){ 
+        
         return(
-            <Menu styles={ styles } pageWrapId={ "page-wrap" } >
-                <Link to="/" id="home" className="hvr-pulse" onClick={this.setState.isOpen = true}>Home</Link>
-                <Link to="/events" id="home" className="hvr-pulse" onClick="close">Events</Link>
-                <Link to="/constellations" id="home" className="hvr-pulse" onClick="close">Constellations</Link>
-                <Link to="/tarot" id="home" className="hvr-pulse" onClick="close">Tarot</Link>
-                <Link to="/horoscope" oneClick="close" id="home" className="hvr-pulse" onClick="close">Horoscope</Link>
+            <Menu isOpen={ false } styles={ styles } pageWrapId={ "page-wrap" } >
+                <Link to="/" id="home" className="hvr-pulse" isOpen ={ false }  >Home</Link>
+                <Link to="/events" id="home" className="hvr-pulse" isOpen ={ false }  >Events</Link>
+                <Link to="/constellations" id="home" className="hvr-pulse" isOpen ={ false }  >Constellations</Link>
+                <Link to="/tarot" id="home" className="hvr-pulse" isOpen ={ false }  >Tarot</Link>
+                <Link to="/horoscope" id="home" className="hvr-pulse" isOpen ={ false }  >Horoscope</Link>
             </Menu>
         );
     }

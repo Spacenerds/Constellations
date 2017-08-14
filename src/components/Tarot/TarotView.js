@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import PickACard from './PickACard'
-import Nav from '.././Nav';
-
 
 class TarotView extends Component {
 

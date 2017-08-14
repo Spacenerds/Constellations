@@ -1,13 +1,24 @@
 import React, { Component } from 'react';
-import BurgerMenu from 'react-burger-menu';
 import Icons from './Icons';
-import {FormGroup, FormControl, InputGroup, Glyphicon} from 'react-bootstrap';
 import './Horoscope.css'
-import Nav from '.././Nav';
 import Background from './hororbg.jpg';
 
 class Horoscope extends Component {
-    
+    constructor(props){
+        super(props);
+        this.state = {
+          json: {}
+        }
+    }
+
+    componentDidMount () {
+        const URL = 'https://aztro.herokuapp.com/?sign=aries&day=today';
+        fetch(URL, {
+            method: 'POST'
+        }).then(response => response.json())
+        .then(json => { this.setState({json}); });
+    }
+
     render(){
         return(
             <div style={styles.itemsStyles}>
