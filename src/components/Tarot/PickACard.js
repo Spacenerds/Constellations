@@ -37,6 +37,7 @@ class PickACard extends Component {
         this.dealCards = this.dealCards.bind(this);
     }
     componentDidMount(){
+
         this.dealCards();
         this.setCards();
     }
