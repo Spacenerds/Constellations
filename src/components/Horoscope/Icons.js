@@ -1,38 +1,45 @@
 import React, { Component } from 'react';
 import aquarius from './Icons/aquarius.svg'
 import {FormGroup, FormControl, InputGroup, Glyphicon} from 'react-bootstrap';
+import './Horoscope.css'
 
 class Icons extends Component {
+    
+    myfunction() {
+        console.log("CLICKED");
+  }
+  
     render(){
+  
         return(
-            <div style={styles.svgsList}>
-                <img style={styles.svg} src={require ("./Icons/aries.svg")} />
-                <img style={styles.svg} src={require ("./Icons/taurus.svg")} />
-                <img style={styles.svg} src={require ("./Icons/gemini.svg")} />
-                <img style={styles.svg} src={require ("./Icons/cancer.svg")} />
-                <img style={styles.svg} src={require ("./Icons/leo.svg")} />
-                <img style={styles.svg} src={require ("./Icons/virgo.svg")} />
-                <img style={styles.svg} src={require ("./Icons/libra.svg")} />
-                <img style={styles.svg} src={require ("./Icons/scorpio.svg")} />
-                <img style={styles.svg} src={require ("./Icons/sagittarius.svg")} />
-                <img style={styles.svg} src={require ("./Icons/capricorn.svg")} />
-                <img style={styles.svg} src={require ("./Icons/aquarius.svg")} />
-                <img style={styles.svg} src={require ("./Icons/pisces.svg")} />
-                
+            <div >
+                <section style={styles.iconList}>
+                    <button className="iconbutton"><img className="iconitem animate" onClick={this.myfunction} src={require ("./Icons/aries.svg") } /></button>
+                    <img className="iconitem animate" src={require ("./Icons/taurus.svg")} />
+                    <img className="iconitem animate" src={require ("./Icons/gemini.svg")} />
+                    <img className="iconitem animate" src={require ("./Icons/cancer.svg")} />
+                    <img className="iconitem animate" src={require ("./Icons/leo.svg")} />
+                    <img className="iconitem animate" src={require ("./Icons/pisces.svg")} />
+                    <img className="iconitem animate" src={require ("./Icons/virgo.svg")} />
+                    <img className="iconitem animate" src={require ("./Icons/libra.svg")} />
+                    <img className="iconitem animate" src={require ("./Icons/scorpio.svg")} />
+                    <img className="iconitem animate" src={require ("./Icons/sagittarius.svg")} />
+                    <img className="iconitem animate" src={require ("./Icons/capricorn.svg")} />
+                    <img className="iconitem animate" src={require ("./Icons/aquarius.svg")} />
+                </section>
             </div>
-        )
+        )           
     }
 }
 
 const styles = {
-
-    svg: {
-        fill: 'none',
-        stroke: '#000',
-        strokeLinecap: 'round',
-        strokeLineJoin: 'round',
-        width: 130,
-        height: 130
+    iconList:{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        height: '100vh',
+        width: '100vw'
     }
 }
 

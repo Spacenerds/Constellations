@@ -1,33 +1,30 @@
 import React, { Component } from 'react';
+import BurgerMenu from 'react-burger-menu';
 import Icons from './Icons';
 import {FormGroup, FormControl, InputGroup, Glyphicon} from 'react-bootstrap';
-import './Search.css'
+import './Horoscope.css'
 import Nav from '.././Nav';
+import Background from './hororbg.jpg';
 
 class Horoscope extends Component {
+    
     render(){
         return(
-            <div>
+            <div style={styles.itemsStyles}>
                 <Icons />
-                <FormGroup id="search">
-                <InputGroup>
-                    <FormControl className="inputf" type="text" placeholder="Entere your birthdate" 
-                    onKeyPress={event => {
-                        if (event.key === 'Enter') {
-                            this.props.search(this.state.query)
-                        }
-                    }}/>
-                    <InputGroup.Addon onClick={() => this.props.search(this.state.query)} >
-                        <Glyphicon glyph="search"></Glyphicon>
-                    </InputGroup.Addon>
-                </InputGroup>
-                 
-        </FormGroup>
             </div>
         );
     }
 };
 
+const styles = {
+    itemsStyles: {
+        height: '100vh',
+        flexDirection: 'column',
+        backgroundImage: `url(${Background})`,
+        backgroundSize: 'cover'
+    }
+}
 
 
 export default Horoscope;
