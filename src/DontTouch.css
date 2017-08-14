@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* ============================================================================================== 
 Nick Mkrtchyan
 https://www.facebook.com/sonick.pk
@@ -6,7 +5,6 @@ http://www.Mkrtchyan.zz.mu
 ================================================================================================= */
 @import url("https://fonts.googleapis.com/css?family=Megrim");
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
-@import url("https://fonts.googleapis.com/css?family=Days+One");
 html {
   margin: 0;
   padding: 0;
@@ -68,6 +66,7 @@ button {
   border-image: linear-gradient(to top right, #fff 0%, #28E6F9 9%, #080C22 50%);
   border-image-slice: 1; }
 
+<<<<<<< HEAD
 label {
   position: absolute;
   z-index: 4; }
@@ -861,6 +860,8 @@ input:checked ~ .menu div {
 .planetary {
   background: #606060; }
 
+=======
+>>>>>>> master
 .star-cont {
   overflow: hidden; }
 

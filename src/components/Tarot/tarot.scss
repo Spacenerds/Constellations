@@ -1,9 +1,7 @@
-@import '../../main.scss';
-
 .tarot-container {
     padding-top: 40px;
     text-align: center;
-    background: url('./components/Tarot/desk.png');
+    background: url('./desk.png');
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -39,5 +37,8 @@
     .flipping {
         transform: translate(0, 20px) rotateY(90deg);
         -webkit-transform: translate(0, 20px) rotateY(90deg);
+    }
+    .roadhog {
+        display: hidden;
     }
 }

@@ -1,7 +1,5 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Megrim");
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
-@import url("https://fonts.googleapis.com/css?family=Days+One");
 html {
   margin: 0;
   padding: 0;
@@ -62,6 +60,7 @@ button {
   border: 3px solid transparent;
   border-image: linear-gradient(to top right, #fff 0%, #28E6F9 9%, #080C22 50%);
   border-image-slice: 1; }
+<<<<<<< HEAD
 
 label {
   position: absolute;
@@ -855,3 +854,5 @@ input:checked ~ .menu div {
 
 .planetary {
   background: #606060; }
+=======
+>>>>>>> master

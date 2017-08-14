@@ -4,7 +4,7 @@ import Nav from './components/Nav'
 import Sky from './components/Sky'
 
 
-import './App.css';
+
 import router from './router';
 
 

@@ -1,3 +1,83 @@
-@import 'main.scss';
-@import 'DontTouch.scss';
-@import 'components/Tarot/tarot.scss';
+@import url('https://fonts.googleapis.com/css?family=Megrim');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+// /////////////////////////////////////////////////////////////////
+// Base
+// /////////////////////////////////////////////////////////////////
+$deepspace : #080C22;
+$grey : #333542;
+$teal : #28E6F9;
+$blue : #1DAEEC;
+$dust : #606060;
+$moon : #B5B4B5;
+$lilac : #BDCAEC;
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-family:  'Megrim', Serif;
+    font-weight: normal;
+    opacity: 1;
+}
+
+button {
+    padding: 8px 70px;
+    background: rgba($deepspace, 0.75);
+    color: $blue;
+    font-family: 'Megrim', Serif;
+    font-size: 13pt;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to top right, #fff 0%, $teal 9%, $deepspace 50%);
+    border-image-slice: 1;
+}
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgba(black, 0.2);
+        font-family: 'Poiret One', sans-serif;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    button {
+        padding: 8px 70px;
+        background: rgba($deepspace, 0.75);
+        color: $blue;
+        font-family: 'Megrim', Serif;
+        font-size: 13pt;
+
+        border: 3px solid transparent;
+        border-image: linear-gradient(to top right, #fff 0%, $teal 9%, $deepspace 50%);
+        border-image-slice: 1;
+    }
