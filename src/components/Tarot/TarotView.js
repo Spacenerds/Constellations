@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import PickACard from './PickACard'
 import axios from 'axios';
 
+import Nav from '.././Nav';
+
+
 class TarotView extends Component {
     componentDidMount(){
         axios.get('/tarot').then( (response) => {
