@@ -7,16 +7,18 @@ import './Nav.css'
 class Nav extends Component{
     constructor(props){
         super(props)
-        var isMenuOpen = function(state) {
-            return state.isOpen;
-          };
-    }
 
-    
+        this.state = {
+            isOpen: false
+        }
+
+    };
+
+
     render(){ 
         return(
             <Menu styles={ styles } pageWrapId={ "page-wrap" } >
-                <Link to="/" id="home" className="hvr-pulse" onClick="close">Home</Link>
+                <Link to="/" id="home" className="hvr-pulse" onClick={this.setState.isOpen = true}>Home</Link>
                 <Link to="/events" id="home" className="hvr-pulse" onClick="close">Events</Link>
                 <Link to="/constellations" id="home" className="hvr-pulse" onClick="close">Constellations</Link>
                 <Link to="/tarot" id="home" className="hvr-pulse" onClick="close">Tarot</Link>
