@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Days+One');
 
 
 .menu-item {
-    font-family: 'Days One', sans-serif;
     color: white;
     font-weight:800;
     padding-bottom: 15px;
@@ -48,7 +46,6 @@
     }
   }
   .hvr-pulse {
-    font-family: 'Days One', sans-serif;
     color: white;
     font-weight:800;
     padding-bottom: 15px;
