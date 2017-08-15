@@ -335,7 +335,7 @@ button {
 .bottom-ground .foreground {
   position: absolute;
   width: 100vw;
-  height: 76vh;
+  height: 15vh;
   bottom: 0;
 }
 
@@ -639,6 +639,41 @@ button {
   margin-left: 27vw;
 }
 
-.planetary {
-  background: #606060;
+.draw {
+  background: #0B0D1C;
+}
+
+.draw h1 {
+  text-align: center;
+  color: white;
+}
+
+.draw #canvasConst {
+  position: relative;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+.draw .const-name-input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-family: 'Megrim', Serif;
+  width: 32vw;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 2px solid #222;
+  color: white;
+}
+
+.draw .star-backer {
+  height: 500px;
+  width: 1000px;
+  background: url("./nightplain.png");
+  position: absolute;
+  margin-left: -20px;
+  margin-top: -20px;
 }
