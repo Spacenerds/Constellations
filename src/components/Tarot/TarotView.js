@@ -13,7 +13,7 @@ class TarotView extends Component {
         }
     }
     componentDidMount(){
-        axios.get('/tarot').then( (response) => {
+        axios.get('/api/tarot').then( (response) => {
             response.data;
             this.setState({
                 tarot: response.data

@@ -5,6 +5,8 @@ import {Link} from 'react-router-dom';
 
 import Cycle from './Cycle';
 import Meteor from './Meteor';
+import LunarEclipse from './Leclipse';
+import SolarEclipse from './Seclipse';
 import Nav from '.././Nav';
 import './events.css';
 
@@ -60,7 +62,7 @@ class Events extends Component {
     render() {
         let options = {
             sectionClassName:     'section',
-            anchors:              ['types', 'cycle', 'lunareclipse', 'solareclipse', 'meteor', 'planetary', 'test'],
+            anchors:              ['cycle', 'lunareclipse', 'solareclipse', 'meteor', 'planetary', 'test'],
             scrollBar:            false,
             navigation:           true,
             verticalAlign:        false,
@@ -70,59 +72,42 @@ class Events extends Component {
         };
         
         return (
-            <SectionsContainer {...options} className="events-container">
-                <Nav /> 
-                <Section className="types">
-                 
-                    <h1>Celestial Events</h1>
-                    <h3>Types of Events</h3>
-                    <ul>
-                        <li>Lunar Cycle</li>
-                        <li>Lunar Eclipse</li>
-                        <li>Solar Eclipse</li>
-                        <li>Meteor Shower</li>
-                        <li>Planetary Event</li>
-                        <li>Comets</li>
-                        <li>Equinox/Solstice</li>
-                    </ul>
-                    <Link to="/"><button>Home</button></Link>
-                </Section>
-                <Section className="lunar-cycle">
-                    <Cycle loca={this.props.location.hash}/>
-                </Section>
-                <Section className="lunar-eclipse">
-                    <div className="moon-eclipse"></div>
-                    <div className="lunar-eclipse-text">
-                        <h2>Lunar Eclipse</h2>
-                        <h4>2017 Lunar Eclipses</h4>
-                        <p>Feb 11 - Penumbral Lunar Eclipse<br/>
-                        Best seen in: South America, eastern Canada, Europe, Africa, and West Asia</p>
-                        <p>August 7 - Partial Lunar Eclipse<br/>
-                        Best seen in: Eastern Africa, Central Asia, and Australia</p>
+            <div>
+                <div className="bottom-ground">
+                    <div className="foreground">
+                        <div className="tree1"></div>
+                        <div className="reed reed1"></div>
+                        <div className="reed reed2"></div>
+                        <div className="reed reed3"></div>
+                        <div className="tree2"></div>
+                        <div className="bush"></div>
+                        <div className="grass"></div>
                     </div>
-                </Section>
-                <Section className="solar-eclipse">
-                    <div className="se-img-container">
-                        <div className="solar-eclipse-image">
-                            <div className="sun"></div>
-                            <div className="moon"></div>
-                        </div>
-                    </div>
-                    <h2>Solar Eclipse</h2>
-                    <p>2017 solar eclipses and locations</p>
-                </Section>
-                <Section className="meteor">
-                    <Meteor />
-                </Section>
-                <Section className="planetary">
-                    <h2>Planetary Events</h2>
-                    <p>SVG animation of planets?</p>
-                    <p>uh....the events and dates?</p>
-                </Section>
-                <Section className="test-container">
-                    <canvas id="canvas" width="500" height="500" ref={(canvas) => { this.canvasRef = canvas; }}></canvas>
-                </Section>
-            </SectionsContainer>
+                </div>
+                <SectionsContainer {...options} className="events-container">
+                    <Nav /> 
+                    <Section className="lunar-cycle">
+                        <Cycle loca={this.props.location.hash}/>
+                    </Section>
+                    <Section className="lunar-eclipse">
+                        <LunarEclipse/>
+                    </Section>
+                    <Section className="solar-eclipse">
+                        <SolarEclipse />
+                    </Section>
+                    <Section className="meteor">
+                        <Meteor />
+                    </Section>
+                    <Section className="planetary">
+                        <h2>Planetary Events</h2>
+                        <p>SVG animation of planets?</p>
+                        <p>uh....the events and dates?</p>
+                    </Section>
+                    <Section className="test-container">
+                        <canvas id="canvas" width="500" height="500" ref={(canvas) => { this.canvasRef = canvas; }}></canvas>
+                    </Section>
+                </SectionsContainer>
+            </div>
         );
     }
 }
