@@ -30,7 +30,7 @@ const tarotCTRL = require('./tarotCTRL.js');
 
  }); 
 // ENDPOINTS
-app.get('/tarot',  tarotCTRL.getTarot);
+app.get('/api/tarot',  tarotCTRL.getTarot);
 
 app.get('/api/constellations/:id', constellationsCTRL.getConstel);
 app.get('/api/zodiac/:id', constellationsCTRL.getZodiac);

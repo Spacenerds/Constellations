@@ -5,14 +5,14 @@
   min-height: 100vh;
   background-size: cover;
   background-position: center; }
-  .tarot-container h1, .tarot-container h3, .tarot-container p {
+  .tarot-container h1, .tarot-container p {
     padding: 10px 30px;
     background: rgba(0, 0, 0, 0.75);
     color: white;
     width: auto;
     margin: 0;
     display: inline-block; }
-  .tarot-container h3 {
+  .tarot-container p {
     margin: 10px 0 0 0; }
   .tarot-container .card-holder {
     perspective: 700px; }
@@ -31,5 +31,16 @@
   .tarot-container .flipping {
     transform: translate(0, 20px) rotateY(90deg);
     -webkit-transform: translate(0, 20px) rotateY(90deg); }
-  .tarot-container .roadhog {
-    display: hidden; }
+  .tarot-container .meanings p {
+    margin: 0;
+    padding: 1vw;
+    background: rgba(230, 213, 157, 0.75);
+    font-size: 14px;
+    color: #000; }
+  .tarot-container .meanings div {
+    width: 17vw;
+    margin: 1vw;
+    display: inline-block; }
+  .tarot-container .meanings .meaning1, .tarot-container .meanings .meaning2, .tarot-container .meanings .meaning3, .tarot-container .meanings .meaning4, .tarot-container .meanings .meaning5 {
+    vertical-align: top;
+    opacity: 0; }
