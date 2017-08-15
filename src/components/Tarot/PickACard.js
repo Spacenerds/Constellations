@@ -39,7 +39,6 @@ class PickACard extends Component {
         this.dealCards = this.dealCards.bind(this);
     }
     componentDidMount(){
-        $('.roadhog').hide(),
         this.dealCards();
         this.setCards();
     }
@@ -100,13 +99,19 @@ class PickACard extends Component {
     pickCard(i){
         var CARDWIDTH = 120;
         console.log(this.state.cards[i], "this is the number");
+        let cake = "";
         for(let k = 0; k < this.props.tarot.length; k++){
-           if(this.props.tarot[k].relations === this.state.cards[i]){
-               console.log('yay!')
-           }
+            if(this.props.tarot[k].relations === this.state.cards[i]){
+                cake = this.props.tarot[k].meaning
+            }
+        }
+        if($('.meaning' + i + ' p').length < 1){
+            $('.meaning' + i).append('<p>' + cake + '</p>');
         }
         function turnCompatible(elem, src) {
-            $('.pickCard' + i + ' .roadhog').show();
+            $('.meaning' + i).animate({
+                'opacity': '1'
+            });
             $('.pickCard' + i + '.turnCompatible').animate({
                 width: 0,
                 marginLeft: CARDWIDTH / 2,
@@ -173,16 +178,10 @@ class PickACard extends Component {
     render() {
         return (
             <div>
-                <h3>Double click to flip your cards over</h3>
+                <p>Double click to flip your cards over</p>
                 <div className="card-holder">
                     <div className= "pickCard1 card-base" onClick={() => this.pickCard(1)}>
                         <img className="card pickCard1 turnCompatible" src={cardback} alt='tarot card' />
-                        <div className="roadhog">
-                            HIDDEN BO BIDDEN!!!
-                            <p>{this.props.tarot[0]}</p>
-                            {console.log(this.state.cards[0])}
-                            {console.log(this.props.tarot[0], "holla!")}
-                        </div>
                     </div>
                     <div className="pickCard2 card-base" onClick={() => this.pickCard(2)}>
                         <img className="card pickCard2 turnCompatible" src={cardback} alt='tarot card' />
@@ -195,6 +194,18 @@ class PickACard extends Component {
                     </div>
                     <div className="pickCard5 card-base" onClick={() => this.pickCard(5)}>
                         <img className="card pickCard5 turnCompatible" src={cardback} alt='tarot card' />
+                    </div>
+                </div>
+                <div className="meanings">
+                    <div className="meaning1">
+                    </div>
+                    <div className="meaning2">
+                    </div>
+                    <div className="meaning3">
+                    </div>
+                    <div className="meaning4">
+                    </div>
+                    <div className="meaning5">
                     </div>
                 </div>
             </div>

@@ -99,11 +99,9 @@ class Cycle extends Component {
             }
         };
     render() {
-        if(this.props.loca === "#cycle"){
-           $('#lunar-container').animate({
-               opacity: 1
-           }, 3000)
-        }
+        $('#lunar-container').animate({
+            opacity: 1
+        }, 3000)
         let nextFullMoon = {
             title: "Full Moon",
             description: "Full Moon",
@@ -113,30 +111,16 @@ class Cycle extends Component {
         }
         return (
             <div>
-                <div className="stars">
-                    <div className="star starone"></div>
-                    <div className="star startwo"></div>
-                    <div className="star starthree"></div>
-                </div>
                 <h1>Lunar Cycle</h1>
                 <div id="lunar-container">
                     <div className="tonight-moon">
                         <p>Tonight's moon</p>
-                        <h3><span id="day">11</span>/<span id="month">11</span>/<span id="year">11</span></h3>
+                        <h3><span id="month">11</span>/<span id="day">11</span>/<span id="year">11</span></h3>
                     </div>
                     <canvas id="moonCanvas" width="200px" height="200px"></canvas>
                 </div>
                 <div className="lunar-cycle-image">
                     <img src={moonphases} alt="moon phases"/>
-                    <ul>
-                        <li>Young</li>
-                        <li>Waxing Cresent</li>
-                        <li>Waxing Gibbous</li>
-                        <li>Full</li>
-                        <li>Wanning Gibbous</li>
-                        <li>Wanning Crecent</li>
-                        <li>Old</li>
-                    </ul>
                 </div>
                 <div className="lunar-text">
                     <h3>Next Full Moon</h3>

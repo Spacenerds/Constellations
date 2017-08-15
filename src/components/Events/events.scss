@@ -67,13 +67,16 @@
     ul li {
         margin-top: 10px;
         display: inline-block;
+        a {
+            color: #fff;
+        }
         &:before {
             content: '☾ ';
             margin-left: 10px;
         }
     }
     .lunar-cycle-image img {
-        width: 50vw;
+        width: 40vw;
         margin: auto;
         position: relative;
         z-index: 5;
@@ -84,11 +87,27 @@
     text-align: center;
     color: #fff;
     background: $deepspace;
+    background: linear-gradient($deepspace, #0F4367);
+    ul li {
+        margin-top: 10px;
+        list-style-type: none;
+        a {
+            color: #fff;
+        }
+        &:before {
+            content: '☽ ';
+            margin-left: 10px;
+        }
+    }
     .lunar-eclipse-text {
         position: relative;
         z-index: 5;
-        text-align: right;
-        margin-right: 50px;
+        text-align: left;
+        width: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgba(0,0,0, 0.5);
+        padding: 1px 15px 15px 15px;
     }
     .moon-eclipse {
         position: absolute;
@@ -117,6 +136,22 @@ $se-size: 15vh;
 $se-duration: 5s;
 .solar-eclipse {
     background: $blue;
+    background: linear-gradient(#0F4367, #392B42);
+    color: white;
+    h2 {
+        text-align: center;
+    }
+    ul li {
+        margin-top: 10px;
+        list-style-type: none;
+        a {
+            color: #fff;
+        }
+        &:before {
+            content: '☼ ';
+            margin-left: 10px;
+        }
+    }
     .se-img-container {
         height: 20vh;
         animation: sky $se-duration linear infinite;
@@ -124,7 +159,7 @@ $se-duration: 5s;
         @keyframes sky {
             from,
             to {
-                background: $blue;
+                background: transparent;
             }
             50% {
                 background: black;
@@ -174,11 +209,29 @@ $se-duration: 5s;
             }
         }
     }
+    .solar-description {
+        max-width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .solar-upcoming {
+        max-width: 40vw;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        h4 {
+            margin-bottom: 0;
+        }
+        p {
+            margin-top: 0px;
+        }
+    }
 }
 
-.meteor {
-    background: $moon;
-    padding-bottom: 0 !important;
+.bottom-ground{
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
     $path: "http://orion9.net/_demos/meteorRain/img/";
     /*=======================*/
     /* MIXINS
@@ -224,12 +277,13 @@ $se-duration: 5s;
     /*=======================*/
     /* SVG ELEMENTS
         /*=======================*/
-    #foreground {
-        position: relative;
+    .foreground {
+        position: absolute;
         width: 100vw;
-        height: 76vh;
+        height: 15vh;
+        bottom: 0;
     }
-    #foreground>div {
+    .foreground>div {
         bottom: 0;
         position: absolute;
         transform-origin: 50% 100%;
@@ -243,7 +297,7 @@ $se-duration: 5s;
         background-position: -100px 100%;
         @include animation("skew4 4s .2s ease-in-out infinite");
     }
-    #tree1 {
+    .tree1 {
         width: 335px;
         height: 425px;
         background: url("#{$path}tree1.svg") no-repeat;
@@ -254,76 +308,38 @@ $se-duration: 5s;
         background: url("#{$path}reed.svg") no-repeat;
         background-size: cover;
     }
-    #reed1 {
+    .reed1 {
         left: calc(15% - 335px / 2);
         width: 180px;
         height: 155px;
         @include animation("skew4 4s ease-in-out infinite");
     }
-    #reed2 {
+    .reed2 {
         left: calc(15% + 80px / 2);
         width: 200px;
         height: 180px;
         @include animation("skew4 4s .4s ease-in-out infinite");
     }
-    #reed3 {
+    .reed3 {
         left: calc(15% - 120px / 2);
         width: 220px;
         height: 200px;
         @include animation("skew4 4s .8s ease-in-out infinite");
     }
-    #tree2 {
+    .tree2 {
         width: 245px;
         height: 480px;
         background: url("#{$path}tree2.svg") no-repeat;
         right: calc(15% - 245px / 2);
         @include animation("skew1 8s 2s ease-in-out infinite");
     }
-    #bush {
+    .bush {
         right: calc(15% - 120px / 2);
         width: 210px;
         height: 135px;
         background: url("#{$path}bush.svg") no-repeat;
         background-size: cover;
         @include animation("skew4 4s .6s ease-in-out infinite");
-    }
-    #telescope {
-        width: 130px;
-        height: 150px;
-        background: url("#{$path}telescope.svg") no-repeat;
-        left: calc(50% + 45px);
-        bottom: 55px !important;
-    }
-    #girl {
-        width: 108px;
-        height: 136px;
-        background: url("#{$path}girl.svg") no-repeat;
-        left: calc(50% - 108px / 2);
-        bottom: 25px !important;
-        cursor: pointer;
-        cursor: alias;
-        pointer-events: auto !important;
-    }
-    /*=======================*/
-    /* OTHER ELEMENTS
-        /*=======================*/
-    #halo {
-        opacity: 0;
-        @include transition("opacity 1s ease-out");
-    }
-    #halo>div {
-        position: absolute;
-        width: 100%;
-        height: 450px;
-        background-color: rgba(170, 255, 230, .05);
-        bottom: -275px;
-        border-radius: 50%;
-        box-shadow: 0 0 55px 0 rgba(170, 255, 230, .1);
-        @include animation("halo 4s ease-in-out infinite");
-        animation-play-state: paused;
-    }
-    .meteorShower #halo>div {
-        animation-play-state: running;
     }
     /*=======================*/
     /* KEYFRAMES
@@ -346,35 +362,63 @@ $se-duration: 5s;
             @include transform("skewX(4deg)");
         }
     }
-    @include keyframes(observing) {
-        0%,
-        80% {
-            @include transform("skewX(0)");
-        }
-        10%,
-        15% {
-            @include transform("skewX(-4deg)");
-        }
-        25%,
-        50% {
-            @include transform("skewX(-4deg) skewY(4deg)");
-        }
-        55%,
-        70% {
-            @include transform("skewX(-4deg)")
-        }
+}
+
+.meteor {
+    background: $moon;
+    background: linear-gradient(#392B42, $deepspace);
+    position: relative;
+    color: #fff;
+    h2 {
+        text-align: center;
     }
-    @include keyframes(halo) {
-        0%,
-        100% {
-            opacity: 1;
-        }
-        50% {
-            opacity: .5;
-        }
+    canvas {
+        height: 100vh;
+        margin-left: -20px;
+        margin-top: -20px;
+        // width: 100vw;
+    }
+    .over-canvas {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        max-width: 40vw;
+        margin-left: 27vw;
     }
 }
 
-.planetary {
-    background: $dust;
+.draw {
+    background: #0B0D1C;
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    #canvasConst {
+        position: relative;
+        margin-left: -20px;
+        margin-top: -20px;
+    }
+
+    .const-name-input {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        font-family:  'Megrim', Serif;
+        width: 32vw;
+        text-align: center;
+        font-size: 18px;
+        border-bottom: 2px solid #222;
+        color: white;
+    }
+    .star-backer {
+        height: 500px;
+        width: 1000px;
+        background: url('./nightplain.png');
+        position: absolute;
+        margin-left: -20px;
+        margin-top: -20px;
+    }
 }

@@ -13,7 +13,7 @@ class TarotView extends Component {
         }
     }
     componentDidMount(){
-        axios.get('/tarot').then( (response) => {
+        axios.get('/api/tarot').then( (response) => {
             response.data;
             this.setState({
                 tarot: response.data
@@ -27,8 +27,6 @@ class TarotView extends Component {
                 <div className="pickAcard-container">
                     <PickACard tarot={this.state.tarot}/>
                 </div>
-                <p>use database call to find card description</p>
-                <p>state should probably be in the parent component?</p>
             </div>
         );
     }
