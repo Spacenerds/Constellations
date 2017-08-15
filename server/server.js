@@ -29,13 +29,11 @@ const tarotCTRL = require('./tarotCTRL.js');
     });
 
  }); 
-
-
-
 // ENDPOINTS
 app.get('/tarot',  tarotCTRL.getTarot);
 
-// app.get('/constellations/:id', constellationsCTRL.getConstellations);
+app.get('/api/constellations/:id', constellationsCTRL.getConstel);
+app.get('/api/zodiac/:id', constellationsCTRL.getZodiac);
 
 // app.get('/horoscope/:sign', horoscopeCTRL.getHoroscope);
 

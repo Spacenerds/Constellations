@@ -47,15 +47,16 @@ http://www.Mkrtchyan.zz.mu
     .stars {
         background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
         z-index: 0;
-        height: 120vh;
+        height: 150vh;
         width: 100vw;
         overflow: hidden;
         
         
     }
       .stars2 {
-        background: transparent url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+        background: transparent url('./images/stars2.png') repeat top center;
         z-index: 0;
+        transform: scaleY(-1);
         height: 100vh;
         width: 100vw;
         
@@ -95,7 +96,7 @@ http://www.Mkrtchyan.zz.mu
     -ms-transform:scale(1.25); /* IE 9 */
     -o-transform:scale(1.25); /* Opera */
      transform:scale(1.25);
-         z-index: 25;
+         z-index: 26;
 }
 }
 .Taurus {
@@ -325,7 +326,7 @@ http://www.Mkrtchyan.zz.mu
   top: 164px;
   width: 153px;
   height: 135px;
-  z-index: 2;
+  z-index: 100;
    -webkit-transition: all .5s ease; /* Safari and Chrome */
     -moz-transition: all .5s ease; /* Firefox */
     -ms-transition: all .5s ease; /* IE 9 */
@@ -343,11 +344,12 @@ http://www.Mkrtchyan.zz.mu
 }
 .Base_Layer {
   background-image: url("./images/BaseLayer.png");
+  background-repeat: no-repeat;
   position: absolute;
   left: 10vw;
   top: 20vh;
   width: 567px;
-  height: 50vh;
+  height: 86vh;
   z-index: 1;
   display: block;
 
@@ -374,70 +376,114 @@ http://www.Mkrtchyan.zz.mu
   .zodiac-title{
     color: $moon;
     font-size: 50px;
-    position: absolute;
-    left: 5vw;
-    z-index: 200;
+    position:  absolute;
+    top: 20px;
+    left: 8vw;
+    z-index: 2;
   }
 
-//   .Ursa_Minor {
-//   background-image: url("./images/UrsaMinor.png");
-//   position: absolute;
-//   left: 15px;
-//   top: 50px;
-//   width: 549px;
-//   height: 365px;
-//   z-index: 26;
-// }
-// .Leo_Minor {
-//   background-image: url("./images/LeoMinor.png");
-//   position: absolute;
-//   left: 215px;
-//   top: 323px;
-//   width: 152px;
-//   height: 100px;
-//   z-index: 25;
-// }
-// .Leo2 {
-//   background-image: url("./images/Leo2.png");
-//   position: absolute;
-//   left: 55px;
-//   top: 424px;
-//   width: 379px;
-//   height: 227px;
-//   z-index: 24;
-// }
-// .Cancer2 {
-//   background-image: url("./images/Cancer2.png");
-//   position: absolute;
-//   left: 459px;
-//   top: 406px;
-//   width: 153px;
-//   height: 234px;
-//   z-index: 23;
-// }
-// .Gemini2 {
-//   background-image: url("./images/Gemini2.png");
-//   position: absolute;
-//   left: 617px;
-//   top: 372px;
-//   width: 243px;
-//   height: 246px;
-//   z-index: 22;
-// }
-// .Taurus2 {
-//   background-image: url("./images/Taurus2.png");
-//   position: absolute;
-//   left: 839px;
-//   top: 162px;
-//   width: 447px;
-//   height: 498px;
-//   z-index: 21;
-// }
+  .Ursa_Major {
+  background-image: url("./images/UrsaMinor.png");
+  position: absolute;
+  left: 15px;
+  top: 50px;
+  width: 549px;
+  height: 305px;
+  z-index: 26;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
+}
+.Leo_Minor {
+  background-image: url("./images/LeoMinor.png");
+  position: absolute;
+  left: 215px;
+  top: 323px;
+  width: 152px;
+  height: 100px;
+  z-index: 25;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
+}
+.Leo2 {
+  background-image: url("./images/Leo2.png");
+  position: absolute;
+  left: 55px;
+  top: 424px;
+  width: 379px;
+  height: 227px;
+  z-index: 24;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
+}
+.Cancer2 {
+  background-image: url("./images/Cancer2.png");
+  position: absolute;
+  left: 459px;
+  top: 406px;
+  width: 153px;
+  height: 234px;
+  z-index: 23;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
+}
+.Gemini2 {
+  background-image: url("./images/Gemini2.png");
+  position: absolute;
+  left: 617px;
+  top: 372px;
+  width: 243px;
+  height: 246px;
+  z-index: 22;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
+}
+.Taurus2 {
+  background-image: url("./images/Taurus2.png");
+  position: absolute;
+  left: 839px;
+  top: 162px;
+  width: 447px;
+  height: 498px;
+  z-index: 21;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
+}
 .Orion {
   background-image: url("./images/Orion.png");
   position: absolute;
   left: 831px;
   top: 494px;
+  // zoom: .39;
   width: 233px;
   height: 328px;
   z-index: 20;
@@ -457,6 +503,13 @@ http://www.Mkrtchyan.zz.mu
   width: 205px;
   height: 68px;
   z-index: 19;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
 .Canis_Major {
   background-image: url("./images/CanisMajor.png");
@@ -466,6 +519,13 @@ http://www.Mkrtchyan.zz.mu
   width: 271px;
   height: 184px;
   z-index: 18;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
 .Columba {
   background-image: url("./images/Columba.png");
@@ -475,8 +535,15 @@ http://www.Mkrtchyan.zz.mu
   width: 201px;
   height: 152px;
   z-index: 17;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
-.Eredanus {
+.Eridanus {
   background-image: url("./images/Eredanus.png");
   position: absolute;
   left: 977px;
@@ -484,15 +551,29 @@ http://www.Mkrtchyan.zz.mu
   width: 391px;
   height: 466px;
   z-index: 16;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
-.Celus {
-  background-image: url("./images/Celus.png");
+.Cetus {
+  background-image: url("./images/Cetus.png");
   position: absolute;
   left: 1241px;
   top: 584px;
   width: 429px;
   height: 362px;
   z-index: 15;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
 .Perseus {
   background-image: url("./images/Perseus.png");
@@ -502,6 +583,13 @@ http://www.Mkrtchyan.zz.mu
   width: 273px;
   height: 288px;
   z-index: 14;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
 .Pegasus {
   background-image: url("./images/Pegasus.png");
@@ -511,6 +599,13 @@ http://www.Mkrtchyan.zz.mu
   width: 673px;
   height: 468px;
   z-index: 13;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
 .Cassiopeia {
   background-image: url("./images/Cassiopeia.png");
@@ -520,15 +615,29 @@ http://www.Mkrtchyan.zz.mu
   width: 309px;
   height: 154px;
   z-index: 12;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
-.Cycnus {
-  background-image: url("./images/Cycnus.png");
+.Cygnus {
+  background-image: url("./images/Cygnus.png");
   position: absolute;
   left: 1993px;
   top: 186px;
   width: 315px;
   height: 264px;
   z-index: 11;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
 .Draco {
   background-image: url("./images/Draco.png");
@@ -538,8 +647,15 @@ http://www.Mkrtchyan.zz.mu
   width: 849px;
   height: 232px;
   z-index: 10;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
-.Herculese {
+.Hercules {
   background-image: url("./images/Herculese.png");
   position: absolute;
   left: 2411px;
@@ -547,17 +663,31 @@ http://www.Mkrtchyan.zz.mu
   width: 363px;
   height: 368px;
   z-index: 9;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
-.Pisces {
-  background-image: url("./images/Pisces2.png");
+.Pisces2 {
+  background-image: url("./images/allPisces.png");
   position: absolute;
   left: 1785px;
   top: 952px;
   width: 261px;
   height: 110px;
   z-index: 8;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
-.Scopius {
+.Scorpius {
   background-image: url("./images/Scopius.png");
   position: absolute;
   left: 2459px;
@@ -565,8 +695,15 @@ http://www.Mkrtchyan.zz.mu
   width: 293px;
   height: 290px;
   z-index: 7;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
-.Libra {
+.Libra2 {
   background-image: url("./images/Libra2.png");
   position: absolute;
   left: 2763px;
@@ -574,6 +711,13 @@ http://www.Mkrtchyan.zz.mu
   width: 141px;
   height: 248px;
   z-index: 6;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
 .Corvus {
   background-image: url("./images/Corvus.png");
@@ -583,6 +727,13 @@ http://www.Mkrtchyan.zz.mu
   width: 190px;
   height: 140px;
   z-index: 5;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
 .Lupus {
   background-image: url("./images/Lupus.png");
@@ -592,8 +743,15 @@ http://www.Mkrtchyan.zz.mu
   width: 243px;
   height: 204px;
   z-index: 4;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
-.Virgo {
+.Virgo2 {
   background-image: url("./images/Virgo2.png");
   position: absolute;
   left: 2871px;
@@ -601,6 +759,13 @@ http://www.Mkrtchyan.zz.mu
   width: 444px;
   height: 302px;
   z-index: 3;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
 .Hydra {
   background-image: url("./images/Hydra.png");
@@ -610,20 +775,25 @@ http://www.Mkrtchyan.zz.mu
   width: 514px;
   height: 454px;
   z-index: 2;
+  &:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+  }
 }
 .mainMap {
   background-image: url("./images/mainMap.png");
   background-size: contain;
   background-repeat: no-repeat;
-  // position: absolute;
-  left: 15vw;
-  right: 15vw;
-  top: 10vh;
+  position: relative;
+  
   width: 100vw;
   height: 50vh;
   z-index: 1;
   display: block;
-  padding-top: 10vh;
+  margin-top: 15vh;
 }
 
 .info_Box2{
@@ -631,6 +801,9 @@ http://www.Mkrtchyan.zz.mu
     width: 65vw;
     background-color: rgba($moon, 0.75) ;
     border-radius: 5px;
+    margin-top: 5vh;
+    margin-left: 1.5vw;
+
     padding: 40px;
     text-align: center;
     
@@ -640,9 +813,19 @@ http://www.Mkrtchyan.zz.mu
     width: 65vw;
     display: block;
     text-align: center;
+    margin-left
+    :  30vh;
     // position: absolute;
     // right: 16vw;
     // left: 16vw;
     // top: 55vh;
     background-color: transparent;
 }
+  .const-cont{
+    width: 3323px;
+    height: 1248px;
+    zoom: .3866;
+  }
+  .img-size{
+    height: 25vh;
+  }

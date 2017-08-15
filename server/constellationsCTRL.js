@@ -1,9 +1,17 @@
 module.exports = {
-    getConstellations: (req, res) => {
-        const db = req.app.get('db');
-        db.get_all_zConstel().then(function(response){
-            res.status(200).send(response)
-        })
+    getZodiac: (req, res) => {
+        const dbInstance = req.app.get('db');
+        dbInstance.get_zConstel(req.params.id)
+        .then((response) =>  res.status(200).send(response))
+        .catch(error => res.status(500).send(error))
+        
+    },
+    getConstel: (req, res) => {
+        const dbInstance = req.app.get('db');
+        dbInstance.get_constel(req.params.id)
+        .then((response) =>  res.status(200).send(response))
+        .catch(error => res.status(500).send(error))  
+          
         
     }
 }
