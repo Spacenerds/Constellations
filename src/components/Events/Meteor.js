@@ -18,7 +18,7 @@ class Meteor extends Component {
             width = window.innerWidth,
             height = document.body.offsetHeight;
 
-        (height < 400) ? height = 400 : height;
+        (height < 600) ? height = 600 : height;
         background.width = width;
         background.height = height;
         function Terrain(options) {
@@ -27,12 +27,10 @@ class Meteor extends Component {
             this.terCtx = this.terrain.getContext("2d");
             this.scrollDelay = options.scrollDelay || 90;
             this.lastScroll = new Date().getTime();
-
             this.terrain.width = width;
             this.terrain.height = height;
             this.fillStyle = options.fillStyle || "#191D4C";
             this.mHeight = options.mHeight || height;
-
             // generate
             this.points = [];
 
