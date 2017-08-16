@@ -1,0 +1,46 @@
+.parent {
+    background: #060e1b;
+    color: white;
+    height: 100vh;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 100vw;
+    height: 50%;
+}
+
+.column-one {
+    width: 50%;
+    display: inline-block;
+    color: white;
+    height: 100%;
+}
+
+.column-two {
+    width: 50%;
+    display: inline-block;
+    color: white;
+    height: 100%;
+}
+
+.bottom-row {
+    color: white;
+}
+
+#stars {
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+canvas {
+    opacity: 0.5;
+    position:absolute;
+    top:0;
+    left:0;
+  }

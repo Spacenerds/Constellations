@@ -31,6 +31,7 @@ class Nav extends Component{
                 <Link to="/events" id="home" className="hvr-pulse" isOpen ={ false }  >Events</Link>
                 <Link to="/constellations" id="home" className="hvr-pulse" isOpen ={ false }  >Constellations</Link>
                 <Link to="/tarot" id="home" className="hvr-pulse" isOpen ={ false }  >Tarot</Link>
+                <Link to="/categories" id="home" className="hvr-pulse" isOpen ={ false }  >Categoriest</Link>
                 <Link to="/horoscope" id="home" className="hvr-pulse" isOpen ={ false }  >Horoscope</Link>
             </Menu>
             </div> 
