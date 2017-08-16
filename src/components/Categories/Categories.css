@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
 .parent {
+    
     background: #060e1b;
     color: white;
     height: 100vh;
@@ -14,6 +17,7 @@
 }
 
 .column-one {
+    
     width: 50%;
     display: inline-block;
     color: white;
@@ -21,6 +25,7 @@
 }
 
 .column-two {
+    font-family: 'Poiret One', cursive;
     width: 50%;
     display: inline-block;
     color: white;
