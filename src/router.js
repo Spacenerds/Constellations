@@ -9,6 +9,7 @@ import Constellations from './components/ConstellationMapping';
 import ConstellationsDos from './components/AllTheConstellations';
 import TarotView from './components/Tarot/TarotView';
 import Horoscope from './components/Horoscope/Horoscope';
+import Space from './components/Space/Space';
 
 export default(
     <Switch>
@@ -18,5 +19,6 @@ export default(
         <Route component={ConstellationsDos} path='/constellationsdos' />
         <Route component={TarotView} path='/tarot' />
         <Route component={Horoscope} path='/horoscope' />
+        <Route component={Space} path='/space' />
     </Switch>
 )
