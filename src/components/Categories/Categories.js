@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Image } from 'react';
 import './Categories.css';
+
 
 class Categories extends Component{
     componentDidMount() {
@@ -89,22 +90,27 @@ class Categories extends Component{
     render(){
         return(
             <div className="parent">
-                <canvas id="canvas"></canvas>
+                
                 <div className="row">
                     <div className="column-one">
                         <h1> Zodiac </h1>
+                        <img className="horor-img" src={require ("./horoscope.png")}/>
                     </div>
 
                     <div className="column-two">
                         <h1>Events</h1>
+                        <img className="horor-img" src={require ("./moon.png")}/>
+                    </div>
+
+                    <div className="column-three">
+                        <h1>Constellations</h1>
+                        <img className="horor-img" src={require ("./constellations.png")}/>
                     </div>
 
                 </div>
-
-                <div className="bottom-row">
-                    <h1>Constellations</h1>
-                </div>
-                
+                <div className="bottom-img">
+                 </div>
+                <canvas id="canvas"></canvas>
             </div>
         )
     }

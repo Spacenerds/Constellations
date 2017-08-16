@@ -1,35 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
 .parent {
-    
     background: #060e1b;
     color: white;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 
 .row {
     display: flex;
     flex-direction: row;
     color: white;
+    padding: 100px 30px ;
     width: 100vw;
-    height: 50%;
+    height: 110vh;
 }
 
 .column-one {
-    
-    width: 50%;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: 'center';
+    align-items: 'center';
+    align-content: 'center';
     color: white;
-    height: 100%;
+    width: 33%;
+}
+
+.column-one h1 {
+    align-self: center;
+    text-align: 'center';
 }
 
 .column-two {
-    font-family: 'Poiret One', cursive;
-    width: 50%;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: 'center';
+    align-items: 'center';
+    align-content: 'center';
     color: white;
-    height: 100%;
+    width: 33%;
+}
+
+.column-three {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: 'center';
+    align-items: 'center';
+    align-content: 'center';
+    color: white;
+    width: 33%;
 }
 
 .bottom-row {
@@ -43,9 +66,24 @@
     height: 100vh;
 }
 
+.horor-img {
+    width: 400px;
+    height: 400px;
+}
+
+.bottom-img {
+    background-image: url("./bottom-img.png");
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
 canvas {
     opacity: 0.5;
-    position:absolute;
+    position: absolute;
     top:0;
     left:0;
   }
