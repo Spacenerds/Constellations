@@ -1,12 +1,11 @@
-
+.side-menu {
+  z-index: 5;
+}
 
 .menu-item {
-    color: white;
     font-weight:800;
     padding-bottom: 15px;
     padding-top: 15px;
-    
-
 }
 
 .menu-item:hover .menu-item:focus .menu-item:item{ 

@@ -11,6 +11,7 @@ import TarotView from './components/Tarot/TarotView';
 import Categories from './components/Categories/Categories';
 import Horoscope from './components/Horoscope/Horoscope';
 import Space from './components/Space/Space';
+import Solar from './components/Solar/Solar';
 
 export default(
     <Switch>
@@ -22,5 +23,6 @@ export default(
         <Route component={Categories} path='/categories' />
         <Route component={Horoscope} path='/horoscope' />
         <Route component={Space} path='/space' />
+        <Route component={Solar} path='/solar' />
     </Switch>
 )
