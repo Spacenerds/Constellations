@@ -29,7 +29,8 @@ class Nav extends Component{
             <Menu isOpen={ false } styles={ styles } pageWrapId={ "page-wrap" } >
                 <Link to="/" id="home" className="hvr-pulse" isOpen ={ false }  >Home</Link>
                 <Link to="/events" id="home" className="hvr-pulse" isOpen ={ false }  >Events</Link>
-                <Link to="/constellations" id="home" className="hvr-pulse" isOpen ={ false }  >Constellations</Link>
+                <Link to="/constellationsDos" id="home" className="hvr-pulse" isOpen ={ false }  >Constellations</Link>
+                 <Link to="/constellations" id="home" className="hvr-pulse" isOpen ={ false }  >Zodiac</Link>
                 <Link to="/tarot" id="home" className="hvr-pulse" isOpen ={ false }  >Tarot</Link>
                 <Link to="/horoscope" id="home" className="hvr-pulse" isOpen ={ false }  >Horoscope</Link>
             </Menu>
