@@ -50,6 +50,7 @@ class Nav extends Component{
 
 const styles = {
     bmBurgerButton: {
+        zIndex: '5',
         position: 'fixed',
         width: '36px',
         height: '30px',
