@@ -7,7 +7,7 @@ class Solar extends Component {
     render() {
         return(
             <div>
-                <div id="container">			
+                <div id="container" className="solar-parent">			
                     <div id="solarsystem">
                         <ol>
                             <li>Sun
