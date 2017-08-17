@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Megrim");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poiret One', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2 {
+  font-family: 'Megrim', Serif;
+  font-weight: normal;
+  opacity: 1; }
+
+button {
+  padding: 8px 70px;
+  background: rgba(8, 12, 34, 0.75);
+  color: #1DAEEC;
+  font-family: 'Megrim', Serif;
+  font-size: 13pt;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to top right, #fff 0%, #28E6F9 9%, #080C22 50%);
+  border-image-slice: 1; }
+
+.moon-distance-container {
+  text-align: center; }
+  .moon-distance-container .md-back {
+    background: #080C22;
+    background: url("http://a1star.com/images/star-tile-far-away.jpg") repeat center;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100vw; }
+    .moon-distance-container .md-back .earth-img {
+      margin-left: auto;
+      margin-right: auto; }
+    .moon-distance-container .md-back .hint p {
+      background: rgba(255, 255, 255, 0.75);
+      padding: 10px;
+      border-radius: 10px;
+      width: 200px;
+      margin-left: 100px; }
+  .moon-distance-container .md-middle {
+    position: fixed;
+    z-index: 1;
+    width: 100vw; }
+    .moon-distance-container .md-middle .astronaut-img {
+      margin-left: auto;
+      margin-right: auto;
+      height: 100px;
+      margin-top: 20vh;
+      animation: astronaut 5s infinite; }
+
+@keyframes astronaut {
+  0% {
+    margin-top: 5%;
+    padding-left: 3%;
+    padding-right: 0%; }
+  25% {
+    margin-top: 4%; }
+  50% {
+    margin-top: 5%;
+    padding-left: 0;
+    padding-right: 3%; }
+  75% {
+    margin-top: 4%; }
+  100% {
+    margin-top: 5%;
+    padding-left: 3%;
+    padding-right: 0%; } }
+  .moon-distance-container .md-front {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100vw; }
+    .moon-distance-container .md-front h1 {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 30px;
+      color: white;
+      margin-top: 32vh; }
+    .moon-distance-container .md-front .distance-tracker {
+      left: 20px;
+      top: 30vh;
+      background: red;
+      border-radius: 45px;
+      height: 75px;
+      width: 75px;
+      position: fixed;
+      padding: 17px; }
+      .moon-distance-container .md-front .distance-tracker .miles {
+        font-size: 20px;
+        color: white; }
+      .moon-distance-container .md-front .distance-tracker p {
+        margin: 0; }
