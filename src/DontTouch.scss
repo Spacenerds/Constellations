@@ -59,22 +59,23 @@ http://www.Mkrtchyan.zz.mu
         transform: scaleY(-1);
         height: 100vh;
         width: 100vw;
+        margin-top: -20vh;
         
         animation: App-logo-spin infinite 500s linear;
         overflow: hidden;
       }
-    // .twinkling {
-    //     background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-    //     z-index: 1;
-    //     height: 100vh;
-    //     width: 100vw;
-    //     -moz-animation: move-twink-back 800s linear infinite;
-    //     -ms-animation: move-twink-back 800s linear infinite;
-    //     -o-animation: move-twink-back 800s linear infinite;
-    //     -webkit-animation: move-twink-back 800s linear infinite;
-    //     animation: move-twink-back 800s linear infinite;
+    .twinkling {
+        background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+        z-index: 1;
+        height: 100vh;
+        width: 100vw;
+        -moz-animation: move-twink-back 800s linear infinite;
+        -ms-animation: move-twink-back 800s linear infinite;
+        -o-animation: move-twink-back 800s linear infinite;
+        -webkit-animation: move-twink-back 800s linear infinite;
+        animation: move-twink-back 800s linear infinite;
         
-    // }
+    }
 }
 
 .Aries {

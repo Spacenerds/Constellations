@@ -9,10 +9,12 @@ class Home extends Component {
     render() {
          
         return (
-            
+            <div className="div1">
             <div className="homepage">
                 
+                
                 <div className="logo">
+                    
                     <svg className="topSVG">
                         {/*a*/}
                         <circle className="logo-star" cx={9} cy={112} r={1} />
@@ -53,7 +55,7 @@ class Home extends Component {
                         <circle className="logo-star" cx={374} cy={147} r={1} />
                         <circle className="logo-star" cx={337} cy={203} r={1} />
                     </svg>
-
+ 
                     <svg version="1.1" className="bottomSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1163 578">
                         <path className="logo-lines" d="M399.4,65.7c-16.3-16.9-31.5-20.6-46.4-20.6c-23.5,0-49.4,13.9-49.4,43.1c0,22.6,14.9,32.8,33.5,40.8
                         c6.3,2.7,13.3,5.3,20.6,8c35.8,12.9,52.7,31.2,52.7,59c0,6.6-1.7,15.9-4,21.2c-11.6,27.5-33.5,34.2-56,34.2
@@ -91,8 +93,28 @@ class Home extends Component {
                         <polyline className="logo-lines" points="871.1,363.8 850.2,433.1 868.9,509 "/>
                     </svg>
                 </div>
-               
+              <div className="stars3"></div>
             </div>
+            <div className="show_Box">
+                <div className="center_box"> 
+                    <Link to="/tarot" >
+            <div  className="tarot_div">
+                 <div className=' background'> 
+                <span className='text'>Go to Tarot Card Reading</span>
+                 </div> 
+            </div>
+            </Link> 
+            <Link to="/horoscope" >
+            <div className="horoscope_div">
+                <div className=' background'> 
+                <span className='text'>Go to Horoscope</span>
+                 </div> 
+                
+                </div>
+                </Link>
+             </div>
+            </div>
+             </div>
         );
     }
 }
