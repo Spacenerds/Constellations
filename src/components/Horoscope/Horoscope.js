@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Icons from './Icons';
+import Icons from './IconsList';
 import './Horoscope.css'
 import Background from './hororbg.jpg';
 import './Search.css'
