@@ -51,15 +51,16 @@
     .stars3 {
         background: transparent url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
         z-index: 0;
-        transform: scaleX(-1);
-        height: 200vh;
+        
+        height:300vh;
         width: 100vw;
        
         margin-top: -50vh;
         
-        animation: App-logo-spin infinite 500s linear;
+        animation: App-logo-spin infinite 700s linear;
         overflow: hidden;
       }
+    
 }
 
 @-webkit-keyframes starlight {
@@ -69,7 +70,7 @@
     }
     100% {
         stroke: $moon;
-        stroke-dashoffset: 0;
+        stroke-dashoffset: 1;
     }
 }
 
@@ -79,13 +80,102 @@
         stroke: $moon;
     }
     50% {
-        opacity: 0;
+        opacity: 1;
     }
     90% {
-        stroke-width: 1;
+        stroke-width: 3;
     }
     100% {
         stroke: $moon;
         stroke-dashoffset: 0;
     }
+}
+.show_Box{
+    position: absolute;
+    top: 40vh;
+    width: 100vw;
+    
+    height: 60vh;
+
+}
+.tarot_div{
+    display: inline-block;
+    width: 29vw;
+    height: 50vh;
+    background-image: url(./back.png);
+    background-size: contain;
+    margin: 0px 80px 0px 20px;
+    border-radius: 5px;
+    z-index: 7;
+    &:hover .background {
+        
+        visibility: visible;
+        background-color: rgba($moon, 0.55);
+        font-size: 30px;
+        color: black;
+        -webkit-transition: all .5s ease; /* Safari and Chrome */
+    -moz-transition: all .5s ease; /* Firefox */
+    -ms-transition: all .5s ease; /* IE 9 */
+    -o-transition: all .5s ease; /* Opera */
+    transition: all .5s ease;
+            
+        
+    }
+    
+
+}
+.background{
+    background-color: rgba($moon, 0.75);
+    display: inline-block;
+    height: 50vh;
+    width: 29vw;
+    border-radius: 5px;
+    z-index: 1;
+    display: inline-block;
+    visibility: hidden;
+     &.text{
+        display: inline-block;
+        visibility: visible;
+             vertical-align: middle;
+            line-height: 50vh;
+            font-size: 40px;
+        color: black;
+        border-radius: 5px;
+        // visibility: hidden;
+       
+        
+        z-index: 7;
+}
+   
+}
+
+.horoscope_div{
+    display: inline-block;
+    width: 29vw;
+    height: 50vh;
+    background-image: url(./hororbg.jpg);
+    background-size: cover;
+    background-position-x: 50%;
+    margin: 0px 20px 0px 80px;
+    border-radius: 5px;
+    &:hover .background {
+        
+        visibility: visible;
+        background-color: rgba($moon, 0.75);
+        font-size: 30px;
+        color: black;
+        -webkit-transition: all .5s ease; /* Safari and Chrome */
+    -moz-transition: all .5s ease; /* Firefox */
+    -ms-transition: all .5s ease; /* IE 9 */
+    -o-transition: all .5s ease; /* Opera */
+    transition: all .5s ease;
+            
+        
+    }
+}
+.center_box{
+    margin: auto;
+    height: 50vh;
+    width: 90vw;
+    text-align: center;
 }

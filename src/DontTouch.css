@@ -108,6 +108,7 @@ button {
     transform: scaleY(-1);
     height: 100vh;
     width: 100vw;
+    margin-top: -20vh;
     animation: App-logo-spin infinite 500s linear;
     overflow: hidden; }
   .star-cont .twinkling {

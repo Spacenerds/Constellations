@@ -95,7 +95,25 @@ class Home extends Component {
                 </div>
               <div className="stars3"></div>
             </div>
-            
+            <div className="show_Box">
+                <div className="center_box"> 
+                    <Link to="/tarot" >
+            <div  className="tarot_div">
+                 <div className=' background'> 
+                <span className='text'>Go to Tarot Card Reading</span>
+                 </div> 
+            </div>
+            </Link> 
+            <Link to="/horoscope" >
+            <div className="horoscope_div">
+                <div className=' background'> 
+                <span className='text'>Go to Horoscope</span>
+                 </div> 
+                
+                </div>
+                </Link>
+             </div>
+            </div>
              </div>
         );
     }
