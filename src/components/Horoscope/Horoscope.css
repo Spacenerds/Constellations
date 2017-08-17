@@ -35,8 +35,8 @@
 }
 
 .iconitem {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
 }
 
 .animate {
@@ -52,7 +52,7 @@
 
 .horoscope-container {
     border: 2px white solid;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
     
 }

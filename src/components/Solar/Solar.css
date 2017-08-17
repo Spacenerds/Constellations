@@ -1,0 +1,332 @@
+/* KINETIC CSS3 ANIMATION */
+ul,ol{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #0f0f0f;
+  overflow: hidden;
+  background: url(./solar-bg.png) top left repeat #000;
+  background-size: 'cover';
+	box-shadow: 0px 0px 30px #000;
+}
+
+#solarsystem{
+	position: relative;
+	margin: auto;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+#solarsystem ol{
+	position: relative;
+	margin: auto;
+	padding: 0;
+	width: 1000px;
+	height: 1000px;
+}
+
+#solarsystem ol li{
+	display: block;	
+	text-indent: -100000px;
+	position: absolute;
+	top: 500px;
+	left: 500px;
+	background-position: 0 0;
+	background-repeat:  no-repeat; 
+	background-color: transparent;
+	background-size: 100%;
+	box-sizing: border-box;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-name: orbitsun;
+}
+
+#solarsystem ol li:hover{
+	-webkit-animation-play-state: paused;
+	z-index: 1;
+	border: 2px solid white;
+}
+
+#solarsystem ol li .desc{
+	color: #fff;
+	text-indent: 0;	
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(53,53,53,0.5);
+	border-radius: 3px;
+ border: 2px solid white;
+	width: 250px;
+	padding: 10px 20px 20px 20px;
+	font-size: 0.8em;	
+	box-sizing :border-box;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-name: reverseorbitsun;
+}
+
+#solarsystem ol li:hover .desc{
+	-webkit-animation-play-state: paused;
+	visibility: visible;
+}
+
+/* The Sun */
+#solarsystem ol>li:nth-child(1){
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;	
+	background-image: 	-webkit-radial-gradient(center, ellipse cover,  rgba(255,255,94,1) 0%,rgba(255,187,0,0.99) 100%),
+						url(https://s.cdpn.io/13060/sun.png);
+	margin-left: -50px;
+	margin-top: -50px;
+	box-shadow: 0px 0px 20px #fc9d34;
+	-webkit-animation-name: pulseglow;
+	-webkit-animation-timing-function: eas-in;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: 2s;
+}
+
+/* Mercury */
+#solarsystem ol>li:nth-child(2){
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-image: 	-webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%),
+						url(https://s.cdpn.io/13060/mercury.png);
+	margin-left: -80px;
+	margin-top: -5px;
+	-webkit-transform-origin: 80px 5px;
+	-webkit-animation-duration: 5s;
+}
+
+#solarsystem ol>li:nth-child(2) .desc{
+	-webkit-animation-duration: 5s;
+}
+
+
+/* Venus */
+#solarsystem ol>li:nth-child(3){
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background-image: 	-webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%),
+						url(https://s.cdpn.io/13060/venus.png);
+	margin-left: -110px;
+	margin-top: -8px;
+	-webkit-transform-origin: 110px 8px;
+	-webkit-animation-duration: 10s;
+}
+
+#solarsystem ol>li:nth-child(3) .desc{
+	-webkit-animation-duration: 10s;
+}
+
+/* Earth */
+#solarsystem ol>li:nth-child(4){
+	overflow: visible;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-image: 	-webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%),
+						url(https://s.cdpn.io/13060/earth.png);
+	margin-left: -150px;
+	margin-top: -10px;
+	-webkit-transform-origin: 150px 10px;
+	-webkit-animation-duration: 15s;
+}
+
+/* The Moon */
+#solarsystem ol>li:nth-child(4) li{
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	text-indent: -100000px;	
+	top: 10px;
+	left: 10px;
+	margin-left: -30px;
+	margin-top: -5px;
+	-webkit-transform-origin: 30px 5px;
+	-webkit-animation-duration: 5s;
+	overflow: visible;	
+}
+
+#solarsystem ol>li:nth-child(4) .desc{
+	-webkit-animation-duration: 15s;
+}
+
+#solarsystem ol>li:nth-child(4) li span{
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;	
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	background-position: 0 0;
+	background-repeat:  no-repeat; 
+	background-color: transparent;
+	background-size: 100%;
+	background-image: 	-webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%),
+						url(https://s.cdpn.io/13060/moon.png);
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-name: reverseorbitsun;
+	-webkit-animation-duration: 5s;
+}
+
+#solarsystem ol>li:nth-child(4):hover li,
+#solarsystem ol>li:nth-child(4):hover li span{
+	-webkit-animation-play-state: paused;
+}
+
+/* Mars */
+#solarsystem ol>li:nth-child(5){
+	width: 14px;
+	height: 14px;
+	border-radius: 7px;
+	background-image: 	-webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%),
+						url(https://s.cdpn.io/13060/mars.png);
+	margin-left: -180px;
+	margin-top: -7px;
+	-webkit-transform-origin: 180px 7px;
+	-webkit-animation-duration: 20s;
+}
+
+#solarsystem ol>li:nth-child(5) .desc{
+	-webkit-animation-duration: 20s;
+}
+
+/* Jupiter */
+#solarsystem ol>li:nth-child(6){
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background-image: 	-webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%),
+						url(https://s.cdpn.io/13060/jupiter.png);
+	margin-left: -240px;
+	margin-top: -20px;
+	-webkit-transform-origin: 240px 20px;
+	-webkit-animation-duration: 25s;
+}
+
+#solarsystem ol>li:nth-child(6) .desc{	
+	-webkit-animation-duration: 25s;
+}
+
+/* Saturn */
+#solarsystem ol>li:nth-child(7){
+	width: 36px;
+	height: 36px;
+	border-radius: 18px;
+	background-image: 	-webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%),
+						url(https://s.cdpn.io/13060/saturn.png);
+	margin-left: -294px;
+	margin-top: -18px;
+	-webkit-transform-origin: 294px 18px;
+	-webkit-animation-duration: 30s;	
+}
+
+#solarsystem ol>li:nth-child(7) .desc{
+	-webkit-animation-duration: 30s;	
+}
+
+#solarsystem ol>li:nth-child(7):after{
+	content: "";
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	position: absolute;
+	top: -19px;
+	left: -16px;
+	-webkit-transform: rotateZ(36deg) rotateY(53deg) rotateX(66deg);
+	-webkit-box-shadow: 3px 0px 38px #C7D152;
+
+
+}
+
+/* Uranus */
+#solarsystem ol>li:nth-child(8){
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	background-position: 0 0;
+	background-image: 	-webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%),
+						url(https://s.cdpn.io/13060/uranus.png);
+	margin-left: -342px;
+	margin-top: -16px;
+	-webkit-transform-origin: 342px 16px;
+	-webkit-animation-duration: 35s;
+}
+
+#solarsystem ol>li:nth-child(8) .desc{
+	-webkit-animation-duration: 35s;
+}
+
+/* Neptune */
+#solarsystem ol>li:nth-child(9){
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background-image: 	-webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%),
+						url(https://s.cdpn.io/13060/neptune.png);
+	margin-left: -388px;
+	margin-top: -15px;
+	-webkit-transform-origin: 388px 15px;
+	-webkit-animation-duration: 40s;
+}
+
+#solarsystem ol>li:nth-child(9) .desc{
+	-webkit-animation-duration: 40s;
+}
+
+/* Pluto */
+#solarsystem ol>li:nth-child(10){
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	background-image: 	-webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%),
+						url(https://s.cdpn.io/13060/pluto.png);
+	margin-left: -412px;
+	margin-top: -3px;
+	-webkit-transform-origin: 412px 3px;
+	-webkit-animation-duration: 45s;
+}
+
+#solarsystem ol>li:nth-child(10) .desc{
+	-webkit-animation-duration: 45s;
+}
+
+@-webkit-keyframes orbitsun{
+	from {
+		-webkit-transform:rotate(0deg)
+	}
+	to{
+		-webkit-transform:rotate(360deg)
+	}
+}
+
+@-webkit-keyframes reverseorbitsun{
+	from {
+		-webkit-transform:rotate(0deg)
+	}
+	to{
+		-webkit-transform:rotate(-360deg)
+	}
+}
+
+@-webkit-keyframes pulseglow{
+	0% {
+		-webkit-box-shadow: 0 0 20px orange,
+							0 0 3px white;
+	}
+	100%{
+		-webkit-box-shadow: 0 0 50px orange,
+							0 0 5px white;
+	}
+}
+
