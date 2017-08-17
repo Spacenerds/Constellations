@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Megrim");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poiret One', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2 {
+  font-family: 'Megrim', Serif;
+  font-weight: normal;
+  opacity: 1; }
+
+button {
+  padding: 8px 70px;
+  background: rgba(8, 12, 34, 0.75);
+  color: #1DAEEC;
+  font-family: 'Megrim', Serif;
+  font-size: 13pt;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to top right, #fff 0%, #28E6F9 9%, #080C22 50%);
+  border-image-slice: 1; }
+
+.moon-distance-container {
+  text-align: center; }
+  .moon-distance-container .md-back {
+    background: #080C22;
+    background: url("http://a1star.com/images/star-tile-far-away.jpg") repeat center;
+    position: absolute;
+    background-attachment: fixed;
+    top: 0;
+    z-index: 0;
+    width: 100vw; }
+    .moon-distance-container .md-back .earth-img {
+      margin-left: auto;
+      margin-right: auto; }
+    .moon-distance-container .md-back .hoop-back-set-1 .md-hoop {
+      width: 200px;
+      height: 200px;
+      border-top: 5px solid #1DAEEC;
+      border-radius: 50%/50px 50px 100px 100px;
+      margin: 0 auto -160px auto; }
+    .moon-distance-container .md-back .hint {
+      margin-top: 500px;
+      height: 1000px; }
+      .moon-distance-container .md-back .hint p {
+        background: rgba(189, 202, 236, 0.75);
+        padding: 30px;
+        border-radius: 10px;
+        width: 200px;
+        margin-left: 100px; }
+      .moon-distance-container .md-back .hint h2 {
+        color: #BDCAEC;
+        position: absolute;
+        right: 10vw;
+        margin-top: 300px; }
+    .moon-distance-container .md-back .visit-const {
+      height: 2500px;
+      margin-top: 200px;
+      color: white; }
+      .moon-distance-container .md-back .visit-const p {
+        padding: 20px; }
+      .moon-distance-container .md-back .visit-const h3 {
+        left: 30vw;
+        position: absolute;
+        font-size: 22px;
+        margin-top: 300px; }
+      .moon-distance-container .md-back .visit-const .gemini {
+        margin-top: 700px;
+        right: 10vw;
+        position: absolute;
+        height: 600px; }
+        .moon-distance-container .md-back .visit-const .gemini img {
+          height: 400px;
+          margin-bottom: -150px; }
+      .moon-distance-container .md-back .visit-const h4 {
+        margin-top: 400px;
+        position: absolute;
+        left: -20vw;
+        color: #28E6F9; }
+      .moon-distance-container .md-back .visit-const .learnmore {
+        margin-top: 700px;
+        background: transparent; }
+      .moon-distance-container .md-back .visit-const a {
+        color: #28E6F9;
+        left: -20vw;
+        top: 1500px;
+        position: absolute; }
+    .moon-distance-container .md-back .visit-zodiacs {
+      width: 100vw;
+      height: 2000px;
+      color: white;
+      margin-top: 150px; }
+      .moon-distance-container .md-back .visit-zodiacs p {
+        padding: 20px; }
+      .moon-distance-container .md-back .visit-zodiacs h2 {
+        color: #28E6F9;
+        left: 10vw;
+        position: absolute;
+        z-index: 2;
+        margin-top: 300px; }
+      .moon-distance-container .md-back .visit-zodiacs img {
+        height: 280px;
+        opacity: 0.85;
+        right: 10vw;
+        position: absolute;
+        z-index: 1; }
+      .moon-distance-container .md-back .visit-zodiacs .leo {
+        height: 500px;
+        margin-top: 600px; }
+        .moon-distance-container .md-back .visit-zodiacs .leo h2 {
+          margin-top: 100px; }
+        .moon-distance-container .md-back .visit-zodiacs .leo p {
+          margin-top: 300px; }
+        .moon-distance-container .md-back .visit-zodiacs .leo h4 {
+          margin-top: 500px; }
+    .moon-distance-container .md-back .visit-horoscope {
+      width: 100vw;
+      height: 2000px;
+      color: white;
+      margin-top: 150px; }
+      .moon-distance-container .md-back .visit-horoscope p {
+        margin-top: 500px;
+        position: absolute;
+        right: 10vw; }
+      .moon-distance-container .md-back .visit-horoscope h3 {
+        margin-top: 1000px; }
+      .moon-distance-container .md-back .visit-horoscope a {
+        margin-top: 500px;
+        position: absolute;
+        left: 10vw;
+        color: #1DAEEC;
+        font-size: 22px; }
+    .moon-distance-container .md-back .visit-tarot {
+      width: 100vw;
+      height: 2000px;
+      color: white;
+      margin-top: 400px; }
+      .moon-distance-container .md-back .visit-tarot p {
+        margin-top: 500px;
+        position: absolute;
+        left: 10vw; }
+      .moon-distance-container .md-back .visit-tarot h3 {
+        margin-top: 1000px; }
+      .moon-distance-container .md-back .visit-tarot a {
+        margin-top: 500px;
+        position: absolute;
+        right: 10vw;
+        color: #BDCAEC;
+        font-size: 22px; }
+  .moon-distance-container .md-middle {
+    position: fixed;
+    z-index: 1;
+    width: 100vw; }
+    .moon-distance-container .md-middle .astronaut-img {
+      margin-left: auto;
+      margin-right: auto;
+      height: 100px;
+      animation: astronaut 5s infinite; }
+
+@keyframes astronaut {
+  0% {
+    margin-top: 20vh;
+    padding-left: 3%;
+    padding-right: 0%; }
+  25% {
+    margin-top: 17vh; }
+  50% {
+    margin-top: 20vh;
+    padding-left: 0;
+    padding-right: 3%; }
+  75% {
+    margin-top: 17vh; }
+  100% {
+    margin-top: 20vh;
+    padding-left: 3%;
+    padding-right: 0%; } }
+  .moon-distance-container .md-front {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100vw; }
+    .moon-distance-container .md-front h1 {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 30px;
+      color: white;
+      margin-top: 32vh; }
+    .moon-distance-container .md-front .distance-tracker {
+      right: 50px;
+      top: 22vh;
+      background: red;
+      border-radius: 45px;
+      height: 75px;
+      width: 75px;
+      position: fixed;
+      padding: 17px;
+      color: white; }
+      .moon-distance-container .md-front .distance-tracker .miles {
+        font-size: 20px; }
+        .moon-distance-container .md-front .distance-tracker .miles:after {
+          content: 'k'; }
+      .moon-distance-container .md-front .distance-tracker p {
+        margin: 0; }
+    .moon-distance-container .md-front .hoop-set-1 {
+      margin-top: 83px;
+      top: 289px;
+      position: absolute;
+      width: 100vw; }
+    .moon-distance-container .md-front .hoop-set-2 {
+      top: 1988px;
+      position: absolute;
+      width: 100vw; }
+    .moon-distance-container .md-front .hoop-set-3 {
+      top: 4807px;
+      position: absolute;
+      width: 100vw; }
+    .moon-distance-container .md-front .hoop-set-4 {
+      top: 9224px;
+      position: absolute;
+      width: 100vw; }
+    .moon-distance-container .md-front .md-hoop {
+      width: 200px;
+      height: 200px;
+      border-bottom: 5px solid #28E6F9;
+      border-radius: 50%/100px 100px 50px 50px;
+      margin: -160px auto 0 auto; }
