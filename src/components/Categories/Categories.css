@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
 .parent {
-    background: #060e1b;
-    color: white;
+    background: transparent;
     height: 100vh;
     margin: 0;
     overflow: hidden;
@@ -15,6 +14,7 @@
     padding: 100px 30px ;
     width: 100vw;
     height: 110vh;
+    z-index: 3;
 }
 
 .column-one {
@@ -55,10 +55,6 @@
     width: 33%;
 }
 
-.bottom-row {
-    color: white;
-}
-
 #stars {
     top: 0;
     position: absolute;
@@ -72,18 +68,31 @@
 }
 
 .bottom-img {
-    background-image: url("./bottom-img.png");
-    background-size: cover;
-    width: 100vw;
     display: flex;
     justify-content: flex-end;
 
 
 }
 
-canvas {
+.button-cat{
+    margin-top:50px;
+}
+
+.bg-all {
+    height: 100vh;
+    width: 100vw;
+    background: #060e1b;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -2;
+  }
+
+#canvas {
     opacity: 0.5;
     position: absolute;
     top:0;
     left:0;
+    z-index: -1;
+
   }

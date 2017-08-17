@@ -1,4 +1,5 @@
 import React, { Component, Image } from 'react';
+import { Link } from 'react-router-dom';
 import './Categories.css';
 
 
@@ -90,27 +91,34 @@ class Categories extends Component{
     render(){
         return(
             <div className="parent">
-                
                 <div className="row">
                     <div className="column-one">
                         <h1> Zodiac </h1>
                         <img className="horor-img" src={require ("./horoscope.png")}/>
+                        <Link to="/horoscope">
+                        <button className="button-cat">VIEW ZODIAC</button>
+                        </Link>
                     </div>
 
                     <div className="column-two">
                         <h1>Events</h1>
                         <img className="horor-img" src={require ("./moon.png")}/>
+                        <Link to="/events">
+                        <button className="button-cat">VIEW EVENTS</button>
+                        </Link>
                     </div>
 
                     <div className="column-three">
                         <h1>Constellations</h1>
                         <img className="horor-img" src={require ("./constellations.png")}/>
+                        <Link to="/constellations">
+                        <button className="button-cat">VIEW CONSTELLATIONS</button>
+                        </Link>
                     </div>
-
+                    <canvas id="canvas"></canvas>
+                    <div className="bg-all"></div>
                 </div>
-                <div className="bottom-img">
-                 </div>
-                <canvas id="canvas"></canvas>
+=                
             </div>
         )
     }
