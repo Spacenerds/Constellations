@@ -39,29 +39,6 @@ button {
   border-image: linear-gradient(to top right, #fff 0%, #28E6F9 9%, #080C22 50%);
   border-image-slice: 1; }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  font-family: 'Poiret One', sans-serif; }
-
-a {
-  text-decoration: none; }
-
-ul {
-  margin: 0;
-  padding: 0; }
-
-button {
-  padding: 8px 70px;
-  background: rgba(8, 12, 34, 0.75);
-  color: #1DAEEC;
-  font-family: 'Megrim', Serif;
-  font-size: 13pt;
-  border: 3px solid transparent;
-  border-image: linear-gradient(to top right, #fff 0%, #28E6F9 9%, #080C22 50%);
-  border-image-slice: 1; }
-
 .events-container .section {
   padding: 20px !important; }
 
