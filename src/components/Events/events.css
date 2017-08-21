@@ -480,12 +480,8 @@ button {
   position: relative;
   color: #fff; }
   .meteor h2 {
-
-    text-align: center; }
-
     text-align: center;
     padding-top: 40px; }
-
   .meteor canvas {
     height: 100vh;
     margin-left: -20px;
