@@ -3,20 +3,45 @@ import { Link } from 'react-router-dom';
 import { stack as Menu } from 'react-burger-menu';
 import Background from './horor.jpg';
 import './Nav.css'
+import config from './config.js';
+import axios from 'axios';
 
 class Nav extends Component{
     constructor(props){
         super(props)
 
         this.state = {
-            isOpen: false
+            isOpen: false,
+            loggedIn: false
         }
+        
 
     };
+
+    componentDidMount() {
+      axios.get('/api/loggeduser').then( (response) => {
+        this.setState({
+          loggedIn: response.data
+        })
+      })
+    }
     render(){ 
+      let amILogged = false;
+      if(this.props.loggedIn){
+        amILogged = <a href={config.logOut}><li>LOG OUT </li></a>
+      } else {
+        amILogged = <a href={config.logIn}><li>LOG IN </li></a>
+      }
         return(
             <div> 
+
+           
+
+
+            <Menu isOpen={ false } styles={ styles } pageWrapId={ "page-wrap" } >
+
             <Menu isOpen={ false } styles={ styles } >
+
                 <Link to="/" id="home" className="hvr-pulse" isOpen ={ false }  >Home</Link>
                 <Link to="/events" id="home" className="hvr-pulse" isOpen ={ false }  >Events</Link>
                 <Link to="/constellationsDos" id="home" className="hvr-pulse" isOpen ={ false }  >Constellations</Link>
@@ -24,7 +49,11 @@ class Nav extends Component{
                 <Link to="/tarot" id="home" className="hvr-pulse" isOpen ={ false }  >Tarot</Link>
                 <Link to="/categories" id="home" className="hvr-pulse" isOpen ={ false }  >Categoriest</Link>
                 <Link to="/horoscope" id="home" className="hvr-pulse" isOpen ={ false }  >Horoscope</Link>
+
+                {amILogged}
+
                 <Link to="/solar" id="home" className="hvr-pulse" isOpen ={ false }  >Solar System</Link>
+
             </Menu>
             </div> 
         );
