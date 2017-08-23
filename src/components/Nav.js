@@ -53,6 +53,7 @@ class Nav extends Component{
                 {amILogged}
 
                 <Link to="/solar" id="home" className="hvr-pulse" isOpen ={ false }  >Solar System</Link>
+                <Link to="/moon" id="home" className="hvr-pulse" isOpen ={ false }  >How Far is the Moon</Link>
 
             </Menu>
             </Menu>
