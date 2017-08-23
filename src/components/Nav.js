@@ -46,6 +46,7 @@ class Nav extends Component{
                 <div className="login-text">
                 {amILogged}
                 </div>
+                <Link to="/moon" id="home" className="hvr-pulse" isOpen ={ false }  >How Far is the Moon</Link>
             </Menu>
             </div> 
         );
