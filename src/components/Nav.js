@@ -55,6 +55,7 @@ class Nav extends Component{
                 <Link to="/solar" id="home" className="hvr-pulse" isOpen ={ false }  >Solar System</Link>
 
             </Menu>
+            </Menu>
             </div> 
         );
     }
