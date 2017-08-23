@@ -43,10 +43,9 @@ class Nav extends Component{
                 <Link to="/categories" id="home" className="hvr-pulse" isOpen ={ false }  >Categoriest</Link>
                 <Link to="/horoscope" id="home" className="hvr-pulse" isOpen ={ false }  >Horoscope</Link>
                 <Link to="/solar" id="home" className="hvr-pulse" isOpen ={ false }  >Solar System</Link>
-                <div className="login-text">
-                {amILogged}
-                </div>
                 <Link to="/moon" id="home" className="hvr-pulse" isOpen ={ false }  >How Far is the Moon</Link>
+                {amILogged}
+              
             </Menu>
             </div> 
         );
