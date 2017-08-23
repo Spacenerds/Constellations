@@ -151,6 +151,9 @@
     transform: scale(1.1) rotate(4deg);
   }
 
+.horor-content {
+}
+
 
 
 @keyframes moveDown{
@@ -162,4 +165,10 @@
         transform: translateY(0px);  
         opacity: 1;
     }
+}
+
+.icons-columns {
+    display: flex;
+    flex-direction: row;
+
 }

@@ -33,7 +33,6 @@ class Icon extends Component {
     displayContent() {
         return (
             <div>
-                <div className="line"></div>
                 <div className="horoscope-container">
                     <div className="horor-sign">{this.props.sign}</div>
                     <div className="content-style">
@@ -67,14 +66,18 @@ class Icon extends Component {
             content = this.displayContent() : 
             content = ""
         return(
-            <div >
+            <div className="in-icons">
                 
                 <div>
                     <img  onClick={ this.getHoroscope } className="iconitem animate hvr-grow-rotate" alt="" src={ this.props.img }  />
                 </div>
+                
+                <div className="horor-content">
                     { content }
-
+                </div>
+                
             </div>
+            
         )
     }
 }
