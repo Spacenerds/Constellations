@@ -68,3 +68,12 @@
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
   }
+
+  .login-text {
+    color: white;
+    text-decoration: none;
+  }
+
+  .in-icons {
+    margin-top: 50px;
+}

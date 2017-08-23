@@ -10,19 +10,27 @@ class Icons extends Component {
                 <div className="horor-title">
                     <h1> PICK YOUR SIGN</h1>
                 </div>
-                <section style={ styles.iconList } >
-                    <Icon sign="aries" img={require ("./Icons/aries.svg")}/>
-                    <Icon sign="taurus" img={require ("./Icons/taurus.svg")}/>
-                    <Icon sign="gemini" img={require ("./Icons/gemini.svg")}/>
-                    <Icon sign="cancer" img={require ("./Icons/cancer.svg")}/>
-                    <Icon sign="leo" img={require ("./Icons/leo.svg")}/>
-                    <Icon sign="virgo" img={require ("./Icons/virgo.svg")}/>
-                    <Icon sign="libra" img={require ("./Icons/libra.svg")}/>
-                    <Icon sign="scorpio" img={require ("./Icons/scorpio.svg")}/>
-                    <Icon sign="sagittarius" img={require ("./Icons/sagittarius.svg")}/>
-                    <Icon sign="capricorn" img={require ("./Icons/capricorn.svg")}/>
-                    <Icon sign="aquarius" img={require ("./Icons/aquarius.svg")}/>
-                    <Icon sign="pisces" img={require ("./Icons/pisces.svg")}/>
+                <section  >
+                    <div className="icons-columns">
+                        <div>
+                            <Icon sign="aries" img={require ("./Icons/aries.svg")}/>
+                            <Icon sign="taurus" img={require ("./Icons/taurus.svg")}/>
+                            <Icon sign="gemini" img={require ("./Icons/gemini.svg")}/>
+                            <Icon sign="cancer" img={require ("./Icons/cancer.svg")}/>
+                        </div>
+                        <div>
+                            <Icon sign="leo" img={require ("./Icons/leo.svg")}/>
+                            <Icon sign="virgo" img={require ("./Icons/virgo.svg")}/>
+                            <Icon sign="libra" img={require ("./Icons/libra.svg")}/>
+                            <Icon sign="scorpio" img={require ("./Icons/scorpio.svg")}/>
+                        </div>
+                        <div>
+                            <Icon sign="sagittarius" img={require ("./Icons/sagittarius.svg")}/>
+                            <Icon sign="capricorn" img={require ("./Icons/capricorn.svg")}/>
+                            <Icon sign="aquarius" img={require ("./Icons/aquarius.svg")}/>
+                            <Icon sign="pisces" img={require ("./Icons/pisces.svg")}/>
+                        </div>
+                    </div>
                 </section>
                 
 
@@ -31,11 +39,6 @@ class Icons extends Component {
     }
 }
 
-const styles = {
-    iconList:{
-        display: 'flex',
-        justifyContent: 'space-around',
-    }
-}
+
 
 export default Icons;
