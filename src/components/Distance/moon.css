@@ -61,7 +61,8 @@ button {
       margin-top: 500px;
       height: 1000px; }
       .moon-distance-container .md-back .hint p {
-        background: rgba(189, 202, 236, 0.75);
+        background: rgba(8, 12, 34, 0.75);
+        color: #BDCAEC;
         padding: 30px;
         border-radius: 10px;
         width: 200px;
@@ -165,6 +166,14 @@ button {
         right: 10vw;
         color: #BDCAEC;
         font-size: 22px; }
+    .moon-distance-container .md-back .endling {
+      margin-top: 800px;
+      color: white; }
+      .moon-distance-container .md-back .endling p {
+        margin: 500px auto; }
+      .moon-distance-container .md-back .endling .moon-img {
+        margin: auto;
+        height: 500px; }
   .moon-distance-container .md-middle {
     position: fixed;
     z-index: 1;
@@ -202,6 +211,9 @@ button {
       padding: 10px 30px;
       color: white;
       margin-top: 32vh; }
+    .moon-distance-container .md-front h2 {
+      margin-top: 11535px;
+      color: white; }
     .moon-distance-container .md-front .distance-tracker {
       right: 50px;
       top: 22vh;
@@ -215,7 +227,8 @@ button {
       .moon-distance-container .md-front .distance-tracker .miles {
         font-size: 20px; }
         .moon-distance-container .md-front .distance-tracker .miles:after {
-          content: 'k'; }
+          content: 'k';
+          font-size: 15px; }
       .moon-distance-container .md-front .distance-tracker p {
         margin: 0; }
     .moon-distance-container .md-front .hoop-set-1 {

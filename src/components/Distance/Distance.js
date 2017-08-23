@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import './moon.css';
 
 import earth from './images/moon.png';
+import moon from './images/endmoon.png';
 import astronaut from './images/astronaut.png';
 import ursaminor from './images/ursaminor.png';
 import leo from './images/leo.png';
@@ -13,7 +14,7 @@ class Distance extends Component {
     render() {
         $(window).scroll(function() {
             const cake = $('.distance-tracker .miles');
-            cake.text(Math.floor($(window).scrollTop()/100));
+            cake.text(Math.floor($(window).scrollTop()/55));
         })
         return (
             <div className="moon-distance-container">
@@ -43,7 +44,7 @@ class Distance extends Component {
                             <h4>Isn't she precious?</h4>
                             <p className="learnmore">Wanna learn more about her and her other constellation friends?</p>
                             <Link to="/constellationsDos">
-                                Check out our constellations page!
+                                <button>Check out our constellations page!</button>
                             </Link>
                         </div>
                     </div>
@@ -62,7 +63,7 @@ class Distance extends Component {
                             <h4>RAWR</h4>
                             <p className="learnmore">Wanna learn more about him and other zodiacs?</p>
                             <Link to="/constellations">
-                                See our zodiacs page!
+                                <button>See our zodiacs page!</button>
                             </Link>
                         </div>
                     </div>
@@ -71,7 +72,7 @@ class Distance extends Component {
                         <p>I wonder how much longer we have to go?</p>
                         <h3>Hey I know!</h3>
                         <Link to="/horoscope">
-                            Let's check our horoscope!
+                            <button>Let's check our horoscope!</button>
                         </Link>
                     </div>
                     <div className="hoop-back-set-1">
@@ -83,9 +84,15 @@ class Distance extends Component {
                         <h2>Well that was insiteful</h2>
                         <p>But it seemed rather vague, didn't it?</p>
                         <h3>Oooooh, what about a tarot reading?</h3>
-                        <Link to="/horoscope">
-                            These things are always accurate!
+                        <Link to="/tarot">
+                            <button>These things are always accurate!</button>
                         </Link>
+                    </div>
+                    <div className="endling">
+                        <h1>I see it!</h1>
+                        <p>And it only took 500 years</p>
+                        <h2>Thanks for traveling with me!</h2>
+                        <img className="moon-img" src={moon} alt="moon" />
                     </div>
                 </div>
                 <div className="md-middle">
@@ -113,6 +120,7 @@ class Distance extends Component {
                         <div className="md-hoop"></div>
                         <div className="md-hoop"></div>
                     </div>
+                    <h2>We're almost there!</h2>
                     <div className="distance-tracker">
                         <p className="miles">0</p>
                         <p>miles</p>
