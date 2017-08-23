@@ -17,7 +17,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cookieParser());
 let corsOptions = {
-    origin: `http://localhost:3000`
+    origin: `*`
 }
 app.use(cors(corsOptions));
 app.use(session({
@@ -25,6 +25,7 @@ app.use(session({
     saveUninitialized: true,
     resave: true
 }))
+app.use(express.static(__dirname + '/build'));
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -87,6 +88,8 @@ app.get('/api/constellations/:id', constellationsCTRL.getConstel);
 app.get('/api/zodiac/:id', constellationsCTRL.getZodiac);
 
 // app.get('/horoscope/:sign', horoscopeCTRL.getHoroscope);
+app.get('*', function (req, res) {
+  res.sendFile(__dirname + '/build/index.html');
+});
 
-
-app.listen(3003, () => console.log(`Listening on port ${config.port}`))
+app.listen(80, () => console.log(`Listening on port ${config.port}`))
