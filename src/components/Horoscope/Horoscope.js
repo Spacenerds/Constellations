@@ -13,15 +13,17 @@ class Horoscope extends Component {
         this.state = {
           json: {}
         }
+
     }
 
-    componentDidMount () {
+    componentWillMount () {
         const URL = 'https://aztro.herokuapp.com/?sign=aries&day=today';
         fetch(URL, {
             method: 'POST'
         }).then(response => response.json())
         .then(json => { this.setState({json}); });
     }
+    
 
     render(){
         return(

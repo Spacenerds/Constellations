@@ -73,6 +73,8 @@ button {
     width: 400px;
     margin: auto;
     left: 34%; }
+    .homepage .logo .logo-lines {
+      stroke-width: 4px; }
   .homepage .homepage {
     background: #000;
     color: #B5B4B5;

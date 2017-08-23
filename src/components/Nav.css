@@ -1,12 +1,11 @@
-
+.side-menu {
+  z-index: 5;
+}
 
 .menu-item {
-    color: white;
     font-weight:800;
     padding-bottom: 15px;
     padding-top: 15px;
-    
-
 }
 
 .menu-item:hover .menu-item:focus .menu-item:item{ 
@@ -69,3 +68,12 @@
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
   }
+
+  .login-text {
+    color: white;
+    text-decoration: none;
+  }
+
+  .in-icons {
+    margin-top: 50px;
+}

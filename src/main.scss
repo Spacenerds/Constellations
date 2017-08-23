@@ -29,7 +29,6 @@ body {
     font-family: 'Poiret One', sans-serif;
 }
 
-
 a {
     text-decoration: none;
 }
@@ -56,28 +55,3 @@ button {
     border-image: linear-gradient(to top right, #fff 0%, $teal 9%, $deepspace 50%);
     border-image-slice: 1;
 }
-
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: rgba(black, 0.2);
-        font-family: 'Poiret One', sans-serif;
-    }
-    a {
-        text-decoration: none;
-    }
-    ul {
-        margin: 0;
-        padding: 0;
-    }
-    button {
-        padding: 8px 70px;
-        background: rgba($deepspace, 0.75);
-        color: $blue;
-        font-family: 'Megrim', Serif;
-        font-size: 13pt;
-
-        border: 3px solid transparent;
-        border-image: linear-gradient(to top right, #fff 0%, $teal 9%, $deepspace 50%);
-        border-image-slice: 1;
-    }

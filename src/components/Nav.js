@@ -28,40 +28,34 @@ class Nav extends Component{
     render(){ 
       let amILogged = false;
       if(this.props.loggedIn){
-        amILogged = <a href={config.logOut}><li>LOG OUT </li></a>
+        amILogged = <a href={config.logOut}><li className="hvr-pulse">LOG OUT </li></a>
       } else {
-        amILogged = <a href={config.logIn}><li>LOG IN </li></a>
+        amILogged = <a href={config.logIn}><li className="hvr-pulse">LOG IN </li></a>
       }
         return(
             <div> 
-           
-
-
-            <Menu isOpen={ false } styles={ styles } pageWrapId={ "page-wrap" } >
-                <Link to="/" id="home" className="hvr-pulse" isOpen ={ false }  >Home</Link>
+            <Menu isOpen={ false } styles={ styles } >
+                <Link to="/" id="home" className="hvr-pulse in-icons" isOpen ={ false }  >Home</Link>
                 <Link to="/events" id="home" className="hvr-pulse" isOpen ={ false }  >Events</Link>
                 <Link to="/constellationsDos" id="home" className="hvr-pulse" isOpen ={ false }  >Constellations</Link>
-                 <Link to="/constellations" id="home" className="hvr-pulse" isOpen ={ false }  >Zodiac</Link>
+                <Link to="/constellations" id="home" className="hvr-pulse" isOpen ={ false }  >Zodiac</Link>
                 <Link to="/tarot" id="home" className="hvr-pulse" isOpen ={ false }  >Tarot</Link>
+                <Link to="/categories" id="home" className="hvr-pulse" isOpen ={ false }  >Categoriest</Link>
                 <Link to="/horoscope" id="home" className="hvr-pulse" isOpen ={ false }  >Horoscope</Link>
+                <Link to="/solar" id="home" className="hvr-pulse" isOpen ={ false }  >Solar System</Link>
+                <div className="login-text">
                 {amILogged}
+                </div>
+                <Link to="/moon" id="home" className="hvr-pulse" isOpen ={ false }  >How Far is the Moon</Link>
             </Menu>
             </div> 
-
-            // <div style={styles.menuStyles}>
-            //     <Link to="/"><button>Home</button></Link>
-            //     <Link to="/constellations"><button>Constellations</button></Link>
-            //     <Link to="/events"><button>Events</button></Link>
-            //     <Link to="/tarot"><button>Tarot</button></Link>  
-            //     <Link to="/horoscope"><button>Horoscope</button></Link>   
-            // </div> 
-
         );
     }
 }
 
 const styles = {
     bmBurgerButton: {
+        zIndex: '5',
         position: 'fixed',
         width: '36px',
         height: '30px',
@@ -93,10 +87,10 @@ const styles = {
       },
       bmOverlay: {
         background: 'rgba(0, 0, 0, 0.3)'
-        
       }, 
 
     menuStyles: {
+      
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-around',

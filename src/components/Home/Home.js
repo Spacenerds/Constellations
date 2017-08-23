@@ -17,43 +17,43 @@ class Home extends Component {
                     
                     <svg className="topSVG">
                         {/*a*/}
-                        <circle className="logo-star" cx={9} cy={112} r={1} />
-                        <circle className="logo-star" cx={39.5} cy={44} r={1} />
-                        <circle className="logo-star" cx={69} cy={110} r={1} />
+                        <circle className="logo-star" cx={9} cy={112} r={2} />
+                        <circle className="logo-star" cx={39.5} cy={44} r={2} />
+                        <circle className="logo-star" cx={69} cy={110} r={2} />
                         {/*s*/}
-                        <circle className="logo-star" cx={136} cy={49} r={1} />
-                        <circle className="logo-star" cx={99} cy={105} r={1} />
+                        <circle className="logo-star" cx={136} cy={49} r={2} />
+                        <circle className="logo-star" cx={99} cy={105} r={2} />
                         {/*t*/}
-                        <circle className="logo-star" cx={167} cy={43} r={1} />
-                        <circle className="logo-star" cx={221} cy={43} r={1} />
-                        <circle className="logo-star" cx={195} cy={112} r={1} />
+                        <circle className="logo-star" cx={167} cy={43} r={2} />
+                        <circle className="logo-star" cx={221} cy={43} r={2} />
+                        <circle className="logo-star" cx={195} cy={112} r={2} />
                         {/*r*/}
-                        <circle className="logo-star" cx={250} cy={43} r={1} />
-                        <circle className="logo-star" cx={250} cy={112} r={1} />
-                        <circle className="logo-star" cx={298} cy={112} r={1} />
+                        <circle className="logo-star" cx={250} cy={43} r={2} />
+                        <circle className="logo-star" cx={250} cy={112} r={2} />
+                        <circle className="logo-star" cx={298} cy={112} r={2} />
                         {/*o*/}
-                        <circle className="logo-star" cx={356} cy={41} r={1} />
-                        <circle className="logo-star" cx={356} cy={114} r={1} />
+                        <circle className="logo-star" cx={356} cy={41} r={2} />
+                        <circle className="logo-star" cx={356} cy={114} r={2} />
                         {/*n*/}
-                        <circle className="logo-star" cx={21} cy={144} r={1} />
-                        <circle className="logo-star" cx={21} cy={210} r={1} />
-                        <circle className="logo-star" cx={74} cy={200} r={1} />
-                        <circle className="logo-star" cx={74} cy={144} r={1} />
+                        <circle className="logo-star" cx={21} cy={144} r={2} />
+                        <circle className="logo-star" cx={21} cy={210} r={2} />
+                        <circle className="logo-star" cx={74} cy={200} r={2} />
+                        <circle className="logo-star" cx={74} cy={144} r={2} />
                         {/*e*/}
-                        <circle className="logo-star" cx={105} cy={142} r={1} />
-                        <circle className="logo-star" cx={105} cy={210} r={1} />
-                        <circle className="logo-star" cx={149} cy={142} r={1} />
-                        <circle className="logo-star" cx={149} cy={210} r={1} />
+                        <circle className="logo-star" cx={105} cy={142} r={2} />
+                        <circle className="logo-star" cx={105} cy={210} r={2} />
+                        <circle className="logo-star" cx={149} cy={142} r={2} />
+                        <circle className="logo-star" cx={149} cy={210} r={2} />
                         {/*r*/}
-                        <circle className="logo-star" cx={177} cy={142} r={1} />
-                        <circle className="logo-star" cx={177} cy={210} r={1} />
-                        <circle className="logo-star" cx={225} cy={211} r={1} />
+                        <circle className="logo-star" cx={177} cy={142} r={2} />
+                        <circle className="logo-star" cx={177} cy={210} r={2} />
+                        <circle className="logo-star" cx={225} cy={211} r={2} />
                         {/*d*/}
-                        <circle className="logo-star" cx={250} cy={142} r={1} />
-                        <circle className="logo-star" cx={250} cy={210} r={1} />
+                        <circle className="logo-star" cx={250} cy={142} r={2} />
+                        <circle className="logo-star" cx={250} cy={210} r={2} />
                         {/*s*/}
-                        <circle className="logo-star" cx={374} cy={147} r={1} />
-                        <circle className="logo-star" cx={337} cy={203} r={1} />
+                        <circle className="logo-star" cx={374} cy={147} r={2} />
+                        <circle className="logo-star" cx={337} cy={203} r={2} />
                     </svg>
  
                     <svg version="1.1" className="bottomSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1163 578">
