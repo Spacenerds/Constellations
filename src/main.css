@@ -3,30 +3,36 @@
 html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poiret One', sans-serif; }
+  font-family: 'Poiret One', sans-serif;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 ul {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 h1,
 h2 {
   font-family: 'Megrim', Serif;
   font-weight: normal;
-  opacity: 1; }
+  opacity: 1;
+}
 
 button {
   padding: 8px 70px;
@@ -36,4 +42,9 @@ button {
   font-size: 13pt;
   border: 3px solid transparent;
   border-image: linear-gradient(to top right, #fff 0%, #28E6F9 9%, #080C22 50%);
-  border-image-slice: 1; }
+  border-image-slice: 1;
+}
+
+.bm-menu-wrap {
+  z-index: 5 !important;
+}
