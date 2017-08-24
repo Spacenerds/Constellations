@@ -32,8 +32,7 @@ class Icon extends Component {
 
     displayContent() {
         return (
-            <div>
-                <div className="horoscope-container">
+            <section className="horoscope-container">
                     <div className="horor-sign">{this.props.sign}</div>
                     <div className="content-style">
                         <div className="row-one">
@@ -55,8 +54,7 @@ class Icon extends Component {
                         
                     </div>
                     <button className="btn-close" onClick={ this.closeHoroscope }>close</button>
-                </div>
-            </div>
+            </section>
         )
 }
     render() {
@@ -71,10 +69,12 @@ class Icon extends Component {
                 <div>
                     <img  onClick={ this.getHoroscope } className="iconitem animate hvr-grow-rotate" alt="" src={ this.props.img }  />
                 </div>
+
                 
                 <div className="horor-content">
                     { content }
-                </div>
+               </div>
+                    
                 
             </div>
             

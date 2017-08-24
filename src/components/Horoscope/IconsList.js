@@ -12,19 +12,17 @@ class Icons extends Component {
                 </div>
                 <section  >
                     <div className="icons-columns">
-                        <div>
+                        <div className="in-row">
                             <Icon sign="aries" img={require ("./Icons/aries.svg")}/>
                             <Icon sign="taurus" img={require ("./Icons/taurus.svg")}/>
                             <Icon sign="gemini" img={require ("./Icons/gemini.svg")}/>
                             <Icon sign="cancer" img={require ("./Icons/cancer.svg")}/>
-                        </div>
-                        <div>
                             <Icon sign="leo" img={require ("./Icons/leo.svg")}/>
                             <Icon sign="virgo" img={require ("./Icons/virgo.svg")}/>
+                        </div>
+                        <div className="in-row">
                             <Icon sign="libra" img={require ("./Icons/libra.svg")}/>
                             <Icon sign="scorpio" img={require ("./Icons/scorpio.svg")}/>
-                        </div>
-                        <div>
                             <Icon sign="sagittarius" img={require ("./Icons/sagittarius.svg")}/>
                             <Icon sign="capricorn" img={require ("./Icons/capricorn.svg")}/>
                             <Icon sign="aquarius" img={require ("./Icons/aquarius.svg")}/>
