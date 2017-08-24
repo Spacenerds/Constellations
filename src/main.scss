@@ -55,3 +55,6 @@ button {
     border-image: linear-gradient(to top right, #fff 0%, $teal 9%, $deepspace 50%);
     border-image-slice: 1;
 }
+.bm-menu-wrap{
+    z-index: 5 !important;
+}
