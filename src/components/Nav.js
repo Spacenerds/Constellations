@@ -20,6 +20,7 @@ class Nav extends Component{
 
     componentDidMount() {
       axios.get('/api/loggeduser').then( (response) => {
+        console.log(response.data, "hello from this side")
         this.setState({
           loggedIn: response.data
         })
@@ -43,6 +44,7 @@ class Nav extends Component{
                 <Link to="/categories" id="home" className="hvr-pulse" isOpen ={ false }  >Categoriest</Link>
                 <Link to="/horoscope" id="home" className="hvr-pulse" isOpen ={ false }  >Horoscope</Link>
                 <Link to="/solar" id="home" className="hvr-pulse" isOpen ={ false }  >Solar System</Link>
+                <Link to="/space" id="home" className="hvr-pulse" isOpen ={ false }  >Space</Link>
                 <div className="login-text">
                 {amILogged}
                 </div>

@@ -13,6 +13,7 @@ import Horoscope from './components/Horoscope/Horoscope';
 import Space from './components/Space/Space';
 import Distance from './components/Distance/Distance';
 import Solar from './components/Solar/Solar';
+import Space from './components/Space/Space';
 
 
 export default(
@@ -27,5 +28,6 @@ export default(
         <Route component={Space} path='/space' />
         <Route component={Distance} path='/moon' />
         <Route component={Solar} path='/solar' />
+        <Route component={Space} path='/space' />
     </Switch>
 )

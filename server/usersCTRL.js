@@ -1,9 +1,10 @@
 module.exports = {
     me: function(req, res, next) {
         if (!req.user) {
-            return res.status(200).json(null);
+        res.status(200).json(null);
+        console.log("hello")
         }
-        return res.status(200).send(req.user);
+        res.status(200).send(req.user);
 
     },
     getAll: function(req, res, next) {
